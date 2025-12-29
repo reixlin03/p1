@@ -242,52 +242,56 @@ def main():
             success = False
             
             for url_item in urls:
+                url = None
+                is_rest_api = False
+                
                 # Handle tuple (url, is_rest_api) or string
                 if isinstance(url_item, tuple):
                     url, is_rest_api = url_item
-                    if is_rest_api:
-                        # REST API query endpoint
-                        try:
-                            print(f"  Trying REST API query: {url}")
-                            params = {
-                                'where': '1=1',
-                                'outFields': '*',
-                                'f': 'geojson',
-                                'outSR': '4326'
-                            }
-                            response = requests.get(url, params=params, headers=headers, timeout=60)
-                            if response.status_code == 200:
-                                data = response.json()
-                                if 'features' in data:
-                                    with open(output_file, 'w', encoding='utf-8') as f:
-                                        json.dump(data, f, indent=2, ensure_ascii=False)
-                                    feature_count = len(data.get('features', []))
-                                    print(f"  ✓ Downloaded {feature_count} features to {output_file}")
-                                    success = True
-                                    break
-                        except Exception as e:
-                            print(f"  REST API query failed: {e}")
-                            continue
-                    else:
-                        url = url_item
+                else:
+                    url = url_item
                 
-                # Regular URL download
-                try:
-                    print(f"  Trying direct download: {url}")
-                    response = requests.get(url, headers=headers, timeout=60, params={'outSR': '4326'} if '?' not in url else {})
-                    
-                    if response.status_code == 200:
-                        data = response.json()
-                        with open(output_file, 'w', encoding='utf-8') as f:
-                            json.dump(data, f, indent=2, ensure_ascii=False)
+                if is_rest_api:
+                    # REST API query endpoint
+                    try:
+                        print(f"  Trying REST API query: {url}")
+                        params = {
+                            'where': '1=1',
+                            'outFields': '*',
+                            'f': 'geojson',
+                            'outSR': '4326'
+                        }
+                        response = requests.get(url, params=params, headers=headers, timeout=60)
+                        if response.status_code == 200:
+                            data = response.json()
+                            if 'features' in data:
+                                with open(output_file, 'w', encoding='utf-8') as f:
+                                    json.dump(data, f, indent=2, ensure_ascii=False)
+                                feature_count = len(data.get('features', []))
+                                print(f"  ✓ Downloaded {feature_count} features to {output_file}")
+                                success = True
+                                break
+                    except Exception as e:
+                        print(f"  REST API query failed: {e}")
+                        continue
+                else:
+                    # Regular URL download
+                    try:
+                        print(f"  Trying direct download: {url}")
+                        response = requests.get(url, headers=headers, timeout=60, params={'outSR': '4326'} if '?' not in url else {})
                         
-                        feature_count = len(data.get('features', []))
-                        print(f"  ✓ Downloaded {feature_count} features to {output_file}")
-                        success = True
-                        break
-                except Exception as e:
-                    print(f"  Direct download failed: {e}")
-                    continue
+                        if response.status_code == 200:
+                            data = response.json()
+                            with open(output_file, 'w', encoding='utf-8') as f:
+                                json.dump(data, f, indent=2, ensure_ascii=False)
+                            
+                            feature_count = len(data.get('features', []))
+                            print(f"  ✓ Downloaded {feature_count} features to {output_file}")
+                            success = True
+                            break
+                    except Exception as e:
+                        print(f"  Direct download failed: {e}")
+                        continue
             
             if success:
                 continue

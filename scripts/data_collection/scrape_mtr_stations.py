@@ -9,6 +9,7 @@ import pandas as pd
 import re
 from typing import List, Dict
 import time
+import os
 
 def scrape_mtr_stations() -> List[Dict]:
     """
