@@ -62,6 +62,22 @@ Xier Project/
   - Multiple base map options
   - Fullscreen and measurement tools
 
+## 🌐 GitHub Pages
+
+This project is hosted on GitHub Pages! Visit the live site:
+
+**🔗 [https://reixlin03.github.io/p1/](https://reixlin03.github.io/p1/)**
+
+The live site includes:
+- **Interactive TPU & MTR Map** - Explore Hong Kong's planning units and MTR stations
+- **Analysis Dashboard** - View spatial analysis and proximity metrics
+- **Project Documentation** - Complete project overview and research questions
+
+### Accessing the Visualizations
+
+- **Main Map**: [TPU & MTR Interactive Map](https://reixlin03.github.io/p1/outputs/maps/tpu_mtr_map.html)
+- **Dashboard**: [Analysis Dashboard](https://reixlin03.github.io/p1/outputs/dashboards/interactive_dashboard.html)
+
 ## Setup Instructions
 
 ### Prerequisites
