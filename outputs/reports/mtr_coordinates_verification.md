@@ -1,13 +1,13 @@
 # MTR Station Coordinates Verification Report
 
-**Date:** 2025-12-29 16:47:42
+**Date:** 2025-12-29 21:16:38
 
 **Source:** OpenStreetMap (Nominatim API)
 
 ## Summary
 
-- Stations verified: 74
-- Stations updated: 31
+- Stations verified: 70
+- Stations updated: 35
 - Stations not found: 8
 
 ## Notes
