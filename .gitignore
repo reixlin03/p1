@@ -53,8 +53,9 @@ data/processed/**/*.geojson
 data/analysis/**/*.geojson
 
 # Outputs (keep reports, exclude large HTML maps and figures)
-outputs/maps/*.html
-outputs/dashboards/*.html
+# Allow HTML files for GitHub Pages
+# outputs/maps/*.html
+# outputs/dashboards/*.html
 outputs/figures/**/*
 !outputs/figures/**/.gitkeep
 
