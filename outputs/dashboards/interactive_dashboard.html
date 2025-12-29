@@ -1,0 +1,3698 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3e93e6ece071f0ce96c8b942898ddea3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.css"/>
+    <script src="https://cdn.jsdelivr.net/gh/ljagis/leaflet-measure@2.1.7/dist/leaflet-measure.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ljagis/leaflet-measure@2.1.7/dist/leaflet-measure.min.css"/>
+</head>
+<body>
+    
+    
+    <div style="position: fixed; bottom: 50px; right: 50px; width: 250px; height: auto; 
+                background-color: white; z-index:9999; font-size:14px;
+                border:2px solid grey; border-radius: 5px; padding: 10px">
+    <h4 style="margin-top: 0;">Legend</h4>
+    <p><strong>TPU Boundaries:</strong></p>
+    <p><span style="color: #FF6B6B;">■</span> 2001</p>
+    <p><span style="color: #4ECDC4;">■</span> 2006</p>
+    <p><span style="color: #45B7D1;">■</span> 2011</p>
+    <p><span style="color: #FFA07A;">■</span> 2016</p>
+    <hr>
+    <p><strong>MTR Proximity:</strong></p>
+    <p><span style="color: #00FF00;">■</span> &lt;500m</p>
+    <p><span style="color: #FFFF00;">■</span> 500-1000m</p>
+    <p><span style="color: #FFA500;">■</span> 1-2km</p>
+    <p><span style="color: #FF0000;">■</span> &gt;2km</p>
+    <hr>
+    <p><span style="color: #FF0000;">●</span> MTR Stations</p>
+    </div>
+    
+    
+            <div class="folium-map" id="map_3e93e6ece071f0ce96c8b942898ddea3" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3e93e6ece071f0ce96c8b942898ddea3 = L.map(
+                "map_3e93e6ece071f0ce96c8b942898ddea3",
+                {
+                    center: [22.3193, 114.1694],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7dc53549febac900de71a937a3755267 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_7dc53549febac900de71a937a3755267.addTo(map_3e93e6ece071f0ce96c8b942898ddea3);
+        
+    
+            var tile_layer_418d37f82c26f43b6fe1a81b85778be8 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_418d37f82c26f43b6fe1a81b85778be8.addTo(map_3e93e6ece071f0ce96c8b942898ddea3);
+        
+    
+            var tile_layer_c7ea958042cf02a0da7f074774c3d077 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_c7ea958042cf02a0da7f074774c3d077.addTo(map_3e93e6ece071f0ce96c8b942898ddea3);
+        
+    
+            var feature_group_ca1473ad6bb9a0e08ef6e4811389019b = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_269a3b979f401f6f360a7330387989fb = L.circleMarker(
+                [22.278399, 114.16433],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_9052b0d3fa7e2c710e484a87dc1d686b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_025c5f9c786d86693d11486bfb0fc303 = $(`<div id="html_025c5f9c786d86693d11486bfb0fc303" style="width: 100.0%; height: 100.0%;">Admiralty</div>`)[0];
+                popup_9052b0d3fa7e2c710e484a87dc1d686b.setContent(html_025c5f9c786d86693d11486bfb0fc303);
+            
+        
+
+        circle_marker_269a3b979f401f6f360a7330387989fb.bindPopup(popup_9052b0d3fa7e2c710e484a87dc1d686b)
+        ;
+
+        
+    
+    
+            circle_marker_269a3b979f401f6f360a7330387989fb.bindTooltip(
+                `<div>
+                     Admiralty
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c3eeb7ad04e787e023e7969319bacab4 = L.circleMarker(
+                [22.281613, 114.17569],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_dda68fdf86db51463c6d8fa127f8ea73 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d93503af2e9025fa27d1fba99c58f954 = $(`<div id="html_d93503af2e9025fa27d1fba99c58f954" style="width: 100.0%; height: 100.0%;">Exhibition Centre</div>`)[0];
+                popup_dda68fdf86db51463c6d8fa127f8ea73.setContent(html_d93503af2e9025fa27d1fba99c58f954);
+            
+        
+
+        circle_marker_c3eeb7ad04e787e023e7969319bacab4.bindPopup(popup_dda68fdf86db51463c6d8fa127f8ea73)
+        ;
+
+        
+    
+    
+            circle_marker_c3eeb7ad04e787e023e7969319bacab4.bindTooltip(
+                `<div>
+                     Exhibition Centre
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e8c0e4662944b2a362327220d4370238 = L.circleMarker(
+                [22.3029, 114.1816],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_b183ede89ab84c61f098ab881f97ee86 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eca15b2c2a5579088b5cf72e8bae3813 = $(`<div id="html_eca15b2c2a5579088b5cf72e8bae3813" style="width: 100.0%; height: 100.0%;">Hung Hom</div>`)[0];
+                popup_b183ede89ab84c61f098ab881f97ee86.setContent(html_eca15b2c2a5579088b5cf72e8bae3813);
+            
+        
+
+        circle_marker_e8c0e4662944b2a362327220d4370238.bindPopup(popup_b183ede89ab84c61f098ab881f97ee86)
+        ;
+
+        
+    
+    
+            circle_marker_e8c0e4662944b2a362327220d4370238.bindTooltip(
+                `<div>
+                     Hung Hom
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b9ca346532a19a0420c6605a05ac2773 = L.circleMarker(
+                [22.3222, 114.1728],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_d45dbdab252b832e6d3e77d5f9482094 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bcc3f4aec85ee58694a571deb0b0b6b3 = $(`<div id="html_bcc3f4aec85ee58694a571deb0b0b6b3" style="width: 100.0%; height: 100.0%;">Mong Kok East</div>`)[0];
+                popup_d45dbdab252b832e6d3e77d5f9482094.setContent(html_bcc3f4aec85ee58694a571deb0b0b6b3);
+            
+        
+
+        circle_marker_b9ca346532a19a0420c6605a05ac2773.bindPopup(popup_d45dbdab252b832e6d3e77d5f9482094)
+        ;
+
+        
+    
+    
+            circle_marker_b9ca346532a19a0420c6605a05ac2773.bindTooltip(
+                `<div>
+                     Mong Kok East
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_53b30d1204eb6e3d6a8677f439d996d7 = L.circleMarker(
+                [22.336809, 114.177245],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_4f8a03d25afd52d4906fb9dfc17d8707 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1685cdd5ce397d3aaeddf20c671903f2 = $(`<div id="html_1685cdd5ce397d3aaeddf20c671903f2" style="width: 100.0%; height: 100.0%;">Kowloon Tong</div>`)[0];
+                popup_4f8a03d25afd52d4906fb9dfc17d8707.setContent(html_1685cdd5ce397d3aaeddf20c671903f2);
+            
+        
+
+        circle_marker_53b30d1204eb6e3d6a8677f439d996d7.bindPopup(popup_4f8a03d25afd52d4906fb9dfc17d8707)
+        ;
+
+        
+    
+    
+            circle_marker_53b30d1204eb6e3d6a8677f439d996d7.bindTooltip(
+                `<div>
+                     Kowloon Tong
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2a2b7d6a3c828cb239aababd82c1953a = L.circleMarker(
+                [22.3731, 114.1786],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_f6c17022153ba0475ea89911f30e56d3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ae25362df5ec73aeb5933ed5ac610d20 = $(`<div id="html_ae25362df5ec73aeb5933ed5ac610d20" style="width: 100.0%; height: 100.0%;">Tai Wai</div>`)[0];
+                popup_f6c17022153ba0475ea89911f30e56d3.setContent(html_ae25362df5ec73aeb5933ed5ac610d20);
+            
+        
+
+        circle_marker_2a2b7d6a3c828cb239aababd82c1953a.bindPopup(popup_f6c17022153ba0475ea89911f30e56d3)
+        ;
+
+        
+    
+    
+            circle_marker_2a2b7d6a3c828cb239aababd82c1953a.bindTooltip(
+                `<div>
+                     Tai Wai
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_27f5accd9734c83376c0d74d5649bc0e = L.circleMarker(
+                [22.3825, 114.1875],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_b2c98c4f463e25d0775c61cd24fdfb88 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_00b4c6c88e35b9e3d55c761781765b67 = $(`<div id="html_00b4c6c88e35b9e3d55c761781765b67" style="width: 100.0%; height: 100.0%;">Sha Tin</div>`)[0];
+                popup_b2c98c4f463e25d0775c61cd24fdfb88.setContent(html_00b4c6c88e35b9e3d55c761781765b67);
+            
+        
+
+        circle_marker_27f5accd9734c83376c0d74d5649bc0e.bindPopup(popup_b2c98c4f463e25d0775c61cd24fdfb88)
+        ;
+
+        
+    
+    
+            circle_marker_27f5accd9734c83376c0d74d5649bc0e.bindTooltip(
+                `<div>
+                     Sha Tin
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_87cef6a449c8803806427d283ec9bafc = L.circleMarker(
+                [22.3953, 114.1982],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_6068180fd1dc3840df236a0010b7e374 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cf3defc57eaeca626adbeb266bbc584f = $(`<div id="html_cf3defc57eaeca626adbeb266bbc584f" style="width: 100.0%; height: 100.0%;">Fo Tan</div>`)[0];
+                popup_6068180fd1dc3840df236a0010b7e374.setContent(html_cf3defc57eaeca626adbeb266bbc584f);
+            
+        
+
+        circle_marker_87cef6a449c8803806427d283ec9bafc.bindPopup(popup_6068180fd1dc3840df236a0010b7e374)
+        ;
+
+        
+    
+    
+            circle_marker_87cef6a449c8803806427d283ec9bafc.bindTooltip(
+                `<div>
+                     Fo Tan
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_82d9de50f20a244f4a35c3be0e6e62fe = L.circleMarker(
+                [22.400476, 114.202899],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_ec4f51176356f8bd0f4cb5ed4423d00d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f1f443bb7b246b1c51dd09f10bc5dae8 = $(`<div id="html_f1f443bb7b246b1c51dd09f10bc5dae8" style="width: 100.0%; height: 100.0%;">Racecourse</div>`)[0];
+                popup_ec4f51176356f8bd0f4cb5ed4423d00d.setContent(html_f1f443bb7b246b1c51dd09f10bc5dae8);
+            
+        
+
+        circle_marker_82d9de50f20a244f4a35c3be0e6e62fe.bindPopup(popup_ec4f51176356f8bd0f4cb5ed4423d00d)
+        ;
+
+        
+    
+    
+            circle_marker_82d9de50f20a244f4a35c3be0e6e62fe.bindTooltip(
+                `<div>
+                     Racecourse
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_99d7fc4c2ac36cc9faa588fec085a9b3 = L.circleMarker(
+                [22.413808, 114.209437],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_af6207b1895d8eac55d8bae099b556a0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_af601bc755c34fc84e7d01bb2a129277 = $(`<div id="html_af601bc755c34fc84e7d01bb2a129277" style="width: 100.0%; height: 100.0%;">University</div>`)[0];
+                popup_af6207b1895d8eac55d8bae099b556a0.setContent(html_af601bc755c34fc84e7d01bb2a129277);
+            
+        
+
+        circle_marker_99d7fc4c2ac36cc9faa588fec085a9b3.bindPopup(popup_af6207b1895d8eac55d8bae099b556a0)
+        ;
+
+        
+    
+    
+            circle_marker_99d7fc4c2ac36cc9faa588fec085a9b3.bindTooltip(
+                `<div>
+                     University
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_76c996894705b23b16cfff4e94be3842 = L.circleMarker(
+                [22.4446, 114.1706],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_59300f060dd9ab0585d719d7b8640cb8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_23d9969105d63fc20ef27cd3d5e9739d = $(`<div id="html_23d9969105d63fc20ef27cd3d5e9739d" style="width: 100.0%; height: 100.0%;">Tai Po Market</div>`)[0];
+                popup_59300f060dd9ab0585d719d7b8640cb8.setContent(html_23d9969105d63fc20ef27cd3d5e9739d);
+            
+        
+
+        circle_marker_76c996894705b23b16cfff4e94be3842.bindPopup(popup_59300f060dd9ab0585d719d7b8640cb8)
+        ;
+
+        
+    
+    
+            circle_marker_76c996894705b23b16cfff4e94be3842.bindTooltip(
+                `<div>
+                     Tai Po Market
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_449d69d0fa305e35adcd3cb042673dc9 = L.circleMarker(
+                [22.4511, 114.1611],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_f6f3fa49764bc9a560fe34ecadf594d2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3ebc690f23c246859e91eabdcc2d8b4a = $(`<div id="html_3ebc690f23c246859e91eabdcc2d8b4a" style="width: 100.0%; height: 100.0%;">Tai Wo</div>`)[0];
+                popup_f6f3fa49764bc9a560fe34ecadf594d2.setContent(html_3ebc690f23c246859e91eabdcc2d8b4a);
+            
+        
+
+        circle_marker_449d69d0fa305e35adcd3cb042673dc9.bindPopup(popup_f6f3fa49764bc9a560fe34ecadf594d2)
+        ;
+
+        
+    
+    
+            circle_marker_449d69d0fa305e35adcd3cb042673dc9.bindTooltip(
+                `<div>
+                     Tai Wo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_65b0c2eb4e818b8cb771fce3aeb8ee61 = L.circleMarker(
+                [22.49075, 114.139191],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_438f9f727cc76d4fc98cf2e1628baa5b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8cabbb89e72eb35373712d0a25d76b45 = $(`<div id="html_8cabbb89e72eb35373712d0a25d76b45" style="width: 100.0%; height: 100.0%;">Fanling</div>`)[0];
+                popup_438f9f727cc76d4fc98cf2e1628baa5b.setContent(html_8cabbb89e72eb35373712d0a25d76b45);
+            
+        
+
+        circle_marker_65b0c2eb4e818b8cb771fce3aeb8ee61.bindPopup(popup_438f9f727cc76d4fc98cf2e1628baa5b)
+        ;
+
+        
+    
+    
+            circle_marker_65b0c2eb4e818b8cb771fce3aeb8ee61.bindTooltip(
+                `<div>
+                     Fanling
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_86231357d05c9c9eb6035d0edcd163ba = L.circleMarker(
+                [22.5012, 114.128],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_7d3693e86354c90bad5fbdf2a89440d2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a597d57ddf33f519f5b3ae137ff358bc = $(`<div id="html_a597d57ddf33f519f5b3ae137ff358bc" style="width: 100.0%; height: 100.0%;">Sheung Shui</div>`)[0];
+                popup_7d3693e86354c90bad5fbdf2a89440d2.setContent(html_a597d57ddf33f519f5b3ae137ff358bc);
+            
+        
+
+        circle_marker_86231357d05c9c9eb6035d0edcd163ba.bindPopup(popup_7d3693e86354c90bad5fbdf2a89440d2)
+        ;
+
+        
+    
+    
+            circle_marker_86231357d05c9c9eb6035d0edcd163ba.bindTooltip(
+                `<div>
+                     Sheung Shui
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fcdd1fe857c446e709ed392bed3a5e87 = L.circleMarker(
+                [22.5283, 114.1134],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_a71d341f40f3d91f2b4a821dea2da4d7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_81b0f72bf2c9b89792e32177fd0d1682 = $(`<div id="html_81b0f72bf2c9b89792e32177fd0d1682" style="width: 100.0%; height: 100.0%;">Lo Wu</div>`)[0];
+                popup_a71d341f40f3d91f2b4a821dea2da4d7.setContent(html_81b0f72bf2c9b89792e32177fd0d1682);
+            
+        
+
+        circle_marker_fcdd1fe857c446e709ed392bed3a5e87.bindPopup(popup_a71d341f40f3d91f2b4a821dea2da4d7)
+        ;
+
+        
+    
+    
+            circle_marker_fcdd1fe857c446e709ed392bed3a5e87.bindTooltip(
+                `<div>
+                     Lo Wu
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2198edad94a8823a8af1188974ed359b = L.circleMarker(
+                [22.5144, 114.0657],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_6dcfc3fa32cd20c6ce61216a73b13a6d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fa53f0b6542b97f03628846ba30f6d6d = $(`<div id="html_fa53f0b6542b97f03628846ba30f6d6d" style="width: 100.0%; height: 100.0%;">Lok Ma Chau</div>`)[0];
+                popup_6dcfc3fa32cd20c6ce61216a73b13a6d.setContent(html_fa53f0b6542b97f03628846ba30f6d6d);
+            
+        
+
+        circle_marker_2198edad94a8823a8af1188974ed359b.bindPopup(popup_6dcfc3fa32cd20c6ce61216a73b13a6d)
+        ;
+
+        
+    
+    
+            circle_marker_2198edad94a8823a8af1188974ed359b.bindTooltip(
+                `<div>
+                     Lok Ma Chau
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3a627de44399f4c47185aa363244e366 = L.circleMarker(
+                [22.305852, 114.188799],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_9125205e4eb56185ec05ab2061fa0fa5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_44b07cb32caafa2a556931fbfa54e244 = $(`<div id="html_44b07cb32caafa2a556931fbfa54e244" style="width: 100.0%; height: 100.0%;">Whampoa</div>`)[0];
+                popup_9125205e4eb56185ec05ab2061fa0fa5.setContent(html_44b07cb32caafa2a556931fbfa54e244);
+            
+        
+
+        circle_marker_3a627de44399f4c47185aa363244e366.bindPopup(popup_9125205e4eb56185ec05ab2061fa0fa5)
+        ;
+
+        
+    
+    
+            circle_marker_3a627de44399f4c47185aa363244e366.bindTooltip(
+                `<div>
+                     Whampoa
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_343697361e3497699fe45132357a2698 = L.circleMarker(
+                [22.308962, 114.181543],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_453cbd041f44c75ae88cc4f1e691d7df = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1137685f48b5071ed54bed568aef45f7 = $(`<div id="html_1137685f48b5071ed54bed568aef45f7" style="width: 100.0%; height: 100.0%;">Ho Man Tin</div>`)[0];
+                popup_453cbd041f44c75ae88cc4f1e691d7df.setContent(html_1137685f48b5071ed54bed568aef45f7);
+            
+        
+
+        circle_marker_343697361e3497699fe45132357a2698.bindPopup(popup_453cbd041f44c75ae88cc4f1e691d7df)
+        ;
+
+        
+    
+    
+            circle_marker_343697361e3497699fe45132357a2698.bindTooltip(
+                `<div>
+                     Ho Man Tin
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d3dbfb17bddca87a9b241226ac16488e = L.circleMarker(
+                [22.3129, 114.1707],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_b679671a2fdbd5d7e34e7204822e3552 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9d66842c505c5cd635c16066034d936b = $(`<div id="html_9d66842c505c5cd635c16066034d936b" style="width: 100.0%; height: 100.0%;">Yau Ma Tei</div>`)[0];
+                popup_b679671a2fdbd5d7e34e7204822e3552.setContent(html_9d66842c505c5cd635c16066034d936b);
+            
+        
+
+        circle_marker_d3dbfb17bddca87a9b241226ac16488e.bindPopup(popup_b679671a2fdbd5d7e34e7204822e3552)
+        ;
+
+        
+    
+    
+            circle_marker_d3dbfb17bddca87a9b241226ac16488e.bindTooltip(
+                `<div>
+                     Yau Ma Tei
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_aafd9fee2c4b091ea2df3c6f0cfc9979 = L.circleMarker(
+                [22.321624, 114.172537],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_e8daf1e32d5265b80bc7e5adf508749d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6182128284cf15eb505df715b9d86246 = $(`<div id="html_6182128284cf15eb505df715b9d86246" style="width: 100.0%; height: 100.0%;">Mong Kok</div>`)[0];
+                popup_e8daf1e32d5265b80bc7e5adf508749d.setContent(html_6182128284cf15eb505df715b9d86246);
+            
+        
+
+        circle_marker_aafd9fee2c4b091ea2df3c6f0cfc9979.bindPopup(popup_e8daf1e32d5265b80bc7e5adf508749d)
+        ;
+
+        
+    
+    
+            circle_marker_aafd9fee2c4b091ea2df3c6f0cfc9979.bindTooltip(
+                `<div>
+                     Mong Kok
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_77e229f907725ebe64b04cd893dfe672 = L.circleMarker(
+                [22.3245, 114.1683],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_028d00d348937499326cb07d1715b424 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1bbb0c81568c70f328fda19bc7704c3a = $(`<div id="html_1bbb0c81568c70f328fda19bc7704c3a" style="width: 100.0%; height: 100.0%;">Prince Edward</div>`)[0];
+                popup_028d00d348937499326cb07d1715b424.setContent(html_1bbb0c81568c70f328fda19bc7704c3a);
+            
+        
+
+        circle_marker_77e229f907725ebe64b04cd893dfe672.bindPopup(popup_028d00d348937499326cb07d1715b424)
+        ;
+
+        
+    
+    
+            circle_marker_77e229f907725ebe64b04cd893dfe672.bindTooltip(
+                `<div>
+                     Prince Edward
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e18b8daef6d55a76dc0c6b5d39bf61e2 = L.circleMarker(
+                [22.332, 114.1687],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_9fb4a2a9209a85c769292bf7b0b7460e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b0813a7d911cdeae91e15c74ecc3d8be = $(`<div id="html_b0813a7d911cdeae91e15c74ecc3d8be" style="width: 100.0%; height: 100.0%;">Shek Kip Mei</div>`)[0];
+                popup_9fb4a2a9209a85c769292bf7b0b7460e.setContent(html_b0813a7d911cdeae91e15c74ecc3d8be);
+            
+        
+
+        circle_marker_e18b8daef6d55a76dc0c6b5d39bf61e2.bindPopup(popup_9fb4a2a9209a85c769292bf7b0b7460e)
+        ;
+
+        
+    
+    
+            circle_marker_e18b8daef6d55a76dc0c6b5d39bf61e2.bindTooltip(
+                `<div>
+                     Shek Kip Mei
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0159aa17c5a7d24385870401150d0e87 = L.circleMarker(
+                [22.338, 114.1871],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_9218f27c6c9cb8671203799d49e2389d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_24fa13700f58da9e86042bc46ec1f405 = $(`<div id="html_24fa13700f58da9e86042bc46ec1f405" style="width: 100.0%; height: 100.0%;">Lok Fu</div>`)[0];
+                popup_9218f27c6c9cb8671203799d49e2389d.setContent(html_24fa13700f58da9e86042bc46ec1f405);
+            
+        
+
+        circle_marker_0159aa17c5a7d24385870401150d0e87.bindPopup(popup_9218f27c6c9cb8671203799d49e2389d)
+        ;
+
+        
+    
+    
+            circle_marker_0159aa17c5a7d24385870401150d0e87.bindTooltip(
+                `<div>
+                     Lok Fu
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cca3e3b7811d5889a74c48dbf6c7a7ca = L.circleMarker(
+                [22.341839, 114.192086],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_cec2e31af7ca19f9f96005409930f347 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ef89d6ba2b2382afba791ad240087087 = $(`<div id="html_ef89d6ba2b2382afba791ad240087087" style="width: 100.0%; height: 100.0%;">Wong Tai Sin</div>`)[0];
+                popup_cec2e31af7ca19f9f96005409930f347.setContent(html_ef89d6ba2b2382afba791ad240087087);
+            
+        
+
+        circle_marker_cca3e3b7811d5889a74c48dbf6c7a7ca.bindPopup(popup_cec2e31af7ca19f9f96005409930f347)
+        ;
+
+        
+    
+    
+            circle_marker_cca3e3b7811d5889a74c48dbf6c7a7ca.bindTooltip(
+                `<div>
+                     Wong Tai Sin
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4419cf3e7af36d4229fd02cdf3daca0b = L.circleMarker(
+                [22.3401, 114.2016],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_afa082e5087bb32bc058e0a19b30e2c2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aa07778687517b2c98e4469f72527fa2 = $(`<div id="html_aa07778687517b2c98e4469f72527fa2" style="width: 100.0%; height: 100.0%;">Diamond Hill</div>`)[0];
+                popup_afa082e5087bb32bc058e0a19b30e2c2.setContent(html_aa07778687517b2c98e4469f72527fa2);
+            
+        
+
+        circle_marker_4419cf3e7af36d4229fd02cdf3daca0b.bindPopup(popup_afa082e5087bb32bc058e0a19b30e2c2)
+        ;
+
+        
+    
+    
+            circle_marker_4419cf3e7af36d4229fd02cdf3daca0b.bindTooltip(
+                `<div>
+                     Diamond Hill
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7da25176ce48bec56f4dcaeb0f711432 = L.circleMarker(
+                [22.333952, 114.210058],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_7dec06fa6935345b833f27f7e3d8ed82 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0a366731071b899be8846106ca577f24 = $(`<div id="html_0a366731071b899be8846106ca577f24" style="width: 100.0%; height: 100.0%;">Choi Hung</div>`)[0];
+                popup_7dec06fa6935345b833f27f7e3d8ed82.setContent(html_0a366731071b899be8846106ca577f24);
+            
+        
+
+        circle_marker_7da25176ce48bec56f4dcaeb0f711432.bindPopup(popup_7dec06fa6935345b833f27f7e3d8ed82)
+        ;
+
+        
+    
+    
+            circle_marker_7da25176ce48bec56f4dcaeb0f711432.bindTooltip(
+                `<div>
+                     Choi Hung
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f8534d2f7bde4f33d28884676873b36d = L.circleMarker(
+                [22.3235, 114.2141],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_05f8f3a8e1c2156eb797253286df66a7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d1e82438501c1c5ca38e937f24dfd5c6 = $(`<div id="html_d1e82438501c1c5ca38e937f24dfd5c6" style="width: 100.0%; height: 100.0%;">Kowloon Bay</div>`)[0];
+                popup_05f8f3a8e1c2156eb797253286df66a7.setContent(html_d1e82438501c1c5ca38e937f24dfd5c6);
+            
+        
+
+        circle_marker_f8534d2f7bde4f33d28884676873b36d.bindPopup(popup_05f8f3a8e1c2156eb797253286df66a7)
+        ;
+
+        
+    
+    
+            circle_marker_f8534d2f7bde4f33d28884676873b36d.bindTooltip(
+                `<div>
+                     Kowloon Bay
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a27ffaa38a6c10c725c10d45f1258f76 = L.circleMarker(
+                [22.3154, 114.2193],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_3c1d6d2de7dadc041ce7befa2811892b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_afd1268748b535bc255c6e003bc5d9c5 = $(`<div id="html_afd1268748b535bc255c6e003bc5d9c5" style="width: 100.0%; height: 100.0%;">Ngau Tau Kok</div>`)[0];
+                popup_3c1d6d2de7dadc041ce7befa2811892b.setContent(html_afd1268748b535bc255c6e003bc5d9c5);
+            
+        
+
+        circle_marker_a27ffaa38a6c10c725c10d45f1258f76.bindPopup(popup_3c1d6d2de7dadc041ce7befa2811892b)
+        ;
+
+        
+    
+    
+            circle_marker_a27ffaa38a6c10c725c10d45f1258f76.bindTooltip(
+                `<div>
+                     Ngau Tau Kok
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_90a8919a7362f4b575783e668e8c4c8f = L.circleMarker(
+                [22.311632, 114.227657],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_58a55d6e40dcc4da5a237bba81fc9763 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3f6f59be58da52e37a6a024ef639c7f9 = $(`<div id="html_3f6f59be58da52e37a6a024ef639c7f9" style="width: 100.0%; height: 100.0%;">Kwun Tong</div>`)[0];
+                popup_58a55d6e40dcc4da5a237bba81fc9763.setContent(html_3f6f59be58da52e37a6a024ef639c7f9);
+            
+        
+
+        circle_marker_90a8919a7362f4b575783e668e8c4c8f.bindPopup(popup_58a55d6e40dcc4da5a237bba81fc9763)
+        ;
+
+        
+    
+    
+            circle_marker_90a8919a7362f4b575783e668e8c4c8f.bindTooltip(
+                `<div>
+                     Kwun Tong
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_651d8fa4465113ee8155934bd6c08fd2 = L.circleMarker(
+                [22.3068, 114.233],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_7762701d08dd72bcfd73da3369d5c939 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aa34925a02a7b3bab4cbb5dfb49f3744 = $(`<div id="html_aa34925a02a7b3bab4cbb5dfb49f3744" style="width: 100.0%; height: 100.0%;">Lam Tin</div>`)[0];
+                popup_7762701d08dd72bcfd73da3369d5c939.setContent(html_aa34925a02a7b3bab4cbb5dfb49f3744);
+            
+        
+
+        circle_marker_651d8fa4465113ee8155934bd6c08fd2.bindPopup(popup_7762701d08dd72bcfd73da3369d5c939)
+        ;
+
+        
+    
+    
+            circle_marker_651d8fa4465113ee8155934bd6c08fd2.bindTooltip(
+                `<div>
+                     Lam Tin
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_216b56a67d64a291a453ff05ab272051 = L.circleMarker(
+                [22.2979, 114.2371],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_33d561c72e7b8ae518ae888015e836a1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bf7a445145e84b890939f5b0c2327c62 = $(`<div id="html_bf7a445145e84b890939f5b0c2327c62" style="width: 100.0%; height: 100.0%;">Yau Tong</div>`)[0];
+                popup_33d561c72e7b8ae518ae888015e836a1.setContent(html_bf7a445145e84b890939f5b0c2327c62);
+            
+        
+
+        circle_marker_216b56a67d64a291a453ff05ab272051.bindPopup(popup_33d561c72e7b8ae518ae888015e836a1)
+        ;
+
+        
+    
+    
+            circle_marker_216b56a67d64a291a453ff05ab272051.bindTooltip(
+                `<div>
+                     Yau Tong
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7b5ebe8d2befe551829c4d1ed8b4c9f0 = L.circleMarker(
+                [22.3042, 114.2524],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_9654b89816312dfa3717a12e3e720205 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d0bc471cacc4b20b0d9d3e123c5172ad = $(`<div id="html_d0bc471cacc4b20b0d9d3e123c5172ad" style="width: 100.0%; height: 100.0%;">Tiu Keng Leng</div>`)[0];
+                popup_9654b89816312dfa3717a12e3e720205.setContent(html_d0bc471cacc4b20b0d9d3e123c5172ad);
+            
+        
+
+        circle_marker_7b5ebe8d2befe551829c4d1ed8b4c9f0.bindPopup(popup_9654b89816312dfa3717a12e3e720205)
+        ;
+
+        
+    
+    
+            circle_marker_7b5ebe8d2befe551829c4d1ed8b4c9f0.bindTooltip(
+                `<div>
+                     Tiu Keng Leng
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ae0308bb12f50e0cc6036d6c8fe6e88c = L.circleMarker(
+                [22.3736, 114.1178],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_eb54d62b511247cac1c24af855df8859 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_326fabddcc0e2ebe1db6edd0cb3a1565 = $(`<div id="html_326fabddcc0e2ebe1db6edd0cb3a1565" style="width: 100.0%; height: 100.0%;">Tsuen Wan</div>`)[0];
+                popup_eb54d62b511247cac1c24af855df8859.setContent(html_326fabddcc0e2ebe1db6edd0cb3a1565);
+            
+        
+
+        circle_marker_ae0308bb12f50e0cc6036d6c8fe6e88c.bindPopup(popup_eb54d62b511247cac1c24af855df8859)
+        ;
+
+        
+    
+    
+            circle_marker_ae0308bb12f50e0cc6036d6c8fe6e88c.bindTooltip(
+                `<div>
+                     Tsuen Wan
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a5488f29ad24f6def5087c5c710bbc04 = L.circleMarker(
+                [22.371129, 114.126303],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_b0fb9a3932ad1de4598c3b6142393d6d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_35da158ede856e9d98be179d2d154e82 = $(`<div id="html_35da158ede856e9d98be179d2d154e82" style="width: 100.0%; height: 100.0%;">Tai Wo Hau</div>`)[0];
+                popup_b0fb9a3932ad1de4598c3b6142393d6d.setContent(html_35da158ede856e9d98be179d2d154e82);
+            
+        
+
+        circle_marker_a5488f29ad24f6def5087c5c710bbc04.bindPopup(popup_b0fb9a3932ad1de4598c3b6142393d6d)
+        ;
+
+        
+    
+    
+            circle_marker_a5488f29ad24f6def5087c5c710bbc04.bindTooltip(
+                `<div>
+                     Tai Wo Hau
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ab05f09089b8862ecb2dc2e5fea8f629 = L.circleMarker(
+                [22.3632, 114.1312],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_19d2f6e698825b37e5ff43eccfbbf4e6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c3fc7e755f69f6804c0b34464ebaea95 = $(`<div id="html_c3fc7e755f69f6804c0b34464ebaea95" style="width: 100.0%; height: 100.0%;">Kwai Hing</div>`)[0];
+                popup_19d2f6e698825b37e5ff43eccfbbf4e6.setContent(html_c3fc7e755f69f6804c0b34464ebaea95);
+            
+        
+
+        circle_marker_ab05f09089b8862ecb2dc2e5fea8f629.bindPopup(popup_19d2f6e698825b37e5ff43eccfbbf4e6)
+        ;
+
+        
+    
+    
+            circle_marker_ab05f09089b8862ecb2dc2e5fea8f629.bindTooltip(
+                `<div>
+                     Kwai Hing
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c053daf8aaee0100503d23e2aa91e061 = L.circleMarker(
+                [22.3569, 114.1279],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_ccc9439089af5e0bf446437e8fe87208 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e76793105460d4e613bee384e90c31c4 = $(`<div id="html_e76793105460d4e613bee384e90c31c4" style="width: 100.0%; height: 100.0%;">Kwai Fong</div>`)[0];
+                popup_ccc9439089af5e0bf446437e8fe87208.setContent(html_e76793105460d4e613bee384e90c31c4);
+            
+        
+
+        circle_marker_c053daf8aaee0100503d23e2aa91e061.bindPopup(popup_ccc9439089af5e0bf446437e8fe87208)
+        ;
+
+        
+    
+    
+            circle_marker_c053daf8aaee0100503d23e2aa91e061.bindTooltip(
+                `<div>
+                     Kwai Fong
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_07780e6d34bc35bae7ea8acc8231f0c3 = L.circleMarker(
+                [22.3484, 114.1261],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_a92419b6ae46a5e1e9b4c9fdb28ffe15 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e849ad8bfc6f0b0e90cbad607e0898b4 = $(`<div id="html_e849ad8bfc6f0b0e90cbad607e0898b4" style="width: 100.0%; height: 100.0%;">Lai King</div>`)[0];
+                popup_a92419b6ae46a5e1e9b4c9fdb28ffe15.setContent(html_e849ad8bfc6f0b0e90cbad607e0898b4);
+            
+        
+
+        circle_marker_07780e6d34bc35bae7ea8acc8231f0c3.bindPopup(popup_a92419b6ae46a5e1e9b4c9fdb28ffe15)
+        ;
+
+        
+    
+    
+            circle_marker_07780e6d34bc35bae7ea8acc8231f0c3.bindTooltip(
+                `<div>
+                     Lai King
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e2f9b61343ec9ac9bff142f095ec6752 = L.circleMarker(
+                [22.336985, 114.140589],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_91218b846973fb2cc3268e3a0c8ed933 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e60e6d19325743fb33fa023fda35f6b5 = $(`<div id="html_e60e6d19325743fb33fa023fda35f6b5" style="width: 100.0%; height: 100.0%;">Mei Foo</div>`)[0];
+                popup_91218b846973fb2cc3268e3a0c8ed933.setContent(html_e60e6d19325743fb33fa023fda35f6b5);
+            
+        
+
+        circle_marker_e2f9b61343ec9ac9bff142f095ec6752.bindPopup(popup_91218b846973fb2cc3268e3a0c8ed933)
+        ;
+
+        
+    
+    
+            circle_marker_e2f9b61343ec9ac9bff142f095ec6752.bindTooltip(
+                `<div>
+                     Mei Foo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_74a6f269f4c9c80312d14b4f136b1024 = L.circleMarker(
+                [22.3373, 114.1482],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_bda274cda8128f804126b248c0748ca8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_18caca4f24437e44adaa3586a881aaa6 = $(`<div id="html_18caca4f24437e44adaa3586a881aaa6" style="width: 100.0%; height: 100.0%;">Lai Chi Kok</div>`)[0];
+                popup_bda274cda8128f804126b248c0748ca8.setContent(html_18caca4f24437e44adaa3586a881aaa6);
+            
+        
+
+        circle_marker_74a6f269f4c9c80312d14b4f136b1024.bindPopup(popup_bda274cda8128f804126b248c0748ca8)
+        ;
+
+        
+    
+    
+            circle_marker_74a6f269f4c9c80312d14b4f136b1024.bindTooltip(
+                `<div>
+                     Lai Chi Kok
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5dc60ab893036f4d8d96edb09ef614eb = L.circleMarker(
+                [22.3354, 114.1563],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_8c39e3c0a48d5c4511c8e651e818fbb7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_95c5143a252bf7e6dd79f8eb6d30e671 = $(`<div id="html_95c5143a252bf7e6dd79f8eb6d30e671" style="width: 100.0%; height: 100.0%;">Cheung Sha Wan</div>`)[0];
+                popup_8c39e3c0a48d5c4511c8e651e818fbb7.setContent(html_95c5143a252bf7e6dd79f8eb6d30e671);
+            
+        
+
+        circle_marker_5dc60ab893036f4d8d96edb09ef614eb.bindPopup(popup_8c39e3c0a48d5c4511c8e651e818fbb7)
+        ;
+
+        
+    
+    
+            circle_marker_5dc60ab893036f4d8d96edb09ef614eb.bindTooltip(
+                `<div>
+                     Cheung Sha Wan
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0b903b3e21dadcba2dbbe0389f98b241 = L.circleMarker(
+                [22.330141, 114.163247],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_098f898e5ce4b10d4850348e110c36c4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4ae18f8a6bebe61fc2fa74dbea34b586 = $(`<div id="html_4ae18f8a6bebe61fc2fa74dbea34b586" style="width: 100.0%; height: 100.0%;">Sham Shui Po</div>`)[0];
+                popup_098f898e5ce4b10d4850348e110c36c4.setContent(html_4ae18f8a6bebe61fc2fa74dbea34b586);
+            
+        
+
+        circle_marker_0b903b3e21dadcba2dbbe0389f98b241.bindPopup(popup_098f898e5ce4b10d4850348e110c36c4)
+        ;
+
+        
+    
+    
+            circle_marker_0b903b3e21dadcba2dbbe0389f98b241.bindTooltip(
+                `<div>
+                     Sham Shui Po
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b44010409733b39189e06e924b2af62c = L.circleMarker(
+                [22.3049, 114.1718],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_20fd8414b202dea7689b75fd03b060b0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3b456c6d78457e13698b1725f2e4372a = $(`<div id="html_3b456c6d78457e13698b1725f2e4372a" style="width: 100.0%; height: 100.0%;">Jordan</div>`)[0];
+                popup_20fd8414b202dea7689b75fd03b060b0.setContent(html_3b456c6d78457e13698b1725f2e4372a);
+            
+        
+
+        circle_marker_b44010409733b39189e06e924b2af62c.bindPopup(popup_20fd8414b202dea7689b75fd03b060b0)
+        ;
+
+        
+    
+    
+            circle_marker_b44010409733b39189e06e924b2af62c.bindTooltip(
+                `<div>
+                     Jordan
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fc9cba12bb72ec2a8ed474ad2d6e7604 = L.circleMarker(
+                [22.2973, 114.1722],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_3d80c023c32ecacc4403a7cdbc6d96d2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ece6a1e5eeab1f92e4391a4711b41dd5 = $(`<div id="html_ece6a1e5eeab1f92e4391a4711b41dd5" style="width: 100.0%; height: 100.0%;">Tsim Sha Tsui</div>`)[0];
+                popup_3d80c023c32ecacc4403a7cdbc6d96d2.setContent(html_ece6a1e5eeab1f92e4391a4711b41dd5);
+            
+        
+
+        circle_marker_fc9cba12bb72ec2a8ed474ad2d6e7604.bindPopup(popup_3d80c023c32ecacc4403a7cdbc6d96d2)
+        ;
+
+        
+    
+    
+            circle_marker_fc9cba12bb72ec2a8ed474ad2d6e7604.bindTooltip(
+                `<div>
+                     Tsim Sha Tsui
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d2641327a7d462513ac44d1ab83b7cc1 = L.circleMarker(
+                [22.281938, 114.158077],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_0e7c3bddbafa86cdbbf51bfde83531c8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6933e6a57200ef9136682e1ca35213cd = $(`<div id="html_6933e6a57200ef9136682e1ca35213cd" style="width: 100.0%; height: 100.0%;">Central</div>`)[0];
+                popup_0e7c3bddbafa86cdbbf51bfde83531c8.setContent(html_6933e6a57200ef9136682e1ca35213cd);
+            
+        
+
+        circle_marker_d2641327a7d462513ac44d1ab83b7cc1.bindPopup(popup_0e7c3bddbafa86cdbbf51bfde83531c8)
+        ;
+
+        
+    
+    
+            circle_marker_d2641327a7d462513ac44d1ab83b7cc1.bindTooltip(
+                `<div>
+                     Central
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_db9695e1b7ba62f2fb72fc97bc6dc1eb = L.circleMarker(
+                [22.347197, 114.141282],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_d74cdac1470258feb58172c4e59dc894 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b2700b7d0ab73bfaeb1b85b1db86ab18 = $(`<div id="html_b2700b7d0ab73bfaeb1b85b1db86ab18" style="width: 100.0%; height: 100.0%;">Hong Kong station</div>`)[0];
+                popup_d74cdac1470258feb58172c4e59dc894.setContent(html_b2700b7d0ab73bfaeb1b85b1db86ab18);
+            
+        
+
+        circle_marker_db9695e1b7ba62f2fb72fc97bc6dc1eb.bindPopup(popup_d74cdac1470258feb58172c4e59dc894)
+        ;
+
+        
+    
+    
+            circle_marker_db9695e1b7ba62f2fb72fc97bc6dc1eb.bindTooltip(
+                `<div>
+                     Hong Kong station
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c9b5c7a002c07287a3d41283f43d8c87 = L.circleMarker(
+                [22.2812, 114.1285],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_f557ed354becd22ef7cd480585fdf8fc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f055e7c0a018980ad25f22b88bbb3b82 = $(`<div id="html_f055e7c0a018980ad25f22b88bbb3b82" style="width: 100.0%; height: 100.0%;">Kennedy Town</div>`)[0];
+                popup_f557ed354becd22ef7cd480585fdf8fc.setContent(html_f055e7c0a018980ad25f22b88bbb3b82);
+            
+        
+
+        circle_marker_c9b5c7a002c07287a3d41283f43d8c87.bindPopup(popup_f557ed354becd22ef7cd480585fdf8fc)
+        ;
+
+        
+    
+    
+            circle_marker_c9b5c7a002c07287a3d41283f43d8c87.bindTooltip(
+                `<div>
+                     Kennedy Town
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_eee908cb517569385a848cc52566a294 = L.circleMarker(
+                [22.2841, 114.1356],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_899d61ddc45614dfbc3416019f1ef128 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fd44e0d74b38f055b678d95d4dbf0747 = $(`<div id="html_fd44e0d74b38f055b678d95d4dbf0747" style="width: 100.0%; height: 100.0%;">HKU</div>`)[0];
+                popup_899d61ddc45614dfbc3416019f1ef128.setContent(html_fd44e0d74b38f055b678d95d4dbf0747);
+            
+        
+
+        circle_marker_eee908cb517569385a848cc52566a294.bindPopup(popup_899d61ddc45614dfbc3416019f1ef128)
+        ;
+
+        
+    
+    
+            circle_marker_eee908cb517569385a848cc52566a294.bindTooltip(
+                `<div>
+                     HKU
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9e9c435ceab1af32dffcb5af711251a6 = L.circleMarker(
+                [22.2856, 114.1427],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_2af12b8fcffababb7ba477b1829c86a8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e215f0bf26eb7cfe1df8170bdd9d5b59 = $(`<div id="html_e215f0bf26eb7cfe1df8170bdd9d5b59" style="width: 100.0%; height: 100.0%;">Sai Ying Pun</div>`)[0];
+                popup_2af12b8fcffababb7ba477b1829c86a8.setContent(html_e215f0bf26eb7cfe1df8170bdd9d5b59);
+            
+        
+
+        circle_marker_9e9c435ceab1af32dffcb5af711251a6.bindPopup(popup_2af12b8fcffababb7ba477b1829c86a8)
+        ;
+
+        
+    
+    
+            circle_marker_9e9c435ceab1af32dffcb5af711251a6.bindTooltip(
+                `<div>
+                     Sai Ying Pun
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_825f504ec714d876fc2e858dfaf0e575 = L.circleMarker(
+                [22.285899, 114.153707],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_d68859dfd9196b3d52b643ea404c0cba = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d963f43803d92f965daf98a30d119a45 = $(`<div id="html_d963f43803d92f965daf98a30d119a45" style="width: 100.0%; height: 100.0%;">Sheung Wan</div>`)[0];
+                popup_d68859dfd9196b3d52b643ea404c0cba.setContent(html_d963f43803d92f965daf98a30d119a45);
+            
+        
+
+        circle_marker_825f504ec714d876fc2e858dfaf0e575.bindPopup(popup_d68859dfd9196b3d52b643ea404c0cba)
+        ;
+
+        
+    
+    
+            circle_marker_825f504ec714d876fc2e858dfaf0e575.bindTooltip(
+                `<div>
+                     Sheung Wan
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_982f26c2c3575e08a228c8017b228d8f = L.circleMarker(
+                [22.264453, 114.237044],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_3cb30aaddebe9a72abf742a22b1f4718 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7e2f442754e826ffa0082801c6c09e81 = $(`<div id="html_7e2f442754e826ffa0082801c6c09e81" style="width: 100.0%; height: 100.0%;">Wan Chai</div>`)[0];
+                popup_3cb30aaddebe9a72abf742a22b1f4718.setContent(html_7e2f442754e826ffa0082801c6c09e81);
+            
+        
+
+        circle_marker_982f26c2c3575e08a228c8017b228d8f.bindPopup(popup_3cb30aaddebe9a72abf742a22b1f4718)
+        ;
+
+        
+    
+    
+            circle_marker_982f26c2c3575e08a228c8017b228d8f.bindTooltip(
+                `<div>
+                     Wan Chai
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a70e780504e2544bc15b1cbd406226bc = L.circleMarker(
+                [22.279392, 114.182926],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_7b3d1e32b3ec5bb2c7e035437085d957 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e83591396726a5f1ec1f3371a5f553d3 = $(`<div id="html_e83591396726a5f1ec1f3371a5f553d3" style="width: 100.0%; height: 100.0%;">Causeway Bay</div>`)[0];
+                popup_7b3d1e32b3ec5bb2c7e035437085d957.setContent(html_e83591396726a5f1ec1f3371a5f553d3);
+            
+        
+
+        circle_marker_a70e780504e2544bc15b1cbd406226bc.bindPopup(popup_7b3d1e32b3ec5bb2c7e035437085d957)
+        ;
+
+        
+    
+    
+            circle_marker_a70e780504e2544bc15b1cbd406226bc.bindTooltip(
+                `<div>
+                     Causeway Bay
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b3c5d238a2d53b51d33f9005d4ffc3b4 = L.circleMarker(
+                [22.2827, 114.1917],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_d1922a5cb892ff7f5a7bf2388a3ffc7c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_15afc82eac22b0f67480d491d43f62e9 = $(`<div id="html_15afc82eac22b0f67480d491d43f62e9" style="width: 100.0%; height: 100.0%;">Tin Hau</div>`)[0];
+                popup_d1922a5cb892ff7f5a7bf2388a3ffc7c.setContent(html_15afc82eac22b0f67480d491d43f62e9);
+            
+        
+
+        circle_marker_b3c5d238a2d53b51d33f9005d4ffc3b4.bindPopup(popup_d1922a5cb892ff7f5a7bf2388a3ffc7c)
+        ;
+
+        
+    
+    
+            circle_marker_b3c5d238a2d53b51d33f9005d4ffc3b4.bindTooltip(
+                `<div>
+                     Tin Hau
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f77246b30767aa31d61bc33d3a134180 = L.circleMarker(
+                [22.2881, 114.1936],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_9defcdb6ae505e02aed2bdd1d71cc3d1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0a8c2a89cb34b2b7724ba199005f2b9b = $(`<div id="html_0a8c2a89cb34b2b7724ba199005f2b9b" style="width: 100.0%; height: 100.0%;">Fortress Hill</div>`)[0];
+                popup_9defcdb6ae505e02aed2bdd1d71cc3d1.setContent(html_0a8c2a89cb34b2b7724ba199005f2b9b);
+            
+        
+
+        circle_marker_f77246b30767aa31d61bc33d3a134180.bindPopup(popup_9defcdb6ae505e02aed2bdd1d71cc3d1)
+        ;
+
+        
+    
+    
+            circle_marker_f77246b30767aa31d61bc33d3a134180.bindTooltip(
+                `<div>
+                     Fortress Hill
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_aed44bd2d8f94e6cad53cd09f2703d13 = L.circleMarker(
+                [22.2909, 114.2007],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_02c08558a70b067c7c33664062c89921 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_70e2048b28d7e6ff938d52f4f75daf42 = $(`<div id="html_70e2048b28d7e6ff938d52f4f75daf42" style="width: 100.0%; height: 100.0%;">North Point</div>`)[0];
+                popup_02c08558a70b067c7c33664062c89921.setContent(html_70e2048b28d7e6ff938d52f4f75daf42);
+            
+        
+
+        circle_marker_aed44bd2d8f94e6cad53cd09f2703d13.bindPopup(popup_02c08558a70b067c7c33664062c89921)
+        ;
+
+        
+    
+    
+            circle_marker_aed44bd2d8f94e6cad53cd09f2703d13.bindTooltip(
+                `<div>
+                     North Point
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6da9d85d3dbe35711cf7e896189b661a = L.circleMarker(
+                [22.2878, 114.2096],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_7117645cc31b420f4081b724046d7a33 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ffb4aa2e62a9063b529dbdeb5f3465b7 = $(`<div id="html_ffb4aa2e62a9063b529dbdeb5f3465b7" style="width: 100.0%; height: 100.0%;">Quarry Bay</div>`)[0];
+                popup_7117645cc31b420f4081b724046d7a33.setContent(html_ffb4aa2e62a9063b529dbdeb5f3465b7);
+            
+        
+
+        circle_marker_6da9d85d3dbe35711cf7e896189b661a.bindPopup(popup_7117645cc31b420f4081b724046d7a33)
+        ;
+
+        
+    
+    
+            circle_marker_6da9d85d3dbe35711cf7e896189b661a.bindTooltip(
+                `<div>
+                     Quarry Bay
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9a148e068959299218074b709bd1caae = L.circleMarker(
+                [22.2846, 114.2161],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_4ff787571aaef0698e47805deca82025 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f8b1c98f82be3e8d5a6252b6aa366cef = $(`<div id="html_f8b1c98f82be3e8d5a6252b6aa366cef" style="width: 100.0%; height: 100.0%;">Tai Koo</div>`)[0];
+                popup_4ff787571aaef0698e47805deca82025.setContent(html_f8b1c98f82be3e8d5a6252b6aa366cef);
+            
+        
+
+        circle_marker_9a148e068959299218074b709bd1caae.bindPopup(popup_4ff787571aaef0698e47805deca82025)
+        ;
+
+        
+    
+    
+            circle_marker_9a148e068959299218074b709bd1caae.bindTooltip(
+                `<div>
+                     Tai Koo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_834af0a426a48a8dcf30b412161e8540 = L.circleMarker(
+                [22.2816, 114.2224],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_9d57cffc9595336ac47ded346362c4fd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d0fc3f9d35c2ffcf3c09b5b0047ce900 = $(`<div id="html_d0fc3f9d35c2ffcf3c09b5b0047ce900" style="width: 100.0%; height: 100.0%;">Sai Wan Ho</div>`)[0];
+                popup_9d57cffc9595336ac47ded346362c4fd.setContent(html_d0fc3f9d35c2ffcf3c09b5b0047ce900);
+            
+        
+
+        circle_marker_834af0a426a48a8dcf30b412161e8540.bindPopup(popup_9d57cffc9595336ac47ded346362c4fd)
+        ;
+
+        
+    
+    
+            circle_marker_834af0a426a48a8dcf30b412161e8540.bindTooltip(
+                `<div>
+                     Sai Wan Ho
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e2000de35238f65c21d47c5a698fc285 = L.circleMarker(
+                [22.2789, 114.2289],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_dd7eed51f3a38dd6fd26732ae903c25a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fdb2da68938dc3c2d4a2ce150c433dd2 = $(`<div id="html_fdb2da68938dc3c2d4a2ce150c433dd2" style="width: 100.0%; height: 100.0%;">Shau Kei Wan</div>`)[0];
+                popup_dd7eed51f3a38dd6fd26732ae903c25a.setContent(html_fdb2da68938dc3c2d4a2ce150c433dd2);
+            
+        
+
+        circle_marker_e2000de35238f65c21d47c5a698fc285.bindPopup(popup_dd7eed51f3a38dd6fd26732ae903c25a)
+        ;
+
+        
+    
+    
+            circle_marker_e2000de35238f65c21d47c5a698fc285.bindTooltip(
+                `<div>
+                     Shau Kei Wan
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_00388777c28e160a7988406479741ea2 = L.circleMarker(
+                [22.2769, 114.2398],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_e136ae0109b698f7aba0a09b5a9d88ce = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4fb3bff0e0edb10c8499d5c25904ac62 = $(`<div id="html_4fb3bff0e0edb10c8499d5c25904ac62" style="width: 100.0%; height: 100.0%;">Heng Fa Chuen</div>`)[0];
+                popup_e136ae0109b698f7aba0a09b5a9d88ce.setContent(html_4fb3bff0e0edb10c8499d5c25904ac62);
+            
+        
+
+        circle_marker_00388777c28e160a7988406479741ea2.bindPopup(popup_e136ae0109b698f7aba0a09b5a9d88ce)
+        ;
+
+        
+    
+    
+            circle_marker_00388777c28e160a7988406479741ea2.bindTooltip(
+                `<div>
+                     Heng Fa Chuen
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fb1917064693e6501fe0050166390a5e = L.circleMarker(
+                [22.2644, 114.2368],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_6e086677c1107503f66ae40506260a5c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_000c71154f354a160a897f8b64ff5256 = $(`<div id="html_000c71154f354a160a897f8b64ff5256" style="width: 100.0%; height: 100.0%;">Chai Wan</div>`)[0];
+                popup_6e086677c1107503f66ae40506260a5c.setContent(html_000c71154f354a160a897f8b64ff5256);
+            
+        
+
+        circle_marker_fb1917064693e6501fe0050166390a5e.bindPopup(popup_6e086677c1107503f66ae40506260a5c)
+        ;
+
+        
+    
+    
+            circle_marker_fb1917064693e6501fe0050166390a5e.bindTooltip(
+                `<div>
+                     Chai Wan
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ab8f3ab7cb8263b6c377a9af5e75f4f7 = L.circleMarker(
+                [22.2893, 113.9416],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_ae4c4c22dedf8c50773f19c627acf606 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_97e68aa88613673e3bfbee489824e88e = $(`<div id="html_97e68aa88613673e3bfbee489824e88e" style="width: 100.0%; height: 100.0%;">Tung Chung</div>`)[0];
+                popup_ae4c4c22dedf8c50773f19c627acf606.setContent(html_97e68aa88613673e3bfbee489824e88e);
+            
+        
+
+        circle_marker_ab8f3ab7cb8263b6c377a9af5e75f4f7.bindPopup(popup_ae4c4c22dedf8c50773f19c627acf606)
+        ;
+
+        
+    
+    
+            circle_marker_ab8f3ab7cb8263b6c377a9af5e75f4f7.bindTooltip(
+                `<div>
+                     Tung Chung
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7ae8f3a283d5b19b16eee99dcaf054ac = L.circleMarker(
+                [22.332661, 114.028505],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_f33892e2763983d493fe48e3fb8af414 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_92d8cada90a561560c4575a61b4c0927 = $(`<div id="html_92d8cada90a561560c4575a61b4c0927" style="width: 100.0%; height: 100.0%;">Sunny Bay</div>`)[0];
+                popup_f33892e2763983d493fe48e3fb8af414.setContent(html_92d8cada90a561560c4575a61b4c0927);
+            
+        
+
+        circle_marker_7ae8f3a283d5b19b16eee99dcaf054ac.bindPopup(popup_f33892e2763983d493fe48e3fb8af414)
+        ;
+
+        
+    
+    
+            circle_marker_7ae8f3a283d5b19b16eee99dcaf054ac.bindTooltip(
+                `<div>
+                     Sunny Bay
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e2352ccafcf1f3611ab848349f6986b8 = L.circleMarker(
+                [22.360206, 114.107587],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_ec64180c4a1ec3b791f6abc97528d1f0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e53521ac7a7b1a7a7de7a9e8b865c440 = $(`<div id="html_e53521ac7a7b1a7a7de7a9e8b865c440" style="width: 100.0%; height: 100.0%;">Tsing Yi</div>`)[0];
+                popup_ec64180c4a1ec3b791f6abc97528d1f0.setContent(html_e53521ac7a7b1a7a7de7a9e8b865c440);
+            
+        
+
+        circle_marker_e2352ccafcf1f3611ab848349f6986b8.bindPopup(popup_ec64180c4a1ec3b791f6abc97528d1f0)
+        ;
+
+        
+    
+    
+            circle_marker_e2352ccafcf1f3611ab848349f6986b8.bindTooltip(
+                `<div>
+                     Tsing Yi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a400923bebef22e3105891c9f6f4f48b = L.circleMarker(
+                [22.327008, 114.15459],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_afe6b2990d1b3581e2f4cd3ab11dae8c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9616b15fd82ab25450a1722190ab82ba = $(`<div id="html_9616b15fd82ab25450a1722190ab82ba" style="width: 100.0%; height: 100.0%;">Nam Cheong</div>`)[0];
+                popup_afe6b2990d1b3581e2f4cd3ab11dae8c.setContent(html_9616b15fd82ab25450a1722190ab82ba);
+            
+        
+
+        circle_marker_a400923bebef22e3105891c9f6f4f48b.bindPopup(popup_afe6b2990d1b3581e2f4cd3ab11dae8c)
+        ;
+
+        
+    
+    
+            circle_marker_a400923bebef22e3105891c9f6f4f48b.bindTooltip(
+                `<div>
+                     Nam Cheong
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b7235450d468860e87ae72bdc4792463 = L.circleMarker(
+                [22.3178, 114.1602],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_38775163b2c8d4d0e75f806900246367 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f81ad96fdf8de89bc0253e6497ad9ddf = $(`<div id="html_f81ad96fdf8de89bc0253e6497ad9ddf" style="width: 100.0%; height: 100.0%;">Olympic</div>`)[0];
+                popup_38775163b2c8d4d0e75f806900246367.setContent(html_f81ad96fdf8de89bc0253e6497ad9ddf);
+            
+        
+
+        circle_marker_b7235450d468860e87ae72bdc4792463.bindPopup(popup_38775163b2c8d4d0e75f806900246367)
+        ;
+
+        
+    
+    
+            circle_marker_b7235450d468860e87ae72bdc4792463.bindTooltip(
+                `<div>
+                     Olympic
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7ea132e5026c5733f5eb11f7420dca7a = L.circleMarker(
+                [22.305242, 114.163317],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_ba8a2325609129f2a47904f4cd8bdfdd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_930e9ac6ad0b1ccb8c437bd63ac94fa2 = $(`<div id="html_930e9ac6ad0b1ccb8c437bd63ac94fa2" style="width: 100.0%; height: 100.0%;">Kowloon</div>`)[0];
+                popup_ba8a2325609129f2a47904f4cd8bdfdd.setContent(html_930e9ac6ad0b1ccb8c437bd63ac94fa2);
+            
+        
+
+        circle_marker_7ea132e5026c5733f5eb11f7420dca7a.bindPopup(popup_ba8a2325609129f2a47904f4cd8bdfdd)
+        ;
+
+        
+    
+    
+            circle_marker_7ea132e5026c5733f5eb11f7420dca7a.bindTooltip(
+                `<div>
+                     Kowloon
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_484fb932e2c0b6715bde40e8b08e0f37 = L.circleMarker(
+                [22.285, 114.158],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_107f2a04e9ebc7ab803bf2229e44200a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_af10fc8f9ab7f13d07ae35de26910f57 = $(`<div id="html_af10fc8f9ab7f13d07ae35de26910f57" style="width: 100.0%; height: 100.0%;">Hong Kong</div>`)[0];
+                popup_107f2a04e9ebc7ab803bf2229e44200a.setContent(html_af10fc8f9ab7f13d07ae35de26910f57);
+            
+        
+
+        circle_marker_484fb932e2c0b6715bde40e8b08e0f37.bindPopup(popup_107f2a04e9ebc7ab803bf2229e44200a)
+        ;
+
+        
+    
+    
+            circle_marker_484fb932e2c0b6715bde40e8b08e0f37.bindTooltip(
+                `<div>
+                     Hong Kong
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e182ac741b3ca63e0402e3623a92ad14 = L.circleMarker(
+                [22.281567, 114.154164],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_ea584649786521a30aab56dcde0a428d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5575574b6c5a315032088f34ee05b516 = $(`<div id="html_5575574b6c5a315032088f34ee05b516" style="width: 100.0%; height: 100.0%;">Central station</div>`)[0];
+                popup_ea584649786521a30aab56dcde0a428d.setContent(html_5575574b6c5a315032088f34ee05b516);
+            
+        
+
+        circle_marker_e182ac741b3ca63e0402e3623a92ad14.bindPopup(popup_ea584649786521a30aab56dcde0a428d)
+        ;
+
+        
+    
+    
+            circle_marker_e182ac741b3ca63e0402e3623a92ad14.bindTooltip(
+                `<div>
+                     Central station
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_66c79e17d6ddd90c6d121179ec983c73 = L.circleMarker(
+                [22.321988, 113.942221],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_ffecf83049431ce2bfee93974994f1c6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f73f87c782a2c757cb0ce5e77f1943d8 = $(`<div id="html_f73f87c782a2c757cb0ce5e77f1943d8" style="width: 100.0%; height: 100.0%;">AsiaWorld–Expo</div>`)[0];
+                popup_ffecf83049431ce2bfee93974994f1c6.setContent(html_f73f87c782a2c757cb0ce5e77f1943d8);
+            
+        
+
+        circle_marker_66c79e17d6ddd90c6d121179ec983c73.bindPopup(popup_ffecf83049431ce2bfee93974994f1c6)
+        ;
+
+        
+    
+    
+            circle_marker_66c79e17d6ddd90c6d121179ec983c73.bindTooltip(
+                `<div>
+                     AsiaWorld–Expo
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8e60ef4fffdf937ea599a9ecde6e928b = L.circleMarker(
+                [22.304925, 114.1616],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_ecc3dd8511ae72f527432b4210be55aa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a9f0880d99fce04fa6c750b87527726f = $(`<div id="html_a9f0880d99fce04fa6c750b87527726f" style="width: 100.0%; height: 100.0%;">Airport</div>`)[0];
+                popup_ecc3dd8511ae72f527432b4210be55aa.setContent(html_a9f0880d99fce04fa6c750b87527726f);
+            
+        
+
+        circle_marker_8e60ef4fffdf937ea599a9ecde6e928b.bindPopup(popup_ecc3dd8511ae72f527432b4210be55aa)
+        ;
+
+        
+    
+    
+            circle_marker_8e60ef4fffdf937ea599a9ecde6e928b.bindTooltip(
+                `<div>
+                     Airport
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3d8b73b20ecbc7335e07c299ff74f6ff = L.circleMarker(
+                [22.3224, 114.258],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_07e9348f209e340d41960033dc15530b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8f08aaee587ec7aa2daeffc32e6e9b43 = $(`<div id="html_8f08aaee587ec7aa2daeffc32e6e9b43" style="width: 100.0%; height: 100.0%;">Po Lam</div>`)[0];
+                popup_07e9348f209e340d41960033dc15530b.setContent(html_8f08aaee587ec7aa2daeffc32e6e9b43);
+            
+        
+
+        circle_marker_3d8b73b20ecbc7335e07c299ff74f6ff.bindPopup(popup_07e9348f209e340d41960033dc15530b)
+        ;
+
+        
+    
+    
+            circle_marker_3d8b73b20ecbc7335e07c299ff74f6ff.bindTooltip(
+                `<div>
+                     Po Lam
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0d84a104c1a34d3aa51be6a6f6c7b301 = L.circleMarker(
+                [22.3156, 114.2644],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_6b0e072aa7b34d50aad1953621d5fcb4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a50313419826ef455f4130ca825448c4 = $(`<div id="html_a50313419826ef455f4130ca825448c4" style="width: 100.0%; height: 100.0%;">Hang Hau</div>`)[0];
+                popup_6b0e072aa7b34d50aad1953621d5fcb4.setContent(html_a50313419826ef455f4130ca825448c4);
+            
+        
+
+        circle_marker_0d84a104c1a34d3aa51be6a6f6c7b301.bindPopup(popup_6b0e072aa7b34d50aad1953621d5fcb4)
+        ;
+
+        
+    
+    
+            circle_marker_0d84a104c1a34d3aa51be6a6f6c7b301.bindTooltip(
+                `<div>
+                     Hang Hau
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9dbb7928f74d6ddf71e980689eefd28f = L.circleMarker(
+                [22.2957, 114.2689],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_88f8abf0cf5b6ceec3388fc8f3306d10 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_de563ba7e5a8c8e56a3ea3b061522935 = $(`<div id="html_de563ba7e5a8c8e56a3ea3b061522935" style="width: 100.0%; height: 100.0%;">LOHAS Park</div>`)[0];
+                popup_88f8abf0cf5b6ceec3388fc8f3306d10.setContent(html_de563ba7e5a8c8e56a3ea3b061522935);
+            
+        
+
+        circle_marker_9dbb7928f74d6ddf71e980689eefd28f.bindPopup(popup_88f8abf0cf5b6ceec3388fc8f3306d10)
+        ;
+
+        
+    
+    
+            circle_marker_9dbb7928f74d6ddf71e980689eefd28f.bindTooltip(
+                `<div>
+                     LOHAS Park
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5dd2c51a7f792027defb6bfcf98deb8a = L.circleMarker(
+                [22.3074, 114.26],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_24ddb1370ef839b77046adbf07227016 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b1cd8d9c06b8e59ae887e0a348f77c97 = $(`<div id="html_b1cd8d9c06b8e59ae887e0a348f77c97" style="width: 100.0%; height: 100.0%;">Tseung Kwan O</div>`)[0];
+                popup_24ddb1370ef839b77046adbf07227016.setContent(html_b1cd8d9c06b8e59ae887e0a348f77c97);
+            
+        
+
+        circle_marker_5dd2c51a7f792027defb6bfcf98deb8a.bindPopup(popup_24ddb1370ef839b77046adbf07227016)
+        ;
+
+        
+    
+    
+            circle_marker_5dd2c51a7f792027defb6bfcf98deb8a.bindTooltip(
+                `<div>
+                     Tseung Kwan O
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0e669617a2d130697828f017e9b9e871 = L.circleMarker(
+                [22.4291, 114.2438],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_098fc26f5b37f620541a86c7c99419c1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_60c907ce8467fbe1465c9901ba7e4792 = $(`<div id="html_60c907ce8467fbe1465c9901ba7e4792" style="width: 100.0%; height: 100.0%;">Wu Kai Sha</div>`)[0];
+                popup_098fc26f5b37f620541a86c7c99419c1.setContent(html_60c907ce8467fbe1465c9901ba7e4792);
+            
+        
+
+        circle_marker_0e669617a2d130697828f017e9b9e871.bindPopup(popup_098fc26f5b37f620541a86c7c99419c1)
+        ;
+
+        
+    
+    
+            circle_marker_0e669617a2d130697828f017e9b9e871.bindTooltip(
+                `<div>
+                     Wu Kai Sha
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9153328a3bba082cd2161f97fe536b1b = L.circleMarker(
+                [22.4247, 114.2316],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_f4d950bc2ca9e26b19d4271d115b5098 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_56db4db437978cc1643c4f0b5591b510 = $(`<div id="html_56db4db437978cc1643c4f0b5591b510" style="width: 100.0%; height: 100.0%;">Ma On Shan</div>`)[0];
+                popup_f4d950bc2ca9e26b19d4271d115b5098.setContent(html_56db4db437978cc1643c4f0b5591b510);
+            
+        
+
+        circle_marker_9153328a3bba082cd2161f97fe536b1b.bindPopup(popup_f4d950bc2ca9e26b19d4271d115b5098)
+        ;
+
+        
+    
+    
+            circle_marker_9153328a3bba082cd2161f97fe536b1b.bindTooltip(
+                `<div>
+                     Ma On Shan
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f7c8ef1d71284bfa570f792fd58da6a1 = L.circleMarker(
+                [22.4174, 114.2258],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_e21d2495c1c0a83813c68b76ea512061 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_622ec6de3570a1cce8f789197d78a3ae = $(`<div id="html_622ec6de3570a1cce8f789197d78a3ae" style="width: 100.0%; height: 100.0%;">Heng On</div>`)[0];
+                popup_e21d2495c1c0a83813c68b76ea512061.setContent(html_622ec6de3570a1cce8f789197d78a3ae);
+            
+        
+
+        circle_marker_f7c8ef1d71284bfa570f792fd58da6a1.bindPopup(popup_e21d2495c1c0a83813c68b76ea512061)
+        ;
+
+        
+    
+    
+            circle_marker_f7c8ef1d71284bfa570f792fd58da6a1.bindTooltip(
+                `<div>
+                     Heng On
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3fdf662f03c52a45e0d8364961680603 = L.circleMarker(
+                [22.4088, 114.223],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_b4d07b84d20a9061ec1058d8a4ebd7c1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_823eb10cfbf60bbd2a3cd900bef7a6ac = $(`<div id="html_823eb10cfbf60bbd2a3cd900bef7a6ac" style="width: 100.0%; height: 100.0%;">Tai Shui Hang</div>`)[0];
+                popup_b4d07b84d20a9061ec1058d8a4ebd7c1.setContent(html_823eb10cfbf60bbd2a3cd900bef7a6ac);
+            
+        
+
+        circle_marker_3fdf662f03c52a45e0d8364961680603.bindPopup(popup_b4d07b84d20a9061ec1058d8a4ebd7c1)
+        ;
+
+        
+    
+    
+            circle_marker_3fdf662f03c52a45e0d8364961680603.bindTooltip(
+                `<div>
+                     Tai Shui Hang
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_01aa03b87f3705fda245133714c65cda = L.circleMarker(
+                [22.3877, 114.2083],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_4eeb69bde0193f5bd8acd7d6cb6528bd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d3d3704dd32b7a5e9571021e8fae4d0a = $(`<div id="html_d3d3704dd32b7a5e9571021e8fae4d0a" style="width: 100.0%; height: 100.0%;">Shek Mun</div>`)[0];
+                popup_4eeb69bde0193f5bd8acd7d6cb6528bd.setContent(html_d3d3704dd32b7a5e9571021e8fae4d0a);
+            
+        
+
+        circle_marker_01aa03b87f3705fda245133714c65cda.bindPopup(popup_4eeb69bde0193f5bd8acd7d6cb6528bd)
+        ;
+
+        
+    
+    
+            circle_marker_01aa03b87f3705fda245133714c65cda.bindTooltip(
+                `<div>
+                     Shek Mun
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_45ff770b378ad368e69e6d844ce47191 = L.circleMarker(
+                [22.3828, 114.2035],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_4e0d067b1b1ff37fdb5e7579d1f673ef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5a20bffc2bb55f861f2ceb8d6777b79a = $(`<div id="html_5a20bffc2bb55f861f2ceb8d6777b79a" style="width: 100.0%; height: 100.0%;">City One</div>`)[0];
+                popup_4e0d067b1b1ff37fdb5e7579d1f673ef.setContent(html_5a20bffc2bb55f861f2ceb8d6777b79a);
+            
+        
+
+        circle_marker_45ff770b378ad368e69e6d844ce47191.bindPopup(popup_4e0d067b1b1ff37fdb5e7579d1f673ef)
+        ;
+
+        
+    
+    
+            circle_marker_45ff770b378ad368e69e6d844ce47191.bindTooltip(
+                `<div>
+                     City One
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_11400612eef1ab6160c15b43b1de6e4d = L.circleMarker(
+                [22.3771, 114.195],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_9b22c54bd441759899c46c535a412883 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a50391d0afd7e1de37dff3eab115c3de = $(`<div id="html_a50391d0afd7e1de37dff3eab115c3de" style="width: 100.0%; height: 100.0%;">Sha Tin Wai</div>`)[0];
+                popup_9b22c54bd441759899c46c535a412883.setContent(html_a50391d0afd7e1de37dff3eab115c3de);
+            
+        
+
+        circle_marker_11400612eef1ab6160c15b43b1de6e4d.bindPopup(popup_9b22c54bd441759899c46c535a412883)
+        ;
+
+        
+    
+    
+            circle_marker_11400612eef1ab6160c15b43b1de6e4d.bindTooltip(
+                `<div>
+                     Sha Tin Wai
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f75671b603b5dc972f613ebae05d5f63 = L.circleMarker(
+                [22.3748, 114.1861],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_21b3698853e70b674fa52bb7ca4d25c7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_79be28eb29d67209129eaa1ee716330e = $(`<div id="html_79be28eb29d67209129eaa1ee716330e" style="width: 100.0%; height: 100.0%;">Che Kung Temple</div>`)[0];
+                popup_21b3698853e70b674fa52bb7ca4d25c7.setContent(html_79be28eb29d67209129eaa1ee716330e);
+            
+        
+
+        circle_marker_f75671b603b5dc972f613ebae05d5f63.bindPopup(popup_21b3698853e70b674fa52bb7ca4d25c7)
+        ;
+
+        
+    
+    
+            circle_marker_f75671b603b5dc972f613ebae05d5f63.bindTooltip(
+                `<div>
+                     Che Kung Temple
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_62c39003543d650df85df78b312f6fba = L.circleMarker(
+                [22.364, 114.1708],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_b9cc65e9ae7034281f6f1964f4a231b7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ce4c8b6257855c3bb4c032cdc349eb14 = $(`<div id="html_ce4c8b6257855c3bb4c032cdc349eb14" style="width: 100.0%; height: 100.0%;">Hin Keng</div>`)[0];
+                popup_b9cc65e9ae7034281f6f1964f4a231b7.setContent(html_ce4c8b6257855c3bb4c032cdc349eb14);
+            
+        
+
+        circle_marker_62c39003543d650df85df78b312f6fba.bindPopup(popup_b9cc65e9ae7034281f6f1964f4a231b7)
+        ;
+
+        
+    
+    
+            circle_marker_62c39003543d650df85df78b312f6fba.bindTooltip(
+                `<div>
+                     Hin Keng
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_80637a68ac07615c2d493de527f48d26 = L.circleMarker(
+                [22.3304, 114.1994],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_b2f898c0e54cbfd3ba0ed502167b5575 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_59b1c1d8e96b20441de47c58c1ec491d = $(`<div id="html_59b1c1d8e96b20441de47c58c1ec491d" style="width: 100.0%; height: 100.0%;">Kai Tak</div>`)[0];
+                popup_b2f898c0e54cbfd3ba0ed502167b5575.setContent(html_59b1c1d8e96b20441de47c58c1ec491d);
+            
+        
+
+        circle_marker_80637a68ac07615c2d493de527f48d26.bindPopup(popup_b2f898c0e54cbfd3ba0ed502167b5575)
+        ;
+
+        
+    
+    
+            circle_marker_80637a68ac07615c2d493de527f48d26.bindTooltip(
+                `<div>
+                     Kai Tak
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7e9f5962493cf97c85bdb69bcd9215e6 = L.circleMarker(
+                [22.326139, 114.190407],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_a8f8680a56535eb59fc205cb1161e210 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_16b60d56a782572803a52bc6559d34fa = $(`<div id="html_16b60d56a782572803a52bc6559d34fa" style="width: 100.0%; height: 100.0%;">Sung Wong Toi</div>`)[0];
+                popup_a8f8680a56535eb59fc205cb1161e210.setContent(html_16b60d56a782572803a52bc6559d34fa);
+            
+        
+
+        circle_marker_7e9f5962493cf97c85bdb69bcd9215e6.bindPopup(popup_a8f8680a56535eb59fc205cb1161e210)
+        ;
+
+        
+    
+    
+            circle_marker_7e9f5962493cf97c85bdb69bcd9215e6.bindTooltip(
+                `<div>
+                     Sung Wong Toi
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_faac1fa55d304a7c40f604efe87198ce = L.circleMarker(
+                [22.3172, 114.1876],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_2be6146a468a5dbb27c385aa2d92b256 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0d225f4b1655670c82245d452740dcec = $(`<div id="html_0d225f4b1655670c82245d452740dcec" style="width: 100.0%; height: 100.0%;">To Kwa Wan</div>`)[0];
+                popup_2be6146a468a5dbb27c385aa2d92b256.setContent(html_0d225f4b1655670c82245d452740dcec);
+            
+        
+
+        circle_marker_faac1fa55d304a7c40f604efe87198ce.bindPopup(popup_2be6146a468a5dbb27c385aa2d92b256)
+        ;
+
+        
+    
+    
+            circle_marker_faac1fa55d304a7c40f604efe87198ce.bindTooltip(
+                `<div>
+                     To Kwa Wan
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_22714578551eaf7e9baf269a4ad3867f = L.circleMarker(
+                [22.294697, 114.174092],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_c0e7eba51ae1787c4cd4a7c1a07db658 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_53f221d2d48c378b7ae16499329451b6 = $(`<div id="html_53f221d2d48c378b7ae16499329451b6" style="width: 100.0%; height: 100.0%;">East Tsim Sha Tsui</div>`)[0];
+                popup_c0e7eba51ae1787c4cd4a7c1a07db658.setContent(html_53f221d2d48c378b7ae16499329451b6);
+            
+        
+
+        circle_marker_22714578551eaf7e9baf269a4ad3867f.bindPopup(popup_c0e7eba51ae1787c4cd4a7c1a07db658)
+        ;
+
+        
+    
+    
+            circle_marker_22714578551eaf7e9baf269a4ad3867f.bindTooltip(
+                `<div>
+                     East Tsim Sha Tsui
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8622687f1530f6a79d1ec7475a84b952 = L.circleMarker(
+                [22.304236, 114.166601],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_0a6ed80f39b328d2f74868033d1b4ed7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_146a17342b9c2c3904287c66354e08a2 = $(`<div id="html_146a17342b9c2c3904287c66354e08a2" style="width: 100.0%; height: 100.0%;">Austin</div>`)[0];
+                popup_0a6ed80f39b328d2f74868033d1b4ed7.setContent(html_146a17342b9c2c3904287c66354e08a2);
+            
+        
+
+        circle_marker_8622687f1530f6a79d1ec7475a84b952.bindPopup(popup_0a6ed80f39b328d2f74868033d1b4ed7)
+        ;
+
+        
+    
+    
+            circle_marker_8622687f1530f6a79d1ec7475a84b952.bindTooltip(
+                `<div>
+                     Austin
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_52117a15b1154968a5415b1c840bf90e = L.circleMarker(
+                [22.369356, 114.10914],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_7d4ea066b70ed30e80c6f20411e5d9a1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_518378a5b3d74c4eaac7b67d735477ef = $(`<div id="html_518378a5b3d74c4eaac7b67d735477ef" style="width: 100.0%; height: 100.0%;">Tsuen Wan West</div>`)[0];
+                popup_7d4ea066b70ed30e80c6f20411e5d9a1.setContent(html_518378a5b3d74c4eaac7b67d735477ef);
+            
+        
+
+        circle_marker_52117a15b1154968a5415b1c840bf90e.bindPopup(popup_7d4ea066b70ed30e80c6f20411e5d9a1)
+        ;
+
+        
+    
+    
+            circle_marker_52117a15b1154968a5415b1c840bf90e.bindTooltip(
+                `<div>
+                     Tsuen Wan West
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c5eedd84b086e115f8df3929898bb481 = L.circleMarker(
+                [22.4348, 114.0634],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_5da8ef2f59b688007e453894a12c6695 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5f3813cdff9415e1256d0c2632b26fe3 = $(`<div id="html_5f3813cdff9415e1256d0c2632b26fe3" style="width: 100.0%; height: 100.0%;">Kam Sheung Road</div>`)[0];
+                popup_5da8ef2f59b688007e453894a12c6695.setContent(html_5f3813cdff9415e1256d0c2632b26fe3);
+            
+        
+
+        circle_marker_c5eedd84b086e115f8df3929898bb481.bindPopup(popup_5da8ef2f59b688007e453894a12c6695)
+        ;
+
+        
+    
+    
+            circle_marker_c5eedd84b086e115f8df3929898bb481.bindTooltip(
+                `<div>
+                     Kam Sheung Road
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d9d2a76d8a6348d7999265ffeb13e61a = L.circleMarker(
+                [22.4461, 114.0352],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_58b891371db863e51613fabdb8e81b68 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6f74a68eb225714bb018733ff1c69871 = $(`<div id="html_6f74a68eb225714bb018733ff1c69871" style="width: 100.0%; height: 100.0%;">Yuen Long</div>`)[0];
+                popup_58b891371db863e51613fabdb8e81b68.setContent(html_6f74a68eb225714bb018733ff1c69871);
+            
+        
+
+        circle_marker_d9d2a76d8a6348d7999265ffeb13e61a.bindPopup(popup_58b891371db863e51613fabdb8e81b68)
+        ;
+
+        
+    
+    
+            circle_marker_d9d2a76d8a6348d7999265ffeb13e61a.bindTooltip(
+                `<div>
+                     Yuen Long
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_40d3eabdfd363caf3067aa8e2de3a4be = L.circleMarker(
+                [22.449302, 114.027269],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_7a3a87c513a211276cbbaa586949fad1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_359eb8194cc10ded54b84a23ecb50a5b = $(`<div id="html_359eb8194cc10ded54b84a23ecb50a5b" style="width: 100.0%; height: 100.0%;">Long Ping</div>`)[0];
+                popup_7a3a87c513a211276cbbaa586949fad1.setContent(html_359eb8194cc10ded54b84a23ecb50a5b);
+            
+        
+
+        circle_marker_40d3eabdfd363caf3067aa8e2de3a4be.bindPopup(popup_7a3a87c513a211276cbbaa586949fad1)
+        ;
+
+        
+    
+    
+            circle_marker_40d3eabdfd363caf3067aa8e2de3a4be.bindTooltip(
+                `<div>
+                     Long Ping
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1714b01d22fc3d03a6a339637707c450 = L.circleMarker(
+                [22.446918, 114.002846],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_8b8401b0be2fe3b2a9fdd9a3d3bdbf40 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2ccb4e29689cf2b63fb83d1fc4be0620 = $(`<div id="html_2ccb4e29689cf2b63fb83d1fc4be0620" style="width: 100.0%; height: 100.0%;">Tin Shui Wai</div>`)[0];
+                popup_8b8401b0be2fe3b2a9fdd9a3d3bdbf40.setContent(html_2ccb4e29689cf2b63fb83d1fc4be0620);
+            
+        
+
+        circle_marker_1714b01d22fc3d03a6a339637707c450.bindPopup(popup_8b8401b0be2fe3b2a9fdd9a3d3bdbf40)
+        ;
+
+        
+    
+    
+            circle_marker_1714b01d22fc3d03a6a339637707c450.bindTooltip(
+                `<div>
+                     Tin Shui Wai
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9ffd4b1e04f231d5e9a81be9238e96e6 = L.circleMarker(
+                [22.413267, 113.979036],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_228849b532a505e0abf619176e7c53a0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cdd4a8283fc8efe3f5e0ef56f32a6f7f = $(`<div id="html_cdd4a8283fc8efe3f5e0ef56f32a6f7f" style="width: 100.0%; height: 100.0%;">Siu Hong</div>`)[0];
+                popup_228849b532a505e0abf619176e7c53a0.setContent(html_cdd4a8283fc8efe3f5e0ef56f32a6f7f);
+            
+        
+
+        circle_marker_9ffd4b1e04f231d5e9a81be9238e96e6.bindPopup(popup_228849b532a505e0abf619176e7c53a0)
+        ;
+
+        
+    
+    
+            circle_marker_9ffd4b1e04f231d5e9a81be9238e96e6.bindTooltip(
+                `<div>
+                     Siu Hong
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0dda6e9afc34307f9b25d4fa2cb5394c = L.circleMarker(
+                [22.394156, 113.973948],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_b0d828c858b88b13e0765e0103810d17 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8c98c0a773fd5a2977f027e321b7e10d = $(`<div id="html_8c98c0a773fd5a2977f027e321b7e10d" style="width: 100.0%; height: 100.0%;">Tuen Mun</div>`)[0];
+                popup_b0d828c858b88b13e0765e0103810d17.setContent(html_8c98c0a773fd5a2977f027e321b7e10d);
+            
+        
+
+        circle_marker_0dda6e9afc34307f9b25d4fa2cb5394c.bindPopup(popup_b0d828c858b88b13e0765e0103810d17)
+        ;
+
+        
+    
+    
+            circle_marker_0dda6e9afc34307f9b25d4fa2cb5394c.bindTooltip(
+                `<div>
+                     Tuen Mun
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3c71cfe6ab0c6c6fd25b428cb083d588 = L.circleMarker(
+                [22.3155, 114.0451],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_3d7fbde48bd62fc0b2275c63e4398bbe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4d6899d5bf2cb6c897ce856273b089d2 = $(`<div id="html_4d6899d5bf2cb6c897ce856273b089d2" style="width: 100.0%; height: 100.0%;">Disneyland Resort</div>`)[0];
+                popup_3d7fbde48bd62fc0b2275c63e4398bbe.setContent(html_4d6899d5bf2cb6c897ce856273b089d2);
+            
+        
+
+        circle_marker_3c71cfe6ab0c6c6fd25b428cb083d588.bindPopup(popup_3d7fbde48bd62fc0b2275c63e4398bbe)
+        ;
+
+        
+    
+    
+            circle_marker_3c71cfe6ab0c6c6fd25b428cb083d588.bindTooltip(
+                `<div>
+                     Disneyland Resort
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ac26ba47a4df0694c4cd44d20ac0b4ae = L.circleMarker(
+                [22.2425, 114.1491],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_48503b1c90ec90738d6db5300dbd3dc9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_81adce1983e581598f1f735dba89ad02 = $(`<div id="html_81adce1983e581598f1f735dba89ad02" style="width: 100.0%; height: 100.0%;">South Horizons</div>`)[0];
+                popup_48503b1c90ec90738d6db5300dbd3dc9.setContent(html_81adce1983e581598f1f735dba89ad02);
+            
+        
+
+        circle_marker_ac26ba47a4df0694c4cd44d20ac0b4ae.bindPopup(popup_48503b1c90ec90738d6db5300dbd3dc9)
+        ;
+
+        
+    
+    
+            circle_marker_ac26ba47a4df0694c4cd44d20ac0b4ae.bindTooltip(
+                `<div>
+                     South Horizons
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b0a3b3bc6a3444463e9d9c3c6a14f5b1 = L.circleMarker(
+                [22.2421, 114.1562],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_e90b0b0387b72da81b47c3b6c694ce61 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a879f20bf2024da44dcd68dbf665018e = $(`<div id="html_a879f20bf2024da44dcd68dbf665018e" style="width: 100.0%; height: 100.0%;">Lei Tung</div>`)[0];
+                popup_e90b0b0387b72da81b47c3b6c694ce61.setContent(html_a879f20bf2024da44dcd68dbf665018e);
+            
+        
+
+        circle_marker_b0a3b3bc6a3444463e9d9c3c6a14f5b1.bindPopup(popup_e90b0b0387b72da81b47c3b6c694ce61)
+        ;
+
+        
+    
+    
+            circle_marker_b0a3b3bc6a3444463e9d9c3c6a14f5b1.bindTooltip(
+                `<div>
+                     Lei Tung
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6458de1dfc8ddb31bd9f649cfaa86c73 = L.circleMarker(
+                [22.248, 114.1681],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_785bebb38cb672db7e02573c44f9b4a8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4d70283bae07c8027cbdd99513aa7bb9 = $(`<div id="html_4d70283bae07c8027cbdd99513aa7bb9" style="width: 100.0%; height: 100.0%;">Wong Chuk Hang</div>`)[0];
+                popup_785bebb38cb672db7e02573c44f9b4a8.setContent(html_4d70283bae07c8027cbdd99513aa7bb9);
+            
+        
+
+        circle_marker_6458de1dfc8ddb31bd9f649cfaa86c73.bindPopup(popup_785bebb38cb672db7e02573c44f9b4a8)
+        ;
+
+        
+    
+    
+            circle_marker_6458de1dfc8ddb31bd9f649cfaa86c73.bindTooltip(
+                `<div>
+                     Wong Chuk Hang
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f5a6f78a9634181b58abd384434cfb49 = L.circleMarker(
+                [22.2486, 114.1743],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_2abada9752c0faaaff1b53c78dff059c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_296693988422d0fc457a706269e48b73 = $(`<div id="html_296693988422d0fc457a706269e48b73" style="width: 100.0%; height: 100.0%;">Ocean Park</div>`)[0];
+                popup_2abada9752c0faaaff1b53c78dff059c.setContent(html_296693988422d0fc457a706269e48b73);
+            
+        
+
+        circle_marker_f5a6f78a9634181b58abd384434cfb49.bindPopup(popup_2abada9752c0faaaff1b53c78dff059c)
+        ;
+
+        
+    
+    
+            circle_marker_f5a6f78a9634181b58abd384434cfb49.bindTooltip(
+                `<div>
+                     Ocean Park
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fed7a138fbfd586ccfa561b9ee1ab5a6 = L.circleMarker(
+                [22.50752, 114.09962],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_a7b8199c5eebf3c040eca24fae1f28c2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fd6e04576c462b8d70e61e7f525f0ad0 = $(`<div id="html_fd6e04576c462b8d70e61e7f525f0ad0" style="width: 100.0%; height: 100.0%;">Kwu Tung</div>`)[0];
+                popup_a7b8199c5eebf3c040eca24fae1f28c2.setContent(html_fd6e04576c462b8d70e61e7f525f0ad0);
+            
+        
+
+        circle_marker_fed7a138fbfd586ccfa561b9ee1ab5a6.bindPopup(popup_a7b8199c5eebf3c040eca24fae1f28c2)
+        ;
+
+        
+    
+    
+            circle_marker_fed7a138fbfd586ccfa561b9ee1ab5a6.bindTooltip(
+                `<div>
+                     Kwu Tung
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5189e29372bb9c903e53bee55777b2a0 = L.circleMarker(
+                [22.373698, 114.117726],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_a6b9984e207209fc3a904f67ab8388f5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4cbe56660baeab6d09dad5ca8d712245 = $(`<div id="html_4cbe56660baeab6d09dad5ca8d712245" style="width: 100.0%; height: 100.0%;">Tsuen Wan station</div>`)[0];
+                popup_a6b9984e207209fc3a904f67ab8388f5.setContent(html_4cbe56660baeab6d09dad5ca8d712245);
+            
+        
+
+        circle_marker_5189e29372bb9c903e53bee55777b2a0.bindPopup(popup_a6b9984e207209fc3a904f67ab8388f5)
+        ;
+
+        
+    
+    
+            circle_marker_5189e29372bb9c903e53bee55777b2a0.bindTooltip(
+                `<div>
+                     Tsuen Wan station
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9ee1940e5dd7fb6f0a533d054fadeac0 = L.circleMarker(
+                [22.305242, 114.163317],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_29d968f98bdde3711b82c5d553a5906c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0a10a0f68b31cbc45bd519f54f4d7fcd = $(`<div id="html_0a10a0f68b31cbc45bd519f54f4d7fcd" style="width: 100.0%; height: 100.0%;">Kowloon station</div>`)[0];
+                popup_29d968f98bdde3711b82c5d553a5906c.setContent(html_0a10a0f68b31cbc45bd519f54f4d7fcd);
+            
+        
+
+        circle_marker_9ee1940e5dd7fb6f0a533d054fadeac0.bindPopup(popup_29d968f98bdde3711b82c5d553a5906c)
+        ;
+
+        
+    
+    
+            circle_marker_9ee1940e5dd7fb6f0a533d054fadeac0.bindTooltip(
+                `<div>
+                     Kowloon station
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_363b6775e5c4bd8888caad562a4c3877 = L.circleMarker(
+                [22.3062, 114.166329],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_15cabbcecdd5d580078514cb5a6f8d04 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7ece4090563c9a452dedb78800302c69 = $(`<div id="html_7ece4090563c9a452dedb78800302c69" style="width: 100.0%; height: 100.0%;">Austin station</div>`)[0];
+                popup_15cabbcecdd5d580078514cb5a6f8d04.setContent(html_7ece4090563c9a452dedb78800302c69);
+            
+        
+
+        circle_marker_363b6775e5c4bd8888caad562a4c3877.bindPopup(popup_15cabbcecdd5d580078514cb5a6f8d04)
+        ;
+
+        
+    
+    
+            circle_marker_363b6775e5c4bd8888caad562a4c3877.bindTooltip(
+                `<div>
+                     Austin station
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a6fc2fb72fce79973b8b314723649bc7 = L.circleMarker(
+                [22.284721, 114.157986],
+                {"bubblingMouseEvents": true, "color": "#FF0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF0000", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 2}
+            ).addTo(feature_group_ca1473ad6bb9a0e08ef6e4811389019b);
+        
+    
+        var popup_9a849d800cf05221704707a76debe119 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_42def1cca5b3e33cec9c0f24830e3206 = $(`<div id="html_42def1cca5b3e33cec9c0f24830e3206" style="width: 100.0%; height: 100.0%;">Railway stations in Hong Kong</div>`)[0];
+                popup_9a849d800cf05221704707a76debe119.setContent(html_42def1cca5b3e33cec9c0f24830e3206);
+            
+        
+
+        circle_marker_a6fc2fb72fce79973b8b314723649bc7.bindPopup(popup_9a849d800cf05221704707a76debe119)
+        ;
+
+        
+    
+    
+            circle_marker_a6fc2fb72fce79973b8b314723649bc7.bindTooltip(
+                `<div>
+                     Railway stations in Hong Kong
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_ca1473ad6bb9a0e08ef6e4811389019b.addTo(map_3e93e6ece071f0ce96c8b942898ddea3);
+        
+    
+            var layer_control_9f57f23c62b3cafaf3e454bb77940b17_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_7dc53549febac900de71a937a3755267,
+                    "CartoDB Positron" : tile_layer_418d37f82c26f43b6fe1a81b85778be8,
+                    "CartoDB Dark Matter" : tile_layer_c7ea958042cf02a0da7f074774c3d077,
+                },
+                overlays :  {
+                    "MTR Stations" : feature_group_ca1473ad6bb9a0e08ef6e4811389019b,
+                },
+            };
+            let layer_control_9f57f23c62b3cafaf3e454bb77940b17 = L.control.layers(
+                layer_control_9f57f23c62b3cafaf3e454bb77940b17_layers.base_layers,
+                layer_control_9f57f23c62b3cafaf3e454bb77940b17_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_3e93e6ece071f0ce96c8b942898ddea3);
+
+        
+    
+            L.control.fullscreen(
+                {
+  "position": "topleft",
+  "title": "Full Screen",
+  "titleCancel": "Exit Full Screen",
+  "forceSeparateButton": false,
+}
+            ).addTo(map_3e93e6ece071f0ce96c8b942898ddea3);
+        
+    
+            var measure_control_8dc27c80c71b14516ad4519c42529cc7 = new L.Control.Measure(
+                {
+  "position": "topright",
+  "primaryLengthUnit": "meters",
+  "secondaryLengthUnit": "miles",
+  "primaryAreaUnit": "sqmeters",
+  "secondaryAreaUnit": "acres",
+});
+            map_3e93e6ece071f0ce96c8b942898ddea3.addControl(measure_control_8dc27c80c71b14516ad4519c42529cc7);
+
+            // Workaround for using this plugin with Leaflet>=1.8.0
+            // https://github.com/ljagis/leaflet-measure/issues/171
+            L.Control.Measure.include({
+                _setCaptureMarkerIcon: function () {
+                    // disable autopan
+                    this._captureMarker.options.autoPanOnFocus = false;
+                    // default function
+                    this._captureMarker.setIcon(
+                        L.divIcon({
+                            iconSize: this._map.getSize().multiplyBy(2)
+                        })
+                    );
+                },
+            });
+
+        
+</script>
+</html>
