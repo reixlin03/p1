@@ -1,5 +1,7 @@
 # MTR Impact on Hong Kong Demographics
 
+🌐 **Live Site:** [View on GitHub Pages](https://reixlin03.github.io/p1/)
+
 ## Project Overview
 
 This project analyzes how Mass Transit Railway (MTR) stations influence demographic changes in Hong Kong's Tertiary Planning Units (TPUs) across census years (2001-2016). The study examines population, age, income, education, and housing characteristics in relation to MTR proximity and station openings.
@@ -168,4 +170,11 @@ This project is for research purposes. Data sources are credited to their respec
 ## Contact
 
 For questions or contributions, please refer to the project repository.
+
+## 🔗 Links
+
+- **Live Site**: [https://reixlin03.github.io/p1/](https://reixlin03.github.io/p1/)
+- **Repository**: [https://github.com/reixlin03/p1](https://github.com/reixlin03/p1)
+- **Interactive Map**: [TPU & MTR Map](https://reixlin03.github.io/p1/outputs/maps/tpu_mtr_map.html)
+- **Dashboard**: [Analysis Dashboard](https://reixlin03.github.io/p1/outputs/dashboards/interactive_dashboard.html)
 
