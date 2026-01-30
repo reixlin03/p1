@@ -138,7 +138,7 @@ def spatial_join_mtr_tpu(year: str = None):
         return
     
     # Process each year or specific year
-    years = [year] if year else ['2001', '2006', '2011', '2016']
+    years = [year] if year else ['2001', '2006', '2011', '2016', '2021']
     
     print("=" * 60)
     print("Spatial Analysis: MTR-TPU Join")

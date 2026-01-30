@@ -1,0 +1,2000 @@
+TPU_ID,YEAR,nearest_mtr_distance,nearest_mtr_station,nearest_mtr_lat,nearest_mtr_lon,mtr_stations_count,has_mtr_station,mtr_proximity_category,within_500m_buffer,within_1000m_buffer,within_2000m_buffer
+254,2021,573.6030883936032,Olympic,22.3178,114.1602,0,False,Close (500-1000m),True,True,True
+254,2021,528.9796259319202,Olympic,22.3178,114.1602,0,False,Close (500-1000m),True,True,True
+335,2021,4462.450828935946,Sunny Bay,22.33285,114.028222,0,False,Far (>2km),False,False,False
+350,2021,1787.777751203744,Tsing Yi,22.360206,114.107587,0,False,Moderate (1-2km),False,False,True
+350,2021,1978.9066114527202,Tsing Yi,22.360206,114.107587,0,False,Moderate (1-2km),False,False,True
+351,2021,1603.836867681603,Tsing Yi,22.360206,114.107587,0,False,Moderate (1-2km),False,False,True
+351,2021,1958.6759856632962,Tsing Yi,22.360206,114.107587,0,False,Moderate (1-2km),False,False,True
+336,2021,3920.2878292631367,Sunny Bay,22.33285,114.028222,0,False,Far (>2km),False,False,False
+336,2021,3576.8995455134045,Sunny Bay,22.33285,114.028222,0,False,Far (>2km),False,False,False
+336,2021,2961.348441477164,Sunny Bay,22.33285,114.028222,0,False,Far (>2km),False,False,False
+336,2021,4029.459463259024,Sunny Bay,22.33285,114.028222,0,False,Far (>2km),False,False,False
+336,2021,3746.558599173894,Sunny Bay,22.33285,114.028222,0,False,Far (>2km),False,False,False
+335,2021,4787.874265567718,Sunny Bay,22.33285,114.028222,0,False,Far (>2km),False,False,False
+335,2021,5012.889469275184,Tsing Yi,22.360206,114.107587,0,False,Far (>2km),False,False,False
+335,2021,4504.777140689645,Sunny Bay,22.33285,114.028222,0,False,Far (>2km),False,False,False
+332,2021,3411.0709676343145,Tsuen Wan West,22.36755,114.11098,0,False,Far (>2km),False,False,False
+335,2021,4136.54594716862,Tsing Yi,22.360206,114.107587,0,False,Far (>2km),False,False,False
+266,2021,449.98763091377634,Nam Cheong,22.32829,114.1538,0,False,Very Close (<500m),True,True,True
+324,2021,481.3470285815265,Tsuen Wan,22.3736,114.1178,0,False,Very Close (<500m),True,True,True
+324,2021,503.1154103468505,Tai Wo Hau,22.371129,114.126303,0,False,Close (500-1000m),True,True,True
+255,2021,116.6215841672629,Nam Cheong,22.32829,114.1538,1,True,Very Close (<500m),True,True,True
+255,2021,233.9783475387086,Nam Cheong,22.32829,114.1538,0,False,Very Close (<500m),True,True,True
+255,2021,313.06235192019653,Nam Cheong,22.32829,114.1538,0,False,Very Close (<500m),True,True,True
+255,2021,331.865593857242,Nam Cheong,22.32829,114.1538,0,False,Very Close (<500m),True,True,True
+265,2021,388.9361210093258,Nam Cheong,22.32829,114.1538,0,False,Very Close (<500m),True,True,True
+532,2021,3811.817700950456,Kam Sheung Road,22.4348,114.0634,0,False,Far (>2km),False,False,False
+328,2021,487.5902817771404,Kwai Fong,22.3569,114.1279,0,False,Very Close (<500m),True,True,True
+328,2021,472.724919729021,Lai King,22.3484,114.1261,0,False,Very Close (<500m),True,True,True
+328,2021,345.8558746208217,Kwai Fong,22.3569,114.1279,0,False,Very Close (<500m),True,True,True
+265,2021,343.599458943051,Nam Cheong,22.32829,114.1538,0,False,Very Close (<500m),True,True,True
+265,2021,361.79139772645846,Nam Cheong,22.32829,114.1538,0,False,Very Close (<500m),True,True,True
+266,2021,595.3235976020854,Sham Shui Po,22.330141,114.163247,0,False,Close (500-1000m),True,True,True
+254,2021,657.6045261806729,Nam Cheong,22.32829,114.1538,0,False,Close (500-1000m),False,True,True
+255,2021,649.2806795482011,Olympic,22.3178,114.1602,0,False,Close (500-1000m),False,True,True
+254,2021,411.4389139395055,Olympic,22.3178,114.1602,0,False,Very Close (<500m),True,True,True
+255,2021,594.6829558503243,Nam Cheong,22.32829,114.1538,0,False,Close (500-1000m),True,True,True
+254,2021,637.7752074618483,Nam Cheong,22.32829,114.1538,0,False,Close (500-1000m),False,True,True
+625,2021,1272.0477646935517,Fanling,22.490627,114.139289,0,False,Moderate (1-2km),False,False,True
+542,2021,1412.4566713600952,Kwu Tung,22.50752,114.09962,0,False,Moderate (1-2km),False,True,True
+624,2021,1369.8939281462035,Sheung Shui,22.5012,114.128,0,False,Moderate (1-2km),False,False,True
+543,2021,2013.189061772885,Kwu Tung,22.50752,114.09962,0,False,Far (>2km),False,True,True
+533,2021,3375.5791229031083,Kam Sheung Road,22.4348,114.0634,0,False,Far (>2km),False,False,False
+532,2021,3515.026470897353,Kam Sheung Road,22.4348,114.0634,0,False,Far (>2km),False,False,False
+532,2021,3373.8625439647685,Kam Sheung Road,22.4348,114.0634,0,False,Far (>2km),False,False,False
+532,2021,2906.609234048812,Kam Sheung Road,22.4348,114.0634,0,False,Far (>2km),False,False,False
+532,2021,4009.857096089768,Kam Sheung Road,22.4348,114.0634,0,False,Far (>2km),False,False,False
+533,2021,2564.2832533233704,Kam Sheung Road,22.4348,114.0634,0,False,Far (>2km),False,False,False
+610,2021,4530.80281708468,Fanling,22.490627,114.139289,0,False,Far (>2km),False,False,False
+532,2021,3815.3508365655694,Kam Sheung Road,22.4348,114.0634,0,False,Far (>2km),False,False,False
+623,2021,1279.5042772176325,Kwu Tung,22.50752,114.09962,0,False,Moderate (1-2km),False,False,True
+623,2021,1110.0208599976786,Kwu Tung,22.50752,114.09962,0,False,Moderate (1-2km),False,True,True
+623,2021,1418.6913529393437,Kwu Tung,22.50752,114.09962,0,False,Moderate (1-2km),False,True,True
+548,2021,726.864898009632,Kwu Tung,22.50752,114.09962,0,False,Close (500-1000m),False,True,True
+545,2021,224.59404802406928,Kwu Tung,22.50752,114.09962,0,False,Very Close (<500m),True,True,True
+548,2021,513.8784419252396,Kwu Tung,22.50752,114.09962,0,False,Close (500-1000m),True,True,True
+533,2021,2984.8714815023263,Kam Sheung Road,22.4348,114.0634,0,False,Far (>2km),False,False,False
+351,2021,1317.205108324424,Tsing Yi,22.360206,114.107587,0,False,Moderate (1-2km),False,False,True
+351,2021,1660.2143013788746,Tsing Yi,22.360206,114.107587,0,False,Moderate (1-2km),False,True,True
+268,2021,301.26260098686765,Kowloon Tong,22.336809,114.177245,0,False,Very Close (<500m),True,True,True
+324,2021,445.0160350301164,Tsuen Wan,22.3736,114.1178,0,False,Very Close (<500m),True,True,True
+324,2021,670.7425375991652,Tsuen Wan,22.3736,114.1178,0,False,Close (500-1000m),False,True,True
+256,2021,741.3328218491123,Airport,22.304925,114.1616,0,False,Close (500-1000m),True,True,True
+256,2021,678.5452105424433,Airport,22.304925,114.1616,0,False,Close (500-1000m),True,True,True
+256,2021,549.2688275818657,Airport,22.304925,114.1616,0,False,Close (500-1000m),True,True,True
+256,2021,360.03773738923707,Airport,22.304925,114.1616,0,False,Very Close (<500m),True,True,True
+256,2021,310.7433820740869,Airport,22.304925,114.1616,0,False,Very Close (<500m),True,True,True
+256,2021,281.5421756934934,Austin,22.304236,114.166601,0,False,Very Close (<500m),True,True,True
+256,2021,218.86052042741116,Austin,22.304236,114.166601,0,False,Very Close (<500m),True,True,True
+256,2021,216.63479626083625,Austin,22.304236,114.166601,0,False,Very Close (<500m),True,True,True
+256,2021,321.24218923380903,Austin,22.304236,114.166601,0,False,Very Close (<500m),True,True,True
+256,2021,380.3333492315187,Austin,22.304236,114.166601,0,False,Very Close (<500m),True,True,True
+256,2021,438.1299374043434,Airport,22.304925,114.1616,0,False,Very Close (<500m),True,True,True
+256,2021,463.4635875386726,Airport,22.304925,114.1616,0,False,Very Close (<500m),True,True,True
+251,2021,336.16038805846375,Airport,22.304925,114.1616,0,False,Very Close (<500m),True,True,True
+251,2021,349.79326486646414,Airport,22.304925,114.1616,0,False,Very Close (<500m),True,True,True
+216,2021,109.35821424137133,East Tsim Sha Tsui,22.295195,114.174446,0,False,Very Close (<500m),True,True,True
+216,2021,420.3501051988432,Tsim Sha Tsui,22.2973,114.1722,0,False,Very Close (<500m),True,True,True
+211,2021,633.395615951089,Tsim Sha Tsui,22.2973,114.1722,0,False,Close (500-1000m),True,True,True
+211,2021,409.01940897650155,Tsim Sha Tsui,22.2973,114.1722,0,False,Very Close (<500m),True,True,True
+221,2021,505.81419213177617,Sham Shui Po,22.330141,114.163247,0,False,Close (500-1000m),True,True,True
+221,2021,617.0201357108745,Prince Edward,22.3245,114.1683,0,False,Close (500-1000m),False,True,True
+221,2021,680.886227356428,Sham Shui Po,22.330141,114.163247,0,False,Close (500-1000m),False,True,True
+252,2021,379.6208831455292,Austin station,22.306294,114.164522,0,False,Very Close (<500m),True,True,True
+252,2021,339.8864265429184,Austin station,22.306294,114.164522,0,False,Very Close (<500m),True,True,True
+252,2021,496.9491999268421,Yau Ma Tei,22.3129,114.1707,0,False,Very Close (<500m),True,True,True
+252,2021,547.7357647662194,Austin station,22.306294,114.164522,0,False,Close (500-1000m),True,True,True
+253,2021,578.5870627484308,Yau Ma Tei,22.3129,114.1707,0,False,Close (500-1000m),False,True,True
+253,2021,593.385646468066,Olympic,22.3178,114.1602,0,False,Close (500-1000m),True,True,True
+253,2021,471.96814030175466,Olympic,22.3178,114.1602,0,False,Very Close (<500m),True,True,True
+532,2021,3819.8294503523025,Kam Sheung Road,22.4348,114.0634,0,False,Far (>2km),False,False,False
+625,2021,1745.979931932632,Fanling,22.490627,114.139289,0,False,Moderate (1-2km),False,False,True
+625,2021,1423.2814213029696,Sheung Shui,22.5012,114.128,0,False,Moderate (1-2km),False,False,True
+623,2021,1304.6887642752922,Kwu Tung,22.50752,114.09962,0,False,Moderate (1-2km),False,False,True
+723,2021,626.7153181021622,Tai Wo,22.4511,114.1611,0,False,Close (500-1000m),True,True,True
+723,2021,326.18085311073514,Tai Wo,22.4511,114.1611,0,False,Very Close (<500m),True,True,True
+724,2021,2130.9991295717,Tai Wo,22.4511,114.1611,0,False,Far (>2km),False,False,True
+724,2021,1593.8837599167603,Tai Wo,22.4511,114.1611,0,False,Moderate (1-2km),False,False,True
+724,2021,1759.3591590172102,Tai Wo,22.4511,114.1611,0,False,Moderate (1-2km),False,False,True
+724,2021,1717.8454409880912,Tai Wo,22.4511,114.1611,0,False,Moderate (1-2km),False,False,True
+724,2021,2056.461425283314,Tai Wo,22.4511,114.1611,0,False,Far (>2km),False,False,True
+724,2021,2439.3766605524343,Tai Wo,22.4511,114.1611,0,False,Far (>2km),False,False,False
+532,2021,3382.6163260292083,Kam Sheung Road,22.4348,114.0634,0,False,Far (>2km),False,False,False
+532,2021,3470.252727382035,Kam Sheung Road,22.4348,114.0634,0,False,Far (>2km),False,False,False
+532,2021,4107.205974217152,Kam Sheung Road,22.4348,114.0634,0,False,Far (>2km),False,False,False
+532,2021,2795.2999937641484,Kam Sheung Road,22.4348,114.0634,0,False,Far (>2km),False,False,False
+531,2021,667.1653572133204,Kam Sheung Road,22.4348,114.0634,0,False,Close (500-1000m),True,True,True
+531,2021,1025.9431010547164,Kam Sheung Road,22.4348,114.0634,1,True,Moderate (1-2km),True,True,True
+531,2021,2318.3965133568377,Kam Sheung Road,22.4348,114.0634,0,False,Far (>2km),False,False,False
+531,2021,2212.3422042042225,Kam Sheung Road,22.4348,114.0634,0,False,Far (>2km),False,False,True
+531,2021,773.9237871677583,Kam Sheung Road,22.4348,114.0634,0,False,Close (500-1000m),True,True,True
+531,2021,1707.0868704482168,Kam Sheung Road,22.4348,114.0634,0,False,Moderate (1-2km),False,False,True
+531,2021,2268.1626483577265,Kam Sheung Road,22.4348,114.0634,0,False,Far (>2km),False,False,False
+531,2021,1747.1543068398862,Kam Sheung Road,22.4348,114.0634,0,False,Moderate (1-2km),False,False,True
+531,2021,2123.637558229302,Kam Sheung Road,22.4348,114.0634,0,False,Far (>2km),False,False,True
+526,2021,867.3911319839445,Kam Sheung Road,22.4348,114.0634,0,False,Close (500-1000m),True,True,True
+531,2021,1455.1619497602733,Kam Sheung Road,22.4348,114.0634,0,False,Moderate (1-2km),False,True,True
+521,2021,793.0038752672112,Kam Sheung Road,22.4348,114.0634,0,False,Close (500-1000m),False,True,True
+521,2021,676.0057076423956,Kam Sheung Road,22.4348,114.0634,0,False,Close (500-1000m),False,True,True
+521,2021,723.94454971828,Kam Sheung Road,22.4348,114.0634,0,False,Close (500-1000m),False,True,True
+532,2021,1415.1983359551525,Kam Sheung Road,22.4348,114.0634,0,False,Moderate (1-2km),False,False,True
+521,2021,745.8003828709091,Kam Sheung Road,22.4348,114.0634,0,False,Close (500-1000m),False,True,True
+532,2021,2391.040749446556,Kam Sheung Road,22.4348,114.0634,0,False,Far (>2km),False,False,False
+532,2021,1490.6162674896007,Kam Sheung Road,22.4348,114.0634,0,False,Moderate (1-2km),False,False,True
+526,2021,2220.5691284232594,Kam Sheung Road,22.4348,114.0634,0,False,Far (>2km),False,False,False
+521,2021,858.3051207590801,Kam Sheung Road,22.4348,114.0634,0,False,Close (500-1000m),False,True,True
+532,2021,1966.7854505601108,Kam Sheung Road,22.4348,114.0634,0,False,Moderate (1-2km),False,False,True
+526,2021,1937.8330740728636,Yuen Long,22.4461,114.0352,0,False,Moderate (1-2km),False,False,True
+526,2021,2388.579631206768,Kam Sheung Road,22.4348,114.0634,0,False,Far (>2km),False,False,True
+547,2021,1514.250763739733,Kwu Tung,22.50752,114.09962,0,False,Moderate (1-2km),False,True,True
+610,2021,4358.513460098225,Fanling,22.490627,114.139289,0,False,Far (>2km),False,False,False
+547,2021,3239.0899572378416,Fanling,22.490627,114.139289,0,False,Far (>2km),False,False,False
+547,2021,3416.9501421926184,Sheung Shui,22.5012,114.128,0,False,Far (>2km),False,False,False
+547,2021,3585.283378388648,Kwu Tung,22.50752,114.09962,0,False,Far (>2km),False,False,True
+547,2021,3379.046562049929,Kwu Tung,22.50752,114.09962,0,False,Far (>2km),False,False,False
+547,2021,1553.2408561567986,Kwu Tung,22.50752,114.09962,0,False,Moderate (1-2km),False,False,True
+625,2021,1473.0173632046274,Fanling,22.490627,114.139289,0,False,Moderate (1-2km),False,False,True
+723,2021,87.8787509903482,Tai Po Market,22.4446,114.1706,1,True,Very Close (<500m),True,True,True
+723,2021,580.8917483830512,Tai Wo,22.4511,114.1611,0,False,Close (500-1000m),True,True,True
+723,2021,567.2990998709057,Tai Wo,22.4511,114.1611,0,False,Close (500-1000m),True,True,True
+723,2021,1065.3931844040135,Tai Wo,22.4511,114.1611,0,False,Moderate (1-2km),False,True,True
+723,2021,307.4568515720334,Tai Po Market,22.4446,114.1706,0,False,Very Close (<500m),True,True,True
+729,2021,2082.6864463088264,University,22.413808,114.209437,0,False,Far (>2km),False,False,True
+741,2021,2034.8219875832528,Wu Kai Sha,22.4291,114.2438,0,False,Far (>2km),False,False,True
+741,2021,1918.669370529494,Wu Kai Sha,22.4291,114.2438,0,False,Moderate (1-2km),False,False,True
+742,2021,9621.666185277985,Wu Kai Sha,22.4291,114.2438,0,False,Far (>2km),False,False,False
+742,2021,9330.747982261044,Wu Kai Sha,22.4291,114.2438,0,False,Far (>2km),False,False,False
+548,2021,476.61401174711364,Kwu Tung,22.50752,114.09962,0,False,Very Close (<500m),True,True,True
+548,2021,708.3307445132887,Kwu Tung,22.50752,114.09962,0,False,Close (500-1000m),True,True,True
+545,2021,175.44890569307086,Kwu Tung,22.50752,114.09962,1,True,Very Close (<500m),True,True,True
+545,2021,489.8565349933396,Kwu Tung,22.50752,114.09962,0,False,Very Close (<500m),True,True,True
+545,2021,348.19635780722706,Kwu Tung,22.50752,114.09962,0,False,Very Close (<500m),True,True,True
+545,2021,432.2707694533285,Kwu Tung,22.50752,114.09962,0,False,Very Close (<500m),True,True,True
+545,2021,152.71926662226107,Kwu Tung,22.50752,114.09962,0,False,Very Close (<500m),True,True,True
+549,2021,1199.0671471484727,Kwu Tung,22.50752,114.09962,0,False,Moderate (1-2km),False,True,True
+548,2021,1074.3989608041602,Kwu Tung,22.50752,114.09962,0,False,Moderate (1-2km),True,True,True
+549,2021,842.3689637460039,Kwu Tung,22.50752,114.09962,0,False,Close (500-1000m),False,True,True
+549,2021,801.9972875638513,Kwu Tung,22.50752,114.09962,0,False,Close (500-1000m),False,True,True
+545,2021,427.4416347259009,Kwu Tung,22.50752,114.09962,0,False,Very Close (<500m),True,True,True
+526,2021,1779.9450663290888,Kam Sheung Road,22.4348,114.0634,0,False,Moderate (1-2km),False,False,True
+742,2021,9427.035213279134,Wu Kai Sha,22.4291,114.2438,0,False,Far (>2km),False,False,False
+622,2021,2010.0540817475528,Lo Wu,22.5283,114.1134,0,False,Far (>2km),False,True,True
+622,2021,1527.021267056366,Kwu Tung,22.50752,114.09962,0,False,Moderate (1-2km),False,True,True
+631,2021,1792.097966176926,Fanling,22.490627,114.139289,0,False,Moderate (1-2km),True,True,True
+631,2021,2382.235678143628,Tai Wo,22.4511,114.1611,0,False,Far (>2km),False,False,True
+631,2021,2150.3468526560114,Tai Wo,22.4511,114.1611,0,False,Far (>2km),False,False,True
+631,2021,1903.3248035136967,Fanling,22.490627,114.139289,0,False,Moderate (1-2km),False,False,True
+631,2021,2895.2781751133757,Fanling,22.490627,114.139289,0,False,Far (>2km),False,False,True
+631,2021,2315.048487423106,Fanling,22.490627,114.139289,0,False,Far (>2km),False,False,True
+631,2021,2451.0312042099154,Fanling,22.490627,114.139289,0,False,Far (>2km),False,False,False
+631,2021,2179.7987780174403,Tai Wo,22.4511,114.1611,0,False,Far (>2km),False,False,True
+634,2021,1946.7762119995248,Fanling,22.490627,114.139289,0,False,Moderate (1-2km),False,False,True
+634,2021,2704.6380643025377,Fanling,22.490627,114.139289,0,False,Far (>2km),False,False,True
+634,2021,3462.611422510434,Fanling,22.490627,114.139289,0,False,Far (>2km),False,False,False
+634,2021,2488.8833738374196,Fanling,22.490627,114.139289,0,False,Far (>2km),False,False,False
+641,2021,3895.3999437690945,Sheung Shui,22.5012,114.128,0,False,Far (>2km),False,False,False
+641,2021,3199.589024074656,Lo Wu,22.5283,114.1134,0,False,Far (>2km),False,False,False
+641,2021,2515.348747842263,Sheung Shui,22.5012,114.128,0,False,Far (>2km),False,False,True
+641,2021,3205.0734330291507,Lo Wu,22.5283,114.1134,0,False,Far (>2km),False,False,False
+641,2021,3658.2043814239028,Lo Wu,22.5283,114.1134,0,False,Far (>2km),False,False,False
+641,2021,3643.288055294325,Lo Wu,22.5283,114.1134,0,False,Far (>2km),False,False,False
+641,2021,1957.6057960815792,Lo Wu,22.5283,114.1134,0,False,Moderate (1-2km),False,False,True
+641,2021,2463.952828020407,Lo Wu,22.5283,114.1134,0,False,Far (>2km),False,False,False
+641,2021,1310.0622639481433,Lo Wu,22.5283,114.1134,0,False,Moderate (1-2km),False,True,True
+641,2021,1981.2637502648208,Lo Wu,22.5283,114.1134,0,False,Moderate (1-2km),False,False,True
+641,2021,3355.6087424320294,Lo Wu,22.5283,114.1134,0,False,Far (>2km),False,False,False
+641,2021,2021.7376909529087,Lo Wu,22.5283,114.1134,0,False,Far (>2km),False,False,True
+641,2021,2589.2987304722246,Lo Wu,22.5283,114.1134,0,False,Far (>2km),False,False,False
+642,2021,4524.83755124637,Lo Wu,22.5283,114.1134,0,False,Far (>2km),False,False,False
+642,2021,5377.3626215265385,Lo Wu,22.5283,114.1134,0,False,Far (>2km),False,False,False
+642,2021,4743.038613968831,Lo Wu,22.5283,114.1134,0,False,Far (>2km),False,False,False
+642,2021,4276.46771232487,Lo Wu,22.5283,114.1134,0,False,Far (>2km),False,False,False
+642,2021,4007.3902333082274,Lo Wu,22.5283,114.1134,0,False,Far (>2km),False,False,False
+642,2021,4789.213513396022,Lo Wu,22.5283,114.1134,0,False,Far (>2km),False,False,False
+642,2021,4963.368615001594,Lo Wu,22.5283,114.1134,0,False,Far (>2km),False,False,False
+642,2021,4047.298680150608,Lo Wu,22.5283,114.1134,0,False,Far (>2km),False,False,False
+642,2021,5212.413860841108,Lo Wu,22.5283,114.1134,0,False,Far (>2km),False,False,False
+651,2021,8842.370760368467,Fanling,22.490627,114.139289,0,False,Far (>2km),False,False,False
+652,2021,9634.581665065387,Fanling,22.490627,114.139289,0,False,Far (>2km),False,False,False
+711,2021,6263.533579518031,Wu Kai Sha,22.4291,114.2438,0,False,Far (>2km),False,False,False
+720,2021,1398.6278882081724,Tai Wo,22.4511,114.1611,0,False,Moderate (1-2km),False,False,True
+720,2021,1218.827627804092,Tai Wo,22.4511,114.1611,0,False,Moderate (1-2km),False,True,True
+721,2021,6019.436422482485,Tai Po Market,22.4446,114.1706,0,False,Far (>2km),False,False,False
+722,2021,2297.061789736002,Tai Po Market,22.4446,114.1706,0,False,Far (>2km),False,False,True
+722,2021,2090.593205470341,Tai Po Market,22.4446,114.1706,0,False,Far (>2km),False,False,True
+728,2021,3852.52033141935,Tai Po Market,22.4446,114.1706,0,False,Far (>2km),False,False,False
+728,2021,3445.2208681646703,Ma On Shan,22.4247,114.2316,0,False,Far (>2km),False,False,False
+728,2021,5283.074507188376,Tai Po Market,22.4446,114.1706,0,False,Far (>2km),False,False,False
+728,2021,5196.137094671277,Tai Po Market,22.4446,114.1706,0,False,Far (>2km),False,False,False
+728,2021,5959.788197449043,Wu Kai Sha,22.4291,114.2438,0,False,Far (>2km),False,False,False
+728,2021,5422.360655480739,Wu Kai Sha,22.4291,114.2438,0,False,Far (>2km),False,False,False
+728,2021,5046.543787590373,Wu Kai Sha,22.4291,114.2438,0,False,Far (>2km),False,False,False
+728,2021,5314.85954258446,Wu Kai Sha,22.4291,114.2438,0,False,Far (>2km),False,False,False
+722,2021,506.1664177722043,Tai Wo,22.4511,114.1611,0,False,Close (500-1000m),True,True,True
+722,2021,921.7012235743722,Tai Wo,22.4511,114.1611,0,False,Close (500-1000m),False,True,True
+722,2021,2524.8398641162507,Tai Po Market,22.4446,114.1706,0,False,Far (>2km),False,False,False
+722,2021,1423.7227438887119,Tai Wo,22.4511,114.1611,0,False,Moderate (1-2km),False,False,True
+722,2021,2419.2620152510963,Tai Po Market,22.4446,114.1706,0,False,Far (>2km),False,False,True
+722,2021,2579.454892983896,Tai Wo,22.4511,114.1611,0,False,Far (>2km),False,True,True
+722,2021,3628.3759536135613,Tai Po Market,22.4446,114.1706,0,False,Far (>2km),False,False,False
+722,2021,3351.109409008944,Tai Po Market,22.4446,114.1706,0,False,Far (>2km),False,False,False
+722,2021,2666.3006290354333,Tai Po Market,22.4446,114.1706,0,False,Far (>2km),False,False,False
+722,2021,3973.2688313925855,Tai Po Market,22.4446,114.1706,0,False,Far (>2km),False,False,False
+722,2021,3873.133799279958,Tai Po Market,22.4446,114.1706,0,False,Far (>2km),False,False,False
+722,2021,3764.059638116569,Tai Po Market,22.4446,114.1706,0,False,Far (>2km),False,False,False
+722,2021,3284.0101865889274,Tai Po Market,22.4446,114.1706,0,False,Far (>2km),False,False,False
+723,2021,594.5889161917898,Tai Wo,22.4511,114.1611,0,False,Close (500-1000m),False,True,True
+723,2021,611.9879974014315,Tai Po Market,22.4446,114.1706,0,False,Close (500-1000m),False,True,True
+723,2021,384.02947458856204,Tai Po Market,22.4446,114.1706,0,False,Very Close (<500m),True,True,True
+723,2021,417.395790820418,Tai Po Market,22.4446,114.1706,0,False,Very Close (<500m),True,True,True
+723,2021,843.5481709637592,Tai Wo,22.4511,114.1611,0,False,Close (500-1000m),False,True,True
+286,2021,893.5793480701726,Kwun Tong,22.311559,114.227765,0,False,Close (500-1000m),False,True,True
+247,2021,728.892418861933,Sung Wong Toi,22.326139,114.190407,0,False,Close (500-1000m),False,True,True
+286,2021,713.6707793166632,Ngau Tau Kok,22.3154,114.2193,0,False,Close (500-1000m),False,True,True
+247,2021,498.5620875026401,To Kwa Wan,22.3172,114.1876,0,False,Very Close (<500m),True,True,True
+286,2021,507.9246675657806,Ngau Tau Kok,22.3154,114.2193,0,False,Close (500-1000m),True,True,True
+286,2021,943.1053085782509,Kowloon Bay,22.3235,114.2141,0,False,Close (500-1000m),False,True,True
+286,2021,175.12272957264148,Kai Tak,22.3304,114.1994,1,True,Very Close (<500m),True,True,True
+286,2021,869.8816582350512,Ngau Tau Kok,22.3154,114.2193,0,False,Close (500-1000m),False,True,True
+286,2021,1119.0488312551674,Ngau Tau Kok,22.3154,114.2193,0,False,Moderate (1-2km),False,True,True
+286,2021,1161.95260433047,Ngau Tau Kok,22.3154,114.2193,0,False,Moderate (1-2km),False,False,True
+724,2021,2366.3143815031717,Tai Wo,22.4511,114.1611,0,False,Far (>2km),False,False,False
+724,2021,2164.9504976962135,Tai Wo,22.4511,114.1611,0,False,Far (>2km),False,False,True
+724,2021,3609.643645676065,Tai Wo,22.4511,114.1611,0,False,Far (>2km),False,False,False
+724,2021,2290.0001165160947,Tai Wo,22.4511,114.1611,0,False,Far (>2km),False,False,False
+724,2021,2472.3278425424805,Tai Wo,22.4511,114.1611,0,False,Far (>2km),False,False,False
+724,2021,2534.3314220331176,Tai Wo,22.4511,114.1611,0,False,Far (>2km),False,False,False
+724,2021,2944.2423512982673,Tai Wo,22.4511,114.1611,0,False,Far (>2km),False,False,False
+724,2021,2964.576485044517,Tai Wo,22.4511,114.1611,0,False,Far (>2km),False,False,False
+724,2021,3779.0475715924604,Tai Wo,22.4511,114.1611,0,False,Far (>2km),False,False,True
+724,2021,2567.1752122721996,Tai Wo,22.4511,114.1611,0,False,Far (>2km),False,False,False
+724,2021,3404.0813140977893,Tai Wo,22.4511,114.1611,0,False,Far (>2km),False,False,False
+724,2021,4674.459685576277,Tai Wo,22.4511,114.1611,0,False,Far (>2km),False,False,False
+724,2021,3837.8444503732917,Tai Wo,22.4511,114.1611,0,False,Far (>2km),False,False,False
+724,2021,2779.4334749979735,Tai Wo,22.4511,114.1611,0,False,Far (>2km),False,False,False
+724,2021,2556.022962982027,Tai Po Market,22.4446,114.1706,0,False,Far (>2km),False,False,True
+724,2021,4188.628220317921,Tai Wo,22.4511,114.1611,0,False,Far (>2km),False,False,False
+724,2021,2154.441322756177,University,22.413808,114.209437,0,False,Far (>2km),False,False,True
+725,2021,1258.0773175175727,Tai Wo,22.4511,114.1611,0,False,Moderate (1-2km),False,False,True
+725,2021,1201.7196309728183,Tai Po Market,22.4446,114.1706,0,False,Moderate (1-2km),False,True,True
+725,2021,1776.1185862922534,Tai Po Market,22.4446,114.1706,0,False,Moderate (1-2km),False,True,True
+725,2021,1269.500534269196,Tai Po Market,22.4446,114.1706,0,False,Moderate (1-2km),False,True,True
+725,2021,1101.4351626562736,Tai Po Market,22.4446,114.1706,0,False,Moderate (1-2km),False,True,True
+725,2021,1226.9189373649006,Tai Po Market,22.4446,114.1706,0,False,Moderate (1-2km),False,True,True
+726,2021,535.4994480520368,Tai Wo,22.4511,114.1611,0,False,Close (500-1000m),True,True,True
+726,2021,603.205215667211,Tai Wo,22.4511,114.1611,0,False,Close (500-1000m),False,True,True
+726,2021,1211.472939158208,Tai Po Market,22.4446,114.1706,0,False,Moderate (1-2km),False,True,True
+726,2021,953.2876099003869,Tai Po Market,22.4446,114.1706,0,False,Close (500-1000m),False,True,True
+728,2021,4205.340455689361,Tai Po Market,22.4446,114.1706,0,False,Far (>2km),False,False,False
+728,2021,4689.072527040193,Tai Po Market,22.4446,114.1706,0,False,Far (>2km),False,False,False
+728,2021,4250.293747115615,Tai Po Market,22.4446,114.1706,0,False,Far (>2km),False,False,False
+728,2021,4140.610555974327,Tai Po Market,22.4446,114.1706,0,False,Far (>2km),False,False,False
+510,2021,637.072088956572,Tin Shui Wai,22.446803,114.003028,0,False,Close (500-1000m),True,True,True
+510,2021,1149.6708847317539,Tin Shui Wai,22.446803,114.003028,0,False,Moderate (1-2km),False,True,True
+510,2021,1527.0624566001948,Tin Shui Wai,22.446803,114.003028,0,False,Moderate (1-2km),False,False,True
+510,2021,1725.7017064359295,Tin Shui Wai,22.446803,114.003028,0,False,Moderate (1-2km),False,False,True
+514,2021,2058.4316892424426,Tin Shui Wai,22.446803,114.003028,0,False,Far (>2km),False,False,True
+514,2021,2591.277946746941,Tin Shui Wai,22.446803,114.003028,0,False,Far (>2km),False,False,False
+514,2021,2263.144735111362,Tin Shui Wai,22.446803,114.003028,0,False,Far (>2km),False,False,False
+728,2021,5318.890790343231,Wu Kai Sha,22.4291,114.2438,0,False,Far (>2km),False,False,False
+728,2021,5258.634819662357,Wu Kai Sha,22.4291,114.2438,0,False,Far (>2km),False,False,False
+728,2021,5079.776410259325,Wu Kai Sha,22.4291,114.2438,0,False,Far (>2km),False,False,False
+728,2021,4898.120563578002,Wu Kai Sha,22.4291,114.2438,0,False,Far (>2km),False,False,False
+728,2021,4539.37567499851,Wu Kai Sha,22.4291,114.2438,0,False,Far (>2km),False,False,False
+728,2021,4903.430368691173,Wu Kai Sha,22.4291,114.2438,0,False,Far (>2km),False,False,False
+728,2021,4387.0879018781025,Tai Po Market,22.4446,114.1706,0,False,Far (>2km),False,False,False
+728,2021,5048.574440493233,Tai Po Market,22.4446,114.1706,0,False,Far (>2km),False,False,False
+728,2021,4695.2606084774525,Tai Po Market,22.4446,114.1706,0,False,Far (>2km),False,False,False
+729,2021,1833.316735119209,Tai Po Market,22.4446,114.1706,0,False,Moderate (1-2km),False,True,True
+729,2021,1480.6459547779452,Tai Po Market,22.4446,114.1706,0,False,Moderate (1-2km),False,True,True
+729,2021,2045.7054893720292,University,22.413808,114.209437,0,False,Far (>2km),False,False,True
+729,2021,1594.5743207558546,University,22.413808,114.209437,0,False,Moderate (1-2km),False,False,True
+729,2021,2192.997077603441,Tai Po Market,22.4446,114.1706,0,False,Far (>2km),False,False,False
+729,2021,2083.1426535415844,Tai Po Market,22.4446,114.1706,0,False,Far (>2km),False,False,True
+729,2021,1888.1134993142139,Tai Po Market,22.4446,114.1706,0,False,Moderate (1-2km),False,False,True
+729,2021,646.0041242736967,Tai Po Market,22.4446,114.1706,0,False,Close (500-1000m),True,True,True
+729,2021,580.4067268958504,Tai Po Market,22.4446,114.1706,0,False,Close (500-1000m),True,True,True
+729,2021,1995.6415602797238,University,22.413808,114.209437,0,False,Moderate (1-2km),False,False,True
+729,2021,1357.2217494083993,University,22.413808,114.209437,0,False,Moderate (1-2km),False,True,True
+962,2021,5615.8968427472455,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+962,2021,6748.276412816901,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+962,2021,6061.393678834458,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+962,2021,5210.367364293258,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+962,2021,5602.665069744501,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+962,2021,6076.781416688024,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+962,2021,6668.897445431415,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+962,2021,5420.166627259816,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+962,2021,6143.619497534503,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+962,2021,5206.769710408664,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+962,2021,5589.2003405861105,Disneyland Resort,22.3155,114.0451,0,False,Far (>2km),False,False,False
+962,2021,5905.522193846517,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+962,2021,5074.5733303555135,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+829,2021,4882.92181491632,Shek Mun,22.3877,114.2083,0,False,Far (>2km),False,False,False
+829,2021,5311.270756807231,Tai Shui Hang,22.4088,114.223,0,False,Far (>2km),False,False,False
+811,2021,7265.061924119097,Wu Kai Sha,22.4291,114.2438,0,False,Far (>2km),False,False,False
+811,2021,6645.996862306357,Wu Kai Sha,22.4291,114.2438,0,False,Far (>2km),False,False,False
+811,2021,7955.323061280363,Wu Kai Sha,22.4291,114.2438,0,False,Far (>2km),False,False,False
+756,2021,755.260791232693,Sha Tin Wai,22.3771,114.195,0,False,Close (500-1000m),False,True,True
+756,2021,989.4864747544004,City One,22.3828,114.2035,0,False,Close (500-1000m),False,True,True
+757,2021,1091.519069491481,Wu Kai Sha,22.4291,114.2438,0,False,Moderate (1-2km),True,True,True
+513,2021,3214.5234825091857,Tin Shui Wai,22.446803,114.003028,0,False,Far (>2km),False,False,False
+513,2021,2842.401835696065,Tin Shui Wai,22.446803,114.003028,0,False,Far (>2km),False,False,True
+513,2021,2511.2676790334485,Siu Hong,22.413564,113.979115,0,False,Far (>2km),False,False,True
+441,2021,1386.2355319402209,Siu Hong,22.413564,113.979115,0,False,Moderate (1-2km),False,True,True
+441,2021,1101.505814992004,Siu Hong,22.413564,113.979115,0,False,Moderate (1-2km),False,False,True
+513,2021,3825.481491226539,Siu Hong,22.413564,113.979115,0,False,Far (>2km),False,False,False
+519,2021,2277.5561407355,Siu Hong,22.413564,113.979115,0,False,Far (>2km),False,False,False
+519,2021,1851.4433763512195,Tin Shui Wai,22.446803,114.003028,0,False,Moderate (1-2km),False,False,True
+513,2021,3374.134672438195,Tin Shui Wai,22.446803,114.003028,0,False,Far (>2km),False,False,False
+513,2021,3040.729127361316,Tin Shui Wai,22.446803,114.003028,0,False,Far (>2km),False,False,False
+513,2021,2604.23247700007,Tin Shui Wai,22.446803,114.003028,0,False,Far (>2km),False,False,False
+423,2021,725.2588320811228,Siu Hong,22.413564,113.979115,0,False,Close (500-1000m),True,True,True
+423,2021,420.52353090433667,Siu Hong,22.413564,113.979115,0,False,Very Close (<500m),True,True,True
+441,2021,1027.9118779573494,Siu Hong,22.413564,113.979115,0,False,Moderate (1-2km),False,True,True
+441,2021,993.4957843197798,Siu Hong,22.413564,113.979115,0,False,Close (500-1000m),False,True,True
+433,2021,2343.823346084042,Siu Hong,22.413564,113.979115,0,False,Far (>2km),False,False,True
+442,2021,1102.7537391760943,Siu Hong,22.413564,113.979115,0,False,Moderate (1-2km),False,True,True
+442,2021,1467.074765322863,Siu Hong,22.413564,113.979115,0,False,Moderate (1-2km),False,True,True
+441,2021,1483.1639278272557,Siu Hong,22.413564,113.979115,0,False,Moderate (1-2km),False,False,True
+441,2021,1991.6945800579092,Siu Hong,22.413564,113.979115,0,False,Moderate (1-2km),False,False,True
+441,2021,1947.029845511687,Tin Shui Wai,22.446803,114.003028,0,False,Moderate (1-2km),False,False,True
+510,2021,196.57373203282262,Tin Shui Wai,22.446803,114.003028,0,False,Very Close (<500m),True,True,True
+510,2021,392.8098357064294,Tin Shui Wai,22.446803,114.003028,0,False,Very Close (<500m),True,True,True
+286,2021,261.5675080722704,Kai Tak,22.3304,114.1994,0,False,Very Close (<500m),True,True,True
+286,2021,332.63496130226486,Kai Tak,22.3304,114.1994,0,False,Very Close (<500m),True,True,True
+286,2021,452.48442175767354,Kai Tak,22.3304,114.1994,0,False,Very Close (<500m),True,True,True
+286,2021,496.0861272375902,Kai Tak,22.3304,114.1994,0,False,Very Close (<500m),True,True,True
+286,2021,407.003222313584,Kai Tak,22.3304,114.1994,0,False,Very Close (<500m),True,True,True
+286,2021,201.16729322908003,Kai Tak,22.3304,114.1994,0,False,Very Close (<500m),True,True,True
+286,2021,427.3872547292905,Kai Tak,22.3304,114.1994,0,False,Very Close (<500m),True,True,True
+286,2021,384.8000653013245,Kai Tak,22.3304,114.1994,0,False,Very Close (<500m),True,True,True
+294,2021,331.48276535749204,Kwun Tong,22.311559,114.227765,0,False,Very Close (<500m),True,True,True
+294,2021,423.71179944497135,Kwun Tong,22.311559,114.227765,0,False,Very Close (<500m),True,True,True
+271,2021,79.58672397152402,Kowloon Tong,22.336809,114.177245,0,False,Very Close (<500m),True,True,True
+296,2021,2032.900701994363,Kowloon Bay,22.3235,114.2141,0,False,Far (>2km),False,False,True
+510,2021,2053.9563169189128,Tin Shui Wai,22.446803,114.003028,0,False,Far (>2km),False,False,True
+514,2021,2803.741294882437,Tin Shui Wai,22.446803,114.003028,0,False,Far (>2km),False,False,False
+513,2021,3081.8254214997423,Tin Shui Wai,22.446803,114.003028,0,False,Far (>2km),False,False,False
+442,2021,1095.7656373098134,Siu Hong,22.413564,113.979115,0,False,Moderate (1-2km),False,True,True
+282,2021,500.582525476087,Lok Fu,22.338,114.1871,0,False,Close (500-1000m),True,True,True
+290,2021,192.50855069547953,Lam Tin,22.305367,114.234261,1,True,Very Close (<500m),True,True,True
+290,2021,560.2110971836064,Lam Tin,22.305367,114.234261,0,False,Close (500-1000m),True,True,True
+290,2021,733.9876440902277,Lam Tin,22.305367,114.234261,0,False,Close (500-1000m),False,True,True
+290,2021,520.5340407127476,Lam Tin,22.305367,114.234261,0,False,Close (500-1000m),True,True,True
+290,2021,764.4094902912515,Lam Tin,22.305367,114.234261,0,False,Close (500-1000m),False,True,True
+272,2021,614.9829747304061,Lok Fu,22.338,114.1871,0,False,Close (500-1000m),False,True,True
+247,2021,722.784350104647,To Kwa Wan,22.3172,114.1876,0,False,Close (500-1000m),False,True,True
+163,2021,499.8906527264495,Wan Chai,22.264453,114.237044,0,False,Very Close (<500m),True,True,True
+161,2021,465.56366682425005,Shau Kei Wan,22.2789,114.2289,0,False,Very Close (<500m),True,True,True
+161,2021,414.02546641889194,Shau Kei Wan,22.2789,114.2289,0,False,Very Close (<500m),True,True,True
+153,2021,224.9105934450281,North Point,22.2909,114.2007,0,False,Very Close (<500m),True,True,True
+195,2021,3818.25556172949,Hong Kong station,22.234767,114.170817,0,False,Far (>2km),False,False,False
+820,2021,3812.0308173424273,Po Lam,22.3224,114.258,0,False,Far (>2km),False,False,False
+820,2021,3947.8002236380835,Po Lam,22.3224,114.258,0,False,Far (>2km),False,False,False
+820,2021,4058.149175334433,Po Lam,22.3224,114.258,0,False,Far (>2km),False,False,False
+286,2021,1044.9622148764613,Ngau Tau Kok,22.3154,114.2193,0,False,Moderate (1-2km),False,True,True
+286,2021,1118.5281055824994,Ngau Tau Kok,22.3154,114.2193,0,False,Moderate (1-2km),False,False,True
+286,2021,1245.2907933114177,Ngau Tau Kok,22.3154,114.2193,0,False,Moderate (1-2km),False,False,True
+286,2021,1190.4712264921222,Ngau Tau Kok,22.3154,114.2193,0,False,Moderate (1-2km),False,False,True
+286,2021,1308.011378657337,Ngau Tau Kok,22.3154,114.2193,0,False,Moderate (1-2km),False,False,True
+286,2021,1275.0684847188793,Ngau Tau Kok,22.3154,114.2193,0,False,Moderate (1-2km),False,False,True
+286,2021,1379.3556847399814,Ngau Tau Kok,22.3154,114.2193,0,False,Moderate (1-2km),False,False,True
+286,2021,1322.2151423158493,Kowloon Bay,22.3235,114.2141,0,False,Moderate (1-2km),False,False,True
+286,2021,1446.5983274192524,Kowloon Bay,22.3235,114.2141,0,False,Moderate (1-2km),False,False,True
+286,2021,1316.8077864707636,Kowloon Bay,22.3235,114.2141,0,False,Moderate (1-2km),False,False,True
+286,2021,1446.0031517600582,Kowloon Bay,22.3235,114.2141,0,False,Moderate (1-2km),False,False,True
+286,2021,1471.8167250701515,Kowloon Bay,22.3235,114.2141,0,False,Moderate (1-2km),False,False,True
+286,2021,1360.0303400324751,Kowloon Bay,22.3235,114.2141,0,False,Moderate (1-2km),False,False,True
+247,2021,777.3792210091264,To Kwa Wan,22.3172,114.1876,0,False,Close (500-1000m),False,True,True
+286,2021,172.8214085751999,Kai Tak,22.3304,114.1994,0,False,Very Close (<500m),True,True,True
+286,2021,1048.7313241275876,Kowloon Bay,22.3235,114.2141,0,False,Moderate (1-2km),False,True,True
+286,2021,1253.714037858755,Kai Tak,22.3304,114.1994,0,False,Moderate (1-2km),False,True,True
+286,2021,717.0387700024895,Kai Tak,22.3304,114.1994,0,False,Close (500-1000m),False,True,True
+286,2021,703.6704332693488,Sung Wong Toi,22.326139,114.190407,0,False,Close (500-1000m),True,True,True
+286,2021,497.65832742016676,Kai Tak,22.3304,114.1994,0,False,Very Close (<500m),True,True,True
+286,2021,470.9502919018627,Sung Wong Toi,22.326139,114.190407,0,False,Very Close (<500m),True,True,True
+286,2021,396.9302683082219,Sung Wong Toi,22.326139,114.190407,0,False,Very Close (<500m),True,True,True
+286,2021,334.5903314988282,Sung Wong Toi,22.326139,114.190407,0,False,Very Close (<500m),True,True,True
+286,2021,283.1040095313263,Sung Wong Toi,22.326139,114.190407,0,False,Very Close (<500m),True,True,True
+286,2021,235.3236717236579,Sung Wong Toi,22.326139,114.190407,0,False,Very Close (<500m),True,True,True
+286,2021,374.6715098144972,Sung Wong Toi,22.326139,114.190407,1,True,Very Close (<500m),True,True,True
+286,2021,445.1841792879905,Kai Tak,22.3304,114.1994,0,False,Very Close (<500m),True,True,True
+286,2021,499.9482701455168,Kai Tak,22.3304,114.1994,0,False,Very Close (<500m),True,True,True
+286,2021,163.2623936021747,Kai Tak,22.3304,114.1994,0,False,Very Close (<500m),True,True,True
+286,2021,346.62476433369335,Kai Tak,22.3304,114.1994,0,False,Very Close (<500m),True,True,True
+286,2021,159.77629925485692,Kai Tak,22.3304,114.1994,0,False,Very Close (<500m),True,True,True
+286,2021,344.86788133153925,Kai Tak,22.3304,114.1994,0,False,Very Close (<500m),True,True,True
+286,2021,191.7279688045057,Kai Tak,22.3304,114.1994,0,False,Very Close (<500m),True,True,True
+286,2021,369.09273817772294,Kai Tak,22.3304,114.1994,0,False,Very Close (<500m),True,True,True
+286,2021,399.7331293492448,Kai Tak,22.3304,114.1994,0,False,Very Close (<500m),True,True,True
+962,2021,5994.154696554253,Disneyland Resort,22.3155,114.0451,0,False,Far (>2km),False,False,False
+837,2021,858.8080301788435,Hang Hau,22.3156,114.2644,0,False,Close (500-1000m),False,True,True
+950,2021,267.8404389613842,Tung Chung,22.2893,113.9416,0,False,Very Close (<500m),True,True,True
+950,2021,542.7086775787819,Tung Chung,22.2893,113.9416,1,True,Close (500-1000m),True,True,True
+172,2021,1300.5219118477917,South Horizons,22.2425,114.1491,0,False,Moderate (1-2km),False,False,True
+296,2021,1815.847901579069,Kwun Tong,22.311559,114.227765,0,False,Moderate (1-2km),False,False,True
+296,2021,1823.6429340284903,Kwun Tong,22.311559,114.227765,0,False,Moderate (1-2km),False,False,True
+296,2021,1919.2015803199783,Kwun Tong,22.311559,114.227765,0,False,Moderate (1-2km),False,False,True
+296,2021,1788.0417593905497,Kwun Tong,22.311559,114.227765,0,False,Moderate (1-2km),False,False,True
+296,2021,1489.9886236458417,Kwun Tong,22.311559,114.227765,0,False,Moderate (1-2km),False,False,True
+296,2021,1818.8453734739026,Kwun Tong,22.311559,114.227765,0,False,Moderate (1-2km),False,False,True
+296,2021,1536.4741135659092,Kwun Tong,22.311559,114.227765,0,False,Moderate (1-2km),False,False,True
+296,2021,1553.1294835896938,Kwun Tong,22.311559,114.227765,0,False,Moderate (1-2km),False,False,True
+296,2021,1649.032244285533,Kwun Tong,22.311559,114.227765,0,False,Moderate (1-2km),False,False,True
+293,2021,1374.6951428911495,Kwun Tong,22.311559,114.227765,0,False,Moderate (1-2km),False,False,True
+292,2021,1657.9266791705886,Kowloon Bay,22.3235,114.2141,0,False,Moderate (1-2km),False,False,True
+293,2021,1291.3656516485948,Kwun Tong,22.311559,114.227765,0,False,Moderate (1-2km),False,False,True
+974,2021,2266.083088617248,Sunny Bay,22.33285,114.028222,0,False,Far (>2km),False,True,True
+972,2021,3553.191064769796,Sunny Bay,22.33285,114.028222,0,False,Far (>2km),False,False,False
+972,2021,4567.154440909427,AsiaWorld–Expo,22.321988,113.942221,0,False,Far (>2km),False,False,False
+972,2021,4512.738908563571,Sunny Bay,22.33285,114.028222,0,False,Far (>2km),False,False,False
+972,2021,4045.699283314104,Sunny Bay,22.33285,114.028222,0,False,Far (>2km),False,False,False
+961,2021,5013.913940505878,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+961,2021,3802.031027884746,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+961,2021,4219.412385031295,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+961,2021,3896.388541722618,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+961,2021,3297.8680207003026,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+961,2021,3389.328722939427,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,True
+961,2021,3715.5949922144687,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+961,2021,4054.9011803307226,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+961,2021,4226.365238590376,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+173,2021,864.4319966787687,South Horizons,22.2425,114.1491,0,False,Close (500-1000m),False,True,True
+163,2021,505.80977163547317,Wan Chai,22.264453,114.237044,0,False,Close (500-1000m),True,True,True
+197,2021,4035.115346558684,Wan Chai,22.264453,114.237044,0,False,Far (>2km),False,False,False
+176,2021,340.4132394970517,Ocean Park,22.2486,114.1743,0,False,Very Close (<500m),True,True,True
+173,2021,801.7288376696658,South Horizons,22.2425,114.1491,0,False,Close (500-1000m),False,True,True
+167,2021,1055.1669121872008,Wan Chai,22.264453,114.237044,0,False,Moderate (1-2km),False,True,True
+837,2021,501.0603322660309,Hang Hau,22.3156,114.2644,0,False,Close (500-1000m),True,True,True
+837,2021,568.4843145903583,Po Lam,22.3224,114.258,0,False,Close (500-1000m),True,True,True
+839,2021,808.8642190880304,Hang Hau,22.3156,114.2644,0,False,Close (500-1000m),True,True,True
+836,2021,1024.5546677691584,Po Lam,22.3224,114.258,0,False,Moderate (1-2km),True,True,True
+912,2021,3207.9866527030467,South Horizons,22.2425,114.1491,0,False,Far (>2km),False,False,False
+976,2021,3221.075150884627,Disneyland Resort,22.3155,114.0451,0,False,Far (>2km),False,False,False
+911,2021,4462.502087235834,South Horizons,22.2425,114.1491,0,False,Far (>2km),False,False,False
+911,2021,3682.958751540676,Hong Kong station,22.234767,114.170817,0,False,Far (>2km),False,False,False
+911,2021,5143.8744330670015,South Horizons,22.2425,114.1491,0,False,Far (>2km),False,False,False
+911,2021,6250.805236847025,South Horizons,22.2425,114.1491,0,False,Far (>2km),False,False,False
+976,2021,2886.663573137868,Disneyland Resort,22.3155,114.0451,0,False,Far (>2km),False,False,False
+912,2021,3889.5593758158047,South Horizons,22.2425,114.1491,0,False,Far (>2km),False,False,False
+976,2021,3535.0667710651187,Disneyland Resort,22.3155,114.0451,0,False,Far (>2km),False,False,False
+976,2021,3719.657996853597,Disneyland Resort,22.3155,114.0451,0,False,Far (>2km),False,False,False
+976,2021,3432.9237635666464,Disneyland Resort,22.3155,114.0451,0,False,Far (>2km),False,False,False
+976,2021,3776.665885600134,Disneyland Resort,22.3155,114.0451,0,False,Far (>2km),False,False,False
+976,2021,3632.793706276472,Disneyland Resort,22.3155,114.0451,0,False,Far (>2km),False,False,False
+976,2021,3593.0521872976806,Disneyland Resort,22.3155,114.0451,0,False,Far (>2km),False,False,False
+976,2021,3256.665862363348,Disneyland Resort,22.3155,114.0451,0,False,Far (>2km),False,False,False
+976,2021,3558.699212931615,Disneyland Resort,22.3155,114.0451,0,False,Far (>2km),False,False,False
+976,2021,3428.692032107241,Disneyland Resort,22.3155,114.0451,0,False,Far (>2km),False,False,False
+950,2021,2803.1455990509776,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+950,2021,2674.4691209728644,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+950,2021,2726.935036631835,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+950,2021,2338.5009812605317,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+950,2021,2428.814539429402,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+950,2021,2307.6865050590195,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+950,2021,2018.7444267811934,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,True
+950,2021,2028.135209584993,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,True
+950,2021,1641.25240529391,Tung Chung,22.2893,113.9416,0,False,Moderate (1-2km),False,False,True
+950,2021,2030.1342558401334,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,True
+950,2021,1545.4824146148999,Tung Chung,22.2893,113.9416,0,False,Moderate (1-2km),False,False,True
+950,2021,1738.7099688863614,Tung Chung,22.2893,113.9416,0,False,Moderate (1-2km),False,False,True
+950,2021,1667.4019124825527,Tung Chung,22.2893,113.9416,0,False,Moderate (1-2km),False,False,True
+950,2021,1323.1469862588633,Tung Chung,22.2893,113.9416,0,False,Moderate (1-2km),False,False,True
+950,2021,1345.3106792448739,Tung Chung,22.2893,113.9416,0,False,Moderate (1-2km),False,False,True
+950,2021,1160.9839742209697,Tung Chung,22.2893,113.9416,0,False,Moderate (1-2km),False,True,True
+950,2021,1200.301540835405,Tung Chung,22.2893,113.9416,0,False,Moderate (1-2km),False,False,True
+950,2021,2730.384285679219,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,True,True
+950,2021,1895.170107772782,Tung Chung,22.2893,113.9416,0,False,Moderate (1-2km),False,False,True
+950,2021,1125.5006802643954,Tung Chung,22.2893,113.9416,0,False,Moderate (1-2km),False,True,True
+950,2021,1622.333910371994,Tung Chung,22.2893,113.9416,0,False,Moderate (1-2km),False,False,True
+950,2021,2199.0289150292674,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,True,True
+831,2021,1513.662941872882,Po Lam,22.3224,114.258,0,False,Moderate (1-2km),False,False,True
+962,2021,5965.88385752132,Disneyland Resort,22.3155,114.0451,0,False,Far (>2km),False,False,False
+962,2021,6153.558262046107,Disneyland Resort,22.3155,114.0451,0,False,Far (>2km),False,False,False
+962,2021,5382.056957001007,Disneyland Resort,22.3155,114.0451,0,False,Far (>2km),False,False,False
+962,2021,5838.6214248099695,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+962,2021,5699.5172785739705,Disneyland Resort,22.3155,114.0451,0,False,Far (>2km),False,False,False
+961,2021,4994.397768674868,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+934,2021,14265.144317708246,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+934,2021,14420.526547011192,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+934,2021,13647.080514961608,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+934,2021,13312.486931248646,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+934,2021,13328.74269315479,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+913,2021,9481.263060142459,Hong Kong station,22.234767,114.170817,0,False,Far (>2km),False,False,False
+934,2021,12638.674212967922,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+934,2021,12578.431657699803,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+934,2021,12735.896335008307,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+934,2021,12350.27213994763,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+913,2021,10913.020963205818,Wan Chai,22.264453,114.237044,0,False,Far (>2km),False,False,False
+172,2021,1673.6801742378211,South Horizons,22.2425,114.1491,0,False,Moderate (1-2km),False,False,True
+167,2021,1205.0820790676087,Wan Chai,22.264453,114.237044,0,False,Moderate (1-2km),False,False,True
+161,2021,293.29847713502875,Shau Kei Wan,22.2789,114.2289,0,False,Very Close (<500m),True,True,True
+161,2021,341.6497025547889,Shau Kei Wan,22.2789,114.2289,0,False,Very Close (<500m),True,True,True
+151,2021,319.3488948180236,Tin Hau,22.2827,114.1917,0,False,Very Close (<500m),True,True,True
+173,2021,618.2385951678997,Lei Tung,22.2421,114.1562,0,False,Close (500-1000m),False,True,True
+153,2021,319.2002025861531,North Point,22.2909,114.2007,0,False,Very Close (<500m),True,True,True
+196,2021,4151.560265164411,Chai Wan,22.2644,114.2368,0,False,Far (>2km),False,False,False
+175,2021,254.73929196829704,Ocean Park,22.2486,114.1743,1,True,Very Close (<500m),True,True,True
+195,2021,5269.143595449835,Hong Kong station,22.234767,114.170817,0,False,Far (>2km),False,False,False
+911,2021,4138.641106540269,South Horizons,22.2425,114.1491,0,False,Far (>2km),False,False,False
+941,2021,13014.430149459353,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+195,2021,5483.7485610440335,Hong Kong station,22.234767,114.170817,0,False,Far (>2km),False,False,False
+911,2021,4783.575403117075,South Horizons,22.2425,114.1491,0,False,Far (>2km),False,False,False
+195,2021,5251.908424924805,Hong Kong station,22.234767,114.170817,0,False,Far (>2km),False,False,False
+912,2021,3954.4428358291607,South Horizons,22.2425,114.1491,0,False,Far (>2km),False,False,False
+912,2021,2476.714024662689,South Horizons,22.2425,114.1491,0,False,Far (>2km),False,False,False
+197,2021,4762.628881614737,Wan Chai,22.264453,114.237044,0,False,Far (>2km),False,False,False
+912,2021,3378.2328535676243,South Horizons,22.2425,114.1491,0,False,Far (>2km),False,False,False
+932,2021,8445.071435927497,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+931,2021,8413.431593087753,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+941,2021,8714.862356614949,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+931,2021,10092.80966283266,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+912,2021,4071.660186123598,South Horizons,22.2425,114.1491,0,False,Far (>2km),False,False,False
+912,2021,4183.1089460613275,South Horizons,22.2425,114.1491,0,False,Far (>2km),False,False,False
+197,2021,4293.360798050503,Wan Chai,22.264453,114.237044,0,False,Far (>2km),False,False,False
+197,2021,4389.069323906347,Wan Chai,22.264453,114.237044,0,False,Far (>2km),False,False,False
+941,2021,10183.680869581587,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+912,2021,3544.5146473274367,South Horizons,22.2425,114.1491,0,False,Far (>2km),False,False,False
+192,2021,2909.6400472240507,Hong Kong station,22.234767,114.170817,0,False,Far (>2km),False,False,False
+931,2021,9924.167599212946,Disneyland Resort,22.3155,114.0451,0,False,Far (>2km),False,False,False
+197,2021,4051.526448337933,Wan Chai,22.264453,114.237044,0,False,Far (>2km),False,False,False
+174,2021,1124.1653009414247,Hong Kong station,22.234767,114.170817,0,False,Moderate (1-2km),False,True,True
+196,2021,6182.748039765798,Chai Wan,22.2644,114.2368,0,False,Far (>2km),False,False,False
+193,2021,3909.595255889957,Hong Kong station,22.234767,114.170817,0,False,Far (>2km),False,False,False
+920,2021,11482.56007982413,Disneyland Resort,22.3155,114.0451,0,False,Far (>2km),False,False,False
+195,2021,5516.457730312035,Hong Kong station,22.234767,114.170817,0,False,Far (>2km),False,False,False
+193,2021,2597.433503772808,Hong Kong station,22.234767,114.170817,0,False,Far (>2km),False,False,False
+920,2021,11710.780519346754,Disneyland Resort,22.3155,114.0451,0,False,Far (>2km),False,False,False
+942,2021,13484.941711106985,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+195,2021,5057.1117517048,Hong Kong station,22.234767,114.170817,0,False,Far (>2km),False,False,False
+195,2021,4807.597439467038,Hong Kong station,22.234767,114.170817,0,False,Far (>2km),False,False,False
+195,2021,4515.353352805302,Hong Kong station,22.234767,114.170817,0,False,Far (>2km),False,False,False
+195,2021,4797.413337204917,Hong Kong station,22.234767,114.170817,0,False,Far (>2km),False,False,False
+195,2021,4252.516424527409,Hong Kong station,22.234767,114.170817,0,False,Far (>2km),False,False,False
+941,2021,9170.665103730444,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+195,2021,4564.13561464125,Hong Kong station,22.234767,114.170817,0,False,Far (>2km),False,False,False
+195,2021,4904.943876993809,Hong Kong station,22.234767,114.170817,0,False,Far (>2km),False,False,False
+911,2021,3729.501970116459,South Horizons,22.2425,114.1491,0,False,Far (>2km),False,False,False
+161,2021,233.99174822347854,Shau Kei Wan,22.2789,114.2289,0,False,Very Close (<500m),True,True,True
+151,2021,302.0848006122782,Fortress Hill,22.2881,114.1936,0,False,Very Close (<500m),True,True,True
+153,2021,111.71550539401632,North Point,22.2909,114.2007,0,False,Very Close (<500m),True,True,True
+195,2021,4065.858950042194,Hong Kong station,22.234767,114.170817,0,False,Far (>2km),False,False,False
+197,2021,5386.198444742561,Wan Chai,22.264453,114.237044,0,False,Far (>2km),False,False,False
+161,2021,251.1690318537214,Shau Kei Wan,22.2789,114.2289,0,False,Very Close (<500m),True,True,True
+161,2021,490.9165503056103,Shau Kei Wan,22.2789,114.2289,0,False,Very Close (<500m),True,True,True
+153,2021,58.91330555339984,North Point,22.2909,114.2007,0,False,Very Close (<500m),True,True,True
+196,2021,4224.533363007573,Chai Wan,22.2644,114.2368,0,False,Far (>2km),False,False,False
+173,2021,561.9807875881938,Lei Tung,22.2421,114.1562,0,False,Close (500-1000m),False,True,True
+166,2021,330.2763527268217,Shau Kei Wan,22.2789,114.2289,0,False,Very Close (<500m),True,True,True
+161,2021,345.04830311873343,Shau Kei Wan,22.2789,114.2289,0,False,Very Close (<500m),True,True,True
+173,2021,1308.3518466231722,Lei Tung,22.2421,114.1562,0,False,Moderate (1-2km),False,True,True
+172,2021,1857.8897587134838,South Horizons,22.2425,114.1491,0,False,Moderate (1-2km),False,False,True
+124,2021,491.65437613311576,Admiralty,22.278399,114.16433,0,False,Very Close (<500m),True,True,True
+124,2021,385.1515976373846,Admiralty,22.278399,114.16433,0,False,Very Close (<500m),True,True,True
+116,2021,473.05394263919453,HKU,22.2841,114.1356,0,False,Very Close (<500m),True,True,True
+123,2021,371.433025651027,Railway stations in Hong Kong,22.284721,114.157986,0,False,Very Close (<500m),True,True,True
+116,2021,542.2493775556802,HKU,22.2841,114.1356,0,False,Close (500-1000m),False,True,True
+112,2021,472.9486941109868,HKU,22.2841,114.1356,0,False,Very Close (<500m),True,True,True
+196,2021,4548.995309694185,Chai Wan,22.2644,114.2368,0,False,Far (>2km),False,False,False
+950,2021,615.5405245559325,Tung Chung,22.2893,113.9416,0,False,Close (500-1000m),True,True,True
+950,2021,531.2876097075141,Tung Chung,22.2893,113.9416,0,False,Close (500-1000m),True,True,True
+950,2021,877.888348529054,Tung Chung,22.2893,113.9416,0,False,Close (500-1000m),False,True,True
+513,2021,2939.707055300287,Tin Shui Wai,22.446803,114.003028,0,False,Far (>2km),False,False,False
+962,2021,5499.317089451818,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+920,2021,12069.302958893582,Disneyland Resort,22.3155,114.0451,0,False,Far (>2km),False,False,False
+174,2021,52.3254225615646,Lei Tung,22.2421,114.1562,1,True,Very Close (<500m),True,True,True
+913,2021,11266.846666620984,Wan Chai,22.264453,114.237044,0,False,Far (>2km),False,False,False
+913,2021,11373.884932884503,Wan Chai,22.264453,114.237044,0,False,Far (>2km),False,False,False
+934,2021,12235.008186776719,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+913,2021,11179.816907652243,Wan Chai,22.264453,114.237044,0,False,Far (>2km),False,False,False
+913,2021,10180.84542570372,Wan Chai,22.264453,114.237044,0,False,Far (>2km),False,False,False
+913,2021,8911.809232022048,Chai Wan,22.2644,114.2368,0,False,Far (>2km),False,False,False
+913,2021,9990.12758114738,Wan Chai,22.264453,114.237044,0,False,Far (>2km),False,False,False
+920,2021,12594.898702603605,Disneyland Resort,22.3155,114.0451,0,False,Far (>2km),False,False,False
+920,2021,12448.50248075157,Disneyland Resort,22.3155,114.0451,0,False,Far (>2km),False,False,False
+920,2021,12645.17082910177,Disneyland Resort,22.3155,114.0451,0,False,Far (>2km),False,False,False
+911,2021,5770.215103376655,Hong Kong station,22.234767,114.170817,0,False,Far (>2km),False,False,False
+920,2021,12786.686808198288,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+933,2021,11484.841163552037,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+920,2021,13049.59359617708,Disneyland Resort,22.3155,114.0451,0,False,Far (>2km),False,False,False
+920,2021,12687.357838176713,Disneyland Resort,22.3155,114.0451,0,False,Far (>2km),False,False,False
+920,2021,12679.961963483724,Disneyland Resort,22.3155,114.0451,0,False,Far (>2km),False,False,False
+934,2021,15164.383740918982,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+934,2021,15000.391264892747,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+913,2021,11592.34951307818,Chai Wan,22.2644,114.2368,0,False,Far (>2km),False,False,False
+920,2021,12038.672479835817,South Horizons,22.2425,114.1491,0,False,Far (>2km),False,False,False
+920,2021,12044.757817473737,Disneyland Resort,22.3155,114.0451,0,False,Far (>2km),False,False,False
+174,2021,340.47601122954757,Lei Tung,22.2421,114.1562,0,False,Very Close (<500m),True,True,True
+174,2021,308.6011260275554,Lei Tung,22.2421,114.1562,0,False,Very Close (<500m),True,True,True
+942,2021,11473.750563655029,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+174,2021,357.7503442632299,Lei Tung,22.2421,114.1562,0,False,Very Close (<500m),True,True,True
+174,2021,228.3155304434705,South Horizons,22.2425,114.1491,0,False,Very Close (<500m),True,True,True
+942,2021,10598.879881311736,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+196,2021,3702.6290567381334,Chai Wan,22.2644,114.2368,0,False,Far (>2km),False,False,False
+912,2021,3228.7066085978327,South Horizons,22.2425,114.1491,0,False,Far (>2km),False,False,False
+931,2021,9449.970406916009,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+912,2021,4007.5649740400545,South Horizons,22.2425,114.1491,0,False,Far (>2km),False,False,False
+192,2021,3131.5305693383348,Hong Kong station,22.234767,114.170817,0,False,Far (>2km),False,False,False
+191,2021,1509.5950637148987,Hong Kong station,22.234767,114.170817,0,False,Moderate (1-2km),False,False,True
+192,2021,2847.4891963839627,Hong Kong station,22.234767,114.170817,0,False,Far (>2km),False,False,False
+197,2021,3824.5969651698883,Wan Chai,22.264453,114.237044,0,False,Far (>2km),False,False,False
+931,2021,5949.107671556642,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+192,2021,2956.723317763752,Hong Kong station,22.234767,114.170817,0,False,Far (>2km),False,False,False
+912,2021,4031.329976728823,South Horizons,22.2425,114.1491,0,False,Far (>2km),False,False,False
+193,2021,3812.6937570580953,Hong Kong station,22.234767,114.170817,0,False,Far (>2km),False,False,False
+193,2021,3739.9225892246445,Hong Kong station,22.234767,114.170817,0,False,Far (>2km),False,False,False
+912,2021,3234.1195977218167,South Horizons,22.2425,114.1491,0,False,Far (>2km),False,False,False
+195,2021,4580.962652210288,Hong Kong station,22.234767,114.170817,0,False,Far (>2km),False,False,False
+920,2021,10886.904356052844,Disneyland Resort,22.3155,114.0451,0,False,Far (>2km),False,False,False
+912,2021,5141.024297101821,South Horizons,22.2425,114.1491,0,False,Far (>2km),False,False,False
+942,2021,12394.107677004917,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+920,2021,10636.784389485494,Disneyland Resort,22.3155,114.0451,0,False,Far (>2km),False,False,False
+195,2021,4129.645474317372,Hong Kong station,22.234767,114.170817,0,False,Far (>2km),False,False,False
+912,2021,4204.1012408024635,South Horizons,22.2425,114.1491,0,False,Far (>2km),False,False,False
+195,2021,4565.602609325082,Hong Kong station,22.234767,114.170817,0,False,Far (>2km),False,False,False
+912,2021,4436.555331465082,South Horizons,22.2425,114.1491,0,False,Far (>2km),False,False,False
+192,2021,2612.7766673267492,Hong Kong station,22.234767,114.170817,0,False,Far (>2km),False,False,False
+192,2021,2525.6364381313124,Hong Kong station,22.234767,114.170817,0,False,Far (>2km),False,False,False
+912,2021,4029.662282057278,South Horizons,22.2425,114.1491,0,False,Far (>2km),False,False,False
+912,2021,3973.901290485981,South Horizons,22.2425,114.1491,0,False,Far (>2km),False,False,False
+912,2021,3882.8020965265896,South Horizons,22.2425,114.1491,0,False,Far (>2km),False,False,False
+192,2021,2426.5767214491334,Hong Kong station,22.234767,114.170817,0,False,Far (>2km),False,False,False
+912,2021,4157.644693946435,South Horizons,22.2425,114.1491,0,False,Far (>2km),False,False,False
+941,2021,8511.404906199856,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+195,2021,4674.985967254617,Hong Kong station,22.234767,114.170817,0,False,Far (>2km),False,False,False
+912,2021,4577.883247741263,South Horizons,22.2425,114.1491,0,False,Far (>2km),False,False,False
+931,2021,9411.300598327534,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+195,2021,4339.2562704430065,Hong Kong station,22.234767,114.170817,0,False,Far (>2km),False,False,False
+920,2021,12470.92175109297,Disneyland Resort,22.3155,114.0451,0,False,Far (>2km),False,False,False
+198,2021,6144.401617388585,Hong Kong station,22.234767,114.170817,0,False,Far (>2km),False,False,False
+920,2021,12365.234756325674,Disneyland Resort,22.3155,114.0451,0,False,Far (>2km),False,False,False
+197,2021,6958.645159810093,Wan Chai,22.264453,114.237044,0,False,Far (>2km),False,False,False
+920,2021,12346.869970084486,South Horizons,22.2425,114.1491,0,False,Far (>2km),False,False,False
+920,2021,12287.537031874646,Disneyland Resort,22.3155,114.0451,0,False,Far (>2km),False,False,False
+195,2021,6179.566187781212,Hong Kong station,22.234767,114.170817,0,False,Far (>2km),False,False,False
+911,2021,5082.930969427699,South Horizons,22.2425,114.1491,0,False,Far (>2km),False,False,False
+175,2021,296.5006021111498,Wong Chuk Hang,22.248,114.1681,0,False,Very Close (<500m),True,True,True
+173,2021,815.201987035207,Lei Tung,22.2421,114.1562,0,False,Close (500-1000m),False,True,True
+173,2021,779.4015805510662,South Horizons,22.2425,114.1491,0,False,Close (500-1000m),False,True,True
+173,2021,796.4949348919607,South Horizons,22.2425,114.1491,0,False,Close (500-1000m),False,True,True
+173,2021,758.8730102720164,South Horizons,22.2425,114.1491,0,False,Close (500-1000m),False,True,True
+173,2021,760.2225999748175,Lei Tung,22.2421,114.1562,0,False,Close (500-1000m),False,True,True
+173,2021,798.7516545242337,South Horizons,22.2425,114.1491,0,False,Close (500-1000m),False,True,True
+173,2021,802.5480379780106,Lei Tung,22.2421,114.1562,0,False,Close (500-1000m),False,True,True
+175,2021,91.88972189999727,Wong Chuk Hang,22.248,114.1681,0,False,Very Close (<500m),True,True,True
+173,2021,840.8162166233561,Lei Tung,22.2421,114.1562,0,False,Close (500-1000m),False,True,True
+173,2021,797.2337501256872,South Horizons,22.2425,114.1491,0,False,Close (500-1000m),False,True,True
+173,2021,787.882610458665,South Horizons,22.2425,114.1491,0,False,Close (500-1000m),False,True,True
+173,2021,869.4135984803041,Lei Tung,22.2421,114.1562,0,False,Close (500-1000m),False,True,True
+174,2021,120.94538565392759,Lei Tung,22.2421,114.1562,0,False,Very Close (<500m),True,True,True
+174,2021,332.9607920144347,Lei Tung,22.2421,114.1562,0,False,Very Close (<500m),True,True,True
+174,2021,359.20919519074863,Lei Tung,22.2421,114.1562,0,False,Very Close (<500m),True,True,True
+174,2021,208.34383786523148,Lei Tung,22.2421,114.1562,0,False,Very Close (<500m),True,True,True
+174,2021,119.34139909113438,South Horizons,22.2425,114.1491,1,True,Very Close (<500m),True,True,True
+174,2021,219.89714715821876,Lei Tung,22.2421,114.1562,0,False,Very Close (<500m),True,True,True
+174,2021,218.47818849077927,Lei Tung,22.2421,114.1562,0,False,Very Close (<500m),True,True,True
+174,2021,203.16539405620864,South Horizons,22.2425,114.1491,0,False,Very Close (<500m),True,True,True
+174,2021,243.60940948828232,Lei Tung,22.2421,114.1562,0,False,Very Close (<500m),True,True,True
+174,2021,376.93158632211185,Lei Tung,22.2421,114.1562,0,False,Very Close (<500m),True,True,True
+174,2021,286.4412647344049,Lei Tung,22.2421,114.1562,0,False,Very Close (<500m),True,True,True
+174,2021,275.3443069296739,Lei Tung,22.2421,114.1562,0,False,Very Close (<500m),True,True,True
+174,2021,260.53981933443396,Lei Tung,22.2421,114.1562,0,False,Very Close (<500m),True,True,True
+174,2021,267.12862293635436,Lei Tung,22.2421,114.1562,0,False,Very Close (<500m),True,True,True
+174,2021,288.94593411867663,Lei Tung,22.2421,114.1562,0,False,Very Close (<500m),True,True,True
+196,2021,2919.653616203781,Chai Wan,22.2644,114.2368,0,False,Far (>2km),False,False,False
+942,2021,7946.478928117461,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+173,2021,844.4722318484826,Lei Tung,22.2421,114.1562,0,False,Close (500-1000m),False,True,True
+942,2021,7409.886540650434,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+167,2021,2302.117300978989,Wan Chai,22.264453,114.237044,0,False,Far (>2km),False,False,False
+191,2021,759.7150624601143,Ocean Park,22.2486,114.1743,0,False,Close (500-1000m),False,True,True
+173,2021,974.0489634564915,Lei Tung,22.2421,114.1562,0,False,Close (500-1000m),False,True,True
+191,2021,406.27443202041394,Ocean Park,22.2486,114.1743,0,False,Very Close (<500m),True,True,True
+174,2021,422.0268887303386,South Horizons,22.2425,114.1491,0,False,Very Close (<500m),True,True,True
+174,2021,364.6814689771071,Lei Tung,22.2421,114.1562,0,False,Very Close (<500m),True,True,True
+197,2021,3030.7254701227243,Wan Chai,22.264453,114.237044,0,False,Far (>2km),False,False,False
+175,2021,399.2284389925827,Wong Chuk Hang,22.248,114.1681,0,False,Very Close (<500m),True,True,True
+931,2021,6119.806522261742,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+191,2021,1440.1842126395993,Ocean Park,22.2486,114.1743,0,False,Moderate (1-2km),False,False,True
+174,2021,574.3647088404167,Lei Tung,22.2421,114.1562,0,False,Close (500-1000m),True,True,True
+192,2021,2725.249031239485,Hong Kong station,22.234767,114.170817,0,False,Far (>2km),False,False,False
+196,2021,3508.8400650292515,Chai Wan,22.2644,114.2368,0,False,Far (>2km),False,False,False
+174,2021,541.8688135542939,Lei Tung,22.2421,114.1562,0,False,Close (500-1000m),True,True,True
+191,2021,2061.6340372172094,Hong Kong station,22.234767,114.170817,0,False,Far (>2km),False,False,True
+931,2021,8684.107279864544,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+192,2021,2851.6935498984026,Ocean Park,22.2486,114.1743,0,False,Far (>2km),False,False,False
+174,2021,524.1070795618906,Lei Tung,22.2421,114.1562,0,False,Close (500-1000m),True,True,True
+932,2021,6587.68299709703,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+192,2021,2625.974156515691,Ocean Park,22.2486,114.1743,0,False,Far (>2km),False,False,False
+192,2021,2274.180520796749,Ocean Park,22.2486,114.1743,0,False,Far (>2km),False,False,False
+174,2021,472.0858241257792,Lei Tung,22.2421,114.1562,0,False,Very Close (<500m),True,True,True
+931,2021,5919.499747538978,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+196,2021,3493.5701953551393,Chai Wan,22.2644,114.2368,0,False,Far (>2km),False,False,False
+174,2021,444.4247467595047,South Horizons,22.2425,114.1491,0,False,Very Close (<500m),True,True,True
+192,2021,2143.378736719077,Ocean Park,22.2486,114.1743,0,False,Far (>2km),False,False,True
+931,2021,7980.107338501335,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+192,2021,2442.5688975397575,Ocean Park,22.2486,114.1743,0,False,Far (>2km),False,False,False
+931,2021,8681.934542917399,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+191,2021,1872.61512974077,Hong Kong station,22.234767,114.170817,0,False,Moderate (1-2km),False,False,True
+192,2021,3025.0574260788394,Ocean Park,22.2486,114.1743,0,False,Far (>2km),False,False,False
+197,2021,3469.3841344031016,Wan Chai,22.264453,114.237044,0,False,Far (>2km),False,False,False
+174,2021,634.4609485078709,South Horizons,22.2425,114.1491,0,False,Close (500-1000m),False,True,True
+834,2021,6100.586138735019,Wan Chai,22.264453,114.237044,0,False,Far (>2km),False,False,False
+174,2021,414.87367499460083,Lei Tung,22.2421,114.1562,0,False,Very Close (<500m),True,True,True
+931,2021,7589.460336449092,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+174,2021,428.0944216953198,Lei Tung,22.2421,114.1562,0,False,Very Close (<500m),True,True,True
+834,2021,5109.256056593104,Wan Chai,22.264453,114.237044,0,False,Far (>2km),False,False,False
+175,2021,868.5781425043987,Hong Kong station,22.234767,114.170817,0,False,Close (500-1000m),False,True,True
+941,2021,8028.4342281050185,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+834,2021,5201.930948567856,Wan Chai,22.264453,114.237044,0,False,Far (>2km),False,False,False
+931,2021,6086.3963690841665,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+834,2021,5180.425304949552,Wan Chai,22.264453,114.237044,0,False,Far (>2km),False,False,False
+174,2021,383.990160919575,Lei Tung,22.2421,114.1562,0,False,Very Close (<500m),True,True,True
+173,2021,983.483733200389,South Horizons,22.2425,114.1491,0,False,Close (500-1000m),False,True,True
+174,2021,187.55655518174888,Lei Tung,22.2421,114.1562,0,False,Very Close (<500m),True,True,True
+173,2021,858.3471990021621,South Horizons,22.2425,114.1491,0,False,Close (500-1000m),False,True,True
+173,2021,707.4445889483469,South Horizons,22.2425,114.1491,0,False,Close (500-1000m),False,True,True
+173,2021,732.8635432238741,South Horizons,22.2425,114.1491,0,False,Close (500-1000m),False,True,True
+173,2021,665.3228186150336,Lei Tung,22.2421,114.1562,0,False,Close (500-1000m),False,True,True
+173,2021,680.5936286396089,Lei Tung,22.2421,114.1562,0,False,Close (500-1000m),False,True,True
+932,2021,5894.147467411336,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+191,2021,805.2239502283222,Ocean Park,22.2486,114.1743,0,False,Close (500-1000m),True,True,True
+173,2021,776.7700648961248,Lei Tung,22.2421,114.1562,0,False,Close (500-1000m),False,True,True
+173,2021,722.5354423479937,Wong Chuk Hang,22.248,114.1681,0,False,Close (500-1000m),False,True,True
+173,2021,774.1766767478837,Lei Tung,22.2421,114.1562,0,False,Close (500-1000m),False,True,True
+175,2021,637.2075389176258,Wong Chuk Hang,22.248,114.1681,0,False,Close (500-1000m),True,True,True
+834,2021,9495.374661105436,LOHAS Park,22.2957,114.2689,0,False,Far (>2km),False,False,False
+183,2021,2022.7352225088273,Ocean Park,22.2486,114.1743,0,False,Far (>2km),False,False,True
+172,2021,1859.4067352648378,South Horizons,22.2425,114.1491,0,False,Moderate (1-2km),False,False,True
+931,2021,6723.897102981955,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+191,2021,494.21559620417787,Ocean Park,22.2486,114.1743,0,False,Very Close (<500m),True,True,True
+175,2021,208.30468505372394,Wong Chuk Hang,22.248,114.1681,0,False,Very Close (<500m),True,True,True
+173,2021,831.502089835997,Lei Tung,22.2421,114.1562,0,False,Close (500-1000m),False,True,True
+173,2021,930.3465528550694,Lei Tung,22.2421,114.1562,0,False,Close (500-1000m),False,True,True
+173,2021,933.7008134118357,Lei Tung,22.2421,114.1562,0,False,Close (500-1000m),False,True,True
+192,2021,2159.182910125844,Ocean Park,22.2486,114.1743,0,False,Far (>2km),False,False,True
+173,2021,879.0670292290919,South Horizons,22.2425,114.1491,0,False,Close (500-1000m),False,True,True
+197,2021,2323.7487261284496,Wan Chai,22.264453,114.237044,0,False,Far (>2km),False,False,True
+834,2021,9331.527875200683,LOHAS Park,22.2957,114.2689,0,False,Far (>2km),False,False,False
+944,2021,8433.754353814185,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+171,2021,2223.751037391018,South Horizons,22.2425,114.1491,0,False,Far (>2km),False,False,True
+171,2021,2168.041570647608,South Horizons,22.2425,114.1491,0,False,Far (>2km),False,False,True
+944,2021,9013.632235193772,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+942,2021,8939.476958411835,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+834,2021,9361.966764115696,LOHAS Park,22.2957,114.2689,0,False,Far (>2km),False,False,False
+931,2021,7651.498201929081,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+175,2021,245.9354373506609,Ocean Park,22.2486,114.1743,0,False,Very Close (<500m),True,True,True
+944,2021,9080.539560323035,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+173,2021,1033.0192002105273,Lei Tung,22.2421,114.1562,0,False,Moderate (1-2km),False,True,True
+944,2021,9040.272909061912,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+931,2021,7147.408487808839,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+931,2021,5580.731674613393,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+174,2021,264.16994976359405,South Horizons,22.2425,114.1491,0,False,Very Close (<500m),True,True,True
+834,2021,9421.176858672248,LOHAS Park,22.2957,114.2689,0,False,Far (>2km),False,False,False
+175,2021,360.23107681981946,Ocean Park,22.2486,114.1743,0,False,Very Close (<500m),True,True,True
+944,2021,9647.862985167154,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+176,2021,594.0892422355447,Ocean Park,22.2486,114.1743,0,False,Close (500-1000m),True,True,True
+191,2021,964.8134827418771,Ocean Park,22.2486,114.1743,0,False,Close (500-1000m),False,True,True
+176,2021,385.31297892516017,Hong Kong station,22.234767,114.170817,1,True,Very Close (<500m),True,True,True
+175,2021,405.6943804687114,Wong Chuk Hang,22.248,114.1681,0,False,Very Close (<500m),True,True,True
+944,2021,9733.337965246314,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+931,2021,7267.374947055186,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+931,2021,6975.302235434621,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+175,2021,670.9196709926434,Wong Chuk Hang,22.248,114.1681,0,False,Close (500-1000m),False,True,True
+942,2021,7528.779514011707,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+175,2021,355.78606229791,Wong Chuk Hang,22.248,114.1681,0,False,Very Close (<500m),True,True,True
+173,2021,588.1429710230186,Lei Tung,22.2421,114.1562,0,False,Close (500-1000m),False,True,True
+173,2021,626.7369481570946,Lei Tung,22.2421,114.1562,0,False,Close (500-1000m),False,True,True
+173,2021,655.2304221106988,Lei Tung,22.2421,114.1562,0,False,Close (500-1000m),False,True,True
+173,2021,651.2089013845012,Lei Tung,22.2421,114.1562,0,False,Close (500-1000m),False,True,True
+173,2021,689.5268854358026,Lei Tung,22.2421,114.1562,0,False,Close (500-1000m),False,True,True
+173,2021,655.3631641796044,South Horizons,22.2425,114.1491,0,False,Close (500-1000m),False,True,True
+173,2021,710.4217895030251,Lei Tung,22.2421,114.1562,0,False,Close (500-1000m),False,True,True
+175,2021,120.98969987703519,Wong Chuk Hang,22.248,114.1681,1,True,Very Close (<500m),True,True,True
+175,2021,364.4487907660882,Ocean Park,22.2486,114.1743,0,False,Very Close (<500m),True,True,True
+175,2021,492.31615194144234,Wong Chuk Hang,22.248,114.1681,0,False,Very Close (<500m),True,True,True
+173,2021,630.6485632269638,South Horizons,22.2425,114.1491,0,False,Close (500-1000m),False,True,True
+173,2021,732.9907148575511,South Horizons,22.2425,114.1491,0,False,Close (500-1000m),False,True,True
+173,2021,717.7178049118857,Lei Tung,22.2421,114.1562,0,False,Close (500-1000m),False,True,True
+173,2021,714.2288188767031,Lei Tung,22.2421,114.1562,0,False,Close (500-1000m),False,True,True
+173,2021,679.5968805740124,South Horizons,22.2425,114.1491,0,False,Close (500-1000m),False,True,True
+191,2021,1035.2601277784686,Ocean Park,22.2486,114.1743,0,False,Moderate (1-2km),False,True,True
+834,2021,9695.47541319213,LOHAS Park,22.2957,114.2689,0,False,Far (>2km),False,False,False
+175,2021,626.0752331046479,Ocean Park,22.2486,114.1743,0,False,Close (500-1000m),True,True,True
+191,2021,1516.1512441549173,Ocean Park,22.2486,114.1743,0,False,Moderate (1-2km),False,True,True
+196,2021,3204.7972003336217,Chai Wan,22.2644,114.2368,0,False,Far (>2km),False,False,True
+197,2021,2133.3763907461607,Wan Chai,22.264453,114.237044,0,False,Far (>2km),False,True,True
+192,2021,2117.4325746937707,Ocean Park,22.2486,114.1743,0,False,Far (>2km),False,False,False
+942,2021,7144.541559154215,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+192,2021,2187.4499310529472,Ocean Park,22.2486,114.1743,0,False,Far (>2km),False,False,True
+834,2021,9629.350892057615,LOHAS Park,22.2957,114.2689,0,False,Far (>2km),False,False,False
+183,2021,1936.9955037171596,Ocean Park,22.2486,114.1743,0,False,Moderate (1-2km),False,False,True
+963,2021,7066.822883887828,Disneyland Resort,22.3155,114.0451,0,False,Far (>2km),False,False,False
+834,2021,5625.689984291355,LOHAS Park,22.2957,114.2689,0,False,Far (>2km),False,False,False
+182,2021,1776.8416552933072,South Horizons,22.2425,114.1491,0,False,Moderate (1-2km),False,False,True
+944,2021,8684.914042311848,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+834,2021,9544.42337907282,LOHAS Park,22.2957,114.2689,0,False,Far (>2km),False,False,False
+944,2021,9541.908071661803,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+182,2021,1863.8314442028457,South Horizons,22.2425,114.1491,0,False,Moderate (1-2km),False,False,True
+194,2021,3559.1711555163097,Chai Wan,22.2644,114.2368,0,False,Far (>2km),False,False,True
+172,2021,2231.3105429090774,South Horizons,22.2425,114.1491,0,False,Far (>2km),False,False,False
+834,2021,9468.019050239029,LOHAS Park,22.2957,114.2689,0,False,Far (>2km),False,False,False
+834,2021,9381.327570796455,LOHAS Park,22.2957,114.2689,0,False,Far (>2km),False,False,False
+834,2021,9413.083882135192,LOHAS Park,22.2957,114.2689,0,False,Far (>2km),False,False,False
+190,2021,1934.444346334407,Causeway Bay,22.279392,114.182926,0,False,Moderate (1-2km),False,False,True
+163,2021,119.15814882149328,Chai Wan,22.2644,114.2368,0,False,Very Close (<500m),True,True,True
+165,2021,598.0911525663882,Wan Chai,22.264453,114.237044,0,False,Close (500-1000m),True,True,True
+163,2021,31.92928126755281,Wan Chai,22.264453,114.237044,1,True,Very Close (<500m),True,True,True
+171,2021,1978.6862384757715,Kennedy Town,22.2812,114.1285,0,False,Moderate (1-2km),False,False,True
+167,2021,1341.2343553574076,Wan Chai,22.264453,114.237044,0,False,Moderate (1-2km),False,False,True
+943,2021,7344.688702338556,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+182,2021,2252.363066226416,South Horizons,22.2425,114.1491,0,False,Far (>2km),False,False,False
+165,2021,216.87811014197243,Chai Wan,22.2644,114.2368,0,False,Very Close (<500m),True,True,True
+167,2021,1568.153368396866,Wan Chai,22.264453,114.237044,0,False,Moderate (1-2km),False,False,True
+173,2021,993.0651484169488,South Horizons,22.2425,114.1491,0,False,Close (500-1000m),False,True,True
+191,2021,966.497800879716,Ocean Park,22.2486,114.1743,0,False,Close (500-1000m),False,True,True
+944,2021,9148.307383568357,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+175,2021,462.75413545473265,Ocean Park,22.2486,114.1743,0,False,Very Close (<500m),True,True,True
+173,2021,875.3218473676025,Wong Chuk Hang,22.248,114.1681,0,False,Close (500-1000m),False,True,True
+944,2021,8841.197754357521,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+175,2021,714.2633170366203,Ocean Park,22.2486,114.1743,0,False,Close (500-1000m),False,True,True
+172,2021,1612.8448854394933,South Horizons,22.2425,114.1491,0,False,Moderate (1-2km),False,False,True
+944,2021,8698.404284813385,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+944,2021,8928.082779925071,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+944,2021,8633.034113361842,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+834,2021,9207.74495259403,LOHAS Park,22.2957,114.2689,0,False,Far (>2km),False,False,False
+944,2021,8890.775683054293,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+944,2021,8796.604535235369,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+172,2021,1835.2629173449927,South Horizons,22.2425,114.1491,0,False,Moderate (1-2km),False,False,True
+163,2021,185.5197696948692,Chai Wan,22.2644,114.2368,0,False,Very Close (<500m),True,True,True
+149,2021,1654.43677550029,Causeway Bay,22.279392,114.182926,0,False,Moderate (1-2km),False,False,True
+834,2021,10600.91227534835,LOHAS Park,22.2957,114.2689,0,False,Far (>2km),False,False,False
+190,2021,1751.152866435938,Tin Hau,22.2827,114.1917,0,False,Moderate (1-2km),False,False,True
+163,2021,859.4189753633738,Wan Chai,22.264453,114.237044,0,False,Close (500-1000m),False,True,True
+144,2021,1382.3167633376488,Causeway Bay,22.279392,114.182926,0,False,Moderate (1-2km),False,False,True
+182,2021,1653.8751554616529,Admiralty,22.278399,114.16433,0,False,Moderate (1-2km),False,False,True
+183,2021,1652.8054112140603,Ocean Park,22.2486,114.1743,0,False,Moderate (1-2km),False,False,True
+144,2021,1392.7408787622862,Causeway Bay,22.279392,114.182926,0,False,Moderate (1-2km),False,False,True
+192,2021,2810.6446201629974,Ocean Park,22.2486,114.1743,0,False,Far (>2km),False,False,False
+171,2021,2406.2310116350104,Kennedy Town,22.2812,114.1285,0,False,Far (>2km),False,False,False
+941,2021,6050.411580333397,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+834,2021,8664.853981721748,LOHAS Park,22.2957,114.2689,0,False,Far (>2km),False,False,False
+144,2021,1936.961440216356,Causeway Bay,22.279392,114.182926,0,False,Moderate (1-2km),False,False,True
+931,2021,5440.784358014716,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+165,2021,290.916926060603,Wan Chai,22.264453,114.237044,0,False,Very Close (<500m),True,True,True
+832,2021,3577.5823593929435,LOHAS Park,22.2957,114.2689,0,False,Far (>2km),False,False,False
+144,2021,1738.3770276145606,Causeway Bay,22.279392,114.182926,0,False,Moderate (1-2km),False,False,True
+163,2021,252.51177919091907,Wan Chai,22.264453,114.237044,0,False,Very Close (<500m),True,True,True
+144,2021,1480.9654073559143,Causeway Bay,22.279392,114.182926,0,False,Moderate (1-2km),False,False,True
+144,2021,1411.6672834604503,Causeway Bay,22.279392,114.182926,0,False,Moderate (1-2km),False,False,True
+171,2021,1636.3594373695457,Kennedy Town,22.2812,114.1285,0,False,Moderate (1-2km),False,False,True
+149,2021,1707.7603673932185,Causeway Bay,22.279392,114.182926,0,False,Moderate (1-2km),False,False,True
+182,2021,1406.3710978274853,Admiralty,22.278399,114.16433,0,False,Moderate (1-2km),False,False,True
+144,2021,1380.4976441398533,Causeway Bay,22.279392,114.182926,0,False,Moderate (1-2km),False,False,True
+144,2021,1321.1041858663418,Causeway Bay,22.279392,114.182926,0,False,Moderate (1-2km),False,False,True
+171,2021,1617.0647766539482,Kennedy Town,22.2812,114.1285,0,False,Moderate (1-2km),False,False,True
+171,2021,2215.7861799957536,Kennedy Town,22.2812,114.1285,0,False,Far (>2km),False,False,False
+171,2021,1860.1815308647917,Kennedy Town,22.2812,114.1285,0,False,Moderate (1-2km),False,False,True
+190,2021,1800.9493209302216,Causeway Bay,22.279392,114.182926,0,False,Moderate (1-2km),False,False,True
+931,2021,4832.636996152179,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+834,2021,10939.272252713428,LOHAS Park,22.2957,114.2689,0,False,Far (>2km),False,False,False
+834,2021,10921.285667726846,LOHAS Park,22.2957,114.2689,0,False,Far (>2km),False,False,False
+184,2021,1730.81816712481,Causeway Bay,22.279392,114.182926,0,False,Moderate (1-2km),False,False,True
+163,2021,122.33982228364438,Chai Wan,22.2644,114.2368,1,True,Very Close (<500m),True,True,True
+144,2021,1948.0540923222409,Causeway Bay,22.279392,114.182926,0,False,Moderate (1-2km),False,False,True
+182,2021,2116.1490248184264,South Horizons,22.2425,114.1491,0,False,Far (>2km),False,False,True
+171,2021,2141.504466903346,Kennedy Town,22.2812,114.1285,0,False,Far (>2km),False,False,True
+171,2021,1998.0234790246825,Kennedy Town,22.2812,114.1285,0,False,Moderate (1-2km),False,False,True
+834,2021,3665.584820790188,LOHAS Park,22.2957,114.2689,0,False,Far (>2km),False,False,False
+144,2021,1822.2719180728973,Causeway Bay,22.279392,114.182926,0,False,Moderate (1-2km),False,False,True
+144,2021,1838.8668693648397,Causeway Bay,22.279392,114.182926,0,False,Moderate (1-2km),False,False,True
+943,2021,7994.741428828269,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+165,2021,588.4627384454619,Wan Chai,22.264453,114.237044,0,False,Close (500-1000m),True,True,True
+172,2021,2370.5893852976487,Kennedy Town,22.2812,114.1285,0,False,Far (>2km),False,False,True
+171,2021,1918.4602742049835,Kennedy Town,22.2812,114.1285,0,False,Moderate (1-2km),False,False,True
+167,2021,1435.6664112031917,Wan Chai,22.264453,114.237044,0,False,Moderate (1-2km),False,False,True
+171,2021,1900.9548607602915,Kennedy Town,22.2812,114.1285,0,False,Moderate (1-2km),False,False,True
+834,2021,10754.067184737136,LOHAS Park,22.2957,114.2689,0,False,Far (>2km),False,False,False
+165,2021,383.2541897780865,Wan Chai,22.264453,114.237044,0,False,Very Close (<500m),True,True,True
+167,2021,1305.0640531429458,Wan Chai,22.264453,114.237044,0,False,Moderate (1-2km),False,False,True
+963,2021,6052.636247378617,Disneyland Resort,22.3155,114.0451,0,False,Far (>2km),False,False,False
+163,2021,203.31990842660022,Wan Chai,22.264453,114.237044,0,False,Very Close (<500m),True,True,True
+167,2021,1516.511663377105,Wan Chai,22.264453,114.237044,0,False,Moderate (1-2km),False,True,True
+165,2021,383.5604897420106,Chai Wan,22.2644,114.2368,0,False,Very Close (<500m),True,True,True
+163,2021,186.67279099271394,Wan Chai,22.264453,114.237044,0,False,Very Close (<500m),True,True,True
+165,2021,757.3396797471263,Chai Wan,22.2644,114.2368,0,False,Close (500-1000m),True,True,True
+163,2021,338.57389163436454,Wan Chai,22.264453,114.237044,0,False,Very Close (<500m),True,True,True
+144,2021,1668.8626615499445,Causeway Bay,22.279392,114.182926,0,False,Moderate (1-2km),False,False,True
+165,2021,347.4334272634029,Chai Wan,22.2644,114.2368,0,False,Very Close (<500m),True,True,True
+165,2021,427.50560404393764,Chai Wan,22.2644,114.2368,0,False,Very Close (<500m),True,True,True
+144,2021,2080.5881602061495,Causeway Bay,22.279392,114.182926,0,False,Far (>2km),False,False,False
+144,2021,2014.7700155407679,Causeway Bay,22.279392,114.182926,0,False,Far (>2km),False,False,True
+165,2021,688.7870396893538,Chai Wan,22.2644,114.2368,0,False,Close (500-1000m),True,True,True
+144,2021,1947.7021388657352,Causeway Bay,22.279392,114.182926,0,False,Moderate (1-2km),False,False,True
+163,2021,464.43874046176336,Chai Wan,22.2644,114.2368,0,False,Very Close (<500m),True,True,True
+149,2021,1571.2476306223587,Causeway Bay,22.279392,114.182926,0,False,Moderate (1-2km),False,False,True
+144,2021,1253.9780544457396,Causeway Bay,22.279392,114.182926,0,False,Moderate (1-2km),False,False,True
+165,2021,479.5087596656002,Chai Wan,22.2644,114.2368,0,False,Very Close (<500m),True,True,True
+144,2021,1253.8420716024802,Causeway Bay,22.279392,114.182926,0,False,Moderate (1-2km),False,False,True
+163,2021,880.8691987601519,Wan Chai,22.264453,114.237044,0,False,Close (500-1000m),False,True,True
+144,2021,1290.2239913266937,Causeway Bay,22.279392,114.182926,0,False,Moderate (1-2km),False,False,True
+163,2021,282.479352900321,Wan Chai,22.264453,114.237044,0,False,Very Close (<500m),True,True,True
+144,2021,1393.896683678676,Causeway Bay,22.279392,114.182926,0,False,Moderate (1-2km),False,False,True
+171,2021,1380.9548176972355,Kennedy Town,22.2812,114.1285,0,False,Moderate (1-2km),False,False,True
+140,2021,1284.7923256462564,Causeway Bay,22.279392,114.182926,0,False,Moderate (1-2km),False,False,True
+144,2021,1099.9379781783857,Causeway Bay,22.279392,114.182926,0,False,Moderate (1-2km),False,False,True
+144,2021,1095.6955879012498,Causeway Bay,22.279392,114.182926,0,False,Moderate (1-2km),False,False,True
+184,2021,1753.6614889408067,Causeway Bay,22.279392,114.182926,0,False,Moderate (1-2km),False,False,True
+171,2021,1293.4484107642725,Kennedy Town,22.2812,114.1285,0,False,Moderate (1-2km),False,False,True
+149,2021,1558.031734808937,Tin Hau,22.2827,114.1917,0,False,Moderate (1-2km),False,False,True
+171,2021,1244.3416965882848,Kennedy Town,22.2812,114.1285,0,False,Moderate (1-2km),False,False,True
+182,2021,1483.899320722211,Admiralty,22.278399,114.16433,0,False,Moderate (1-2km),False,False,True
+144,2021,1629.665646533995,Causeway Bay,22.279392,114.182926,0,False,Moderate (1-2km),False,False,True
+163,2021,342.03493568449164,Chai Wan,22.2644,114.2368,0,False,Very Close (<500m),True,True,True
+144,2021,1293.1435858399864,Causeway Bay,22.279392,114.182926,0,False,Moderate (1-2km),False,False,True
+144,2021,1352.8081924361975,Causeway Bay,22.279392,114.182926,0,False,Moderate (1-2km),False,False,True
+163,2021,293.71926810170396,Chai Wan,22.2644,114.2368,0,False,Very Close (<500m),True,True,True
+165,2021,912.6142046956379,Wan Chai,22.264453,114.237044,0,False,Close (500-1000m),False,True,True
+190,2021,1794.8511325300672,Causeway Bay,22.279392,114.182926,0,False,Moderate (1-2km),False,False,True
+183,2021,1116.1231360166848,Ocean Park,22.2486,114.1743,0,False,Moderate (1-2km),False,True,True
+163,2021,174.38741969812028,Chai Wan,22.2644,114.2368,0,False,Very Close (<500m),True,True,True
+144,2021,1180.1311013958236,Causeway Bay,22.279392,114.182926,0,False,Moderate (1-2km),False,False,True
+149,2021,1508.5907360490626,Tin Hau,22.2827,114.1917,0,False,Moderate (1-2km),False,False,True
+144,2021,1144.2701162390438,Causeway Bay,22.279392,114.182926,0,False,Moderate (1-2km),False,False,True
+144,2021,1526.9680479109295,Causeway Bay,22.279392,114.182926,0,False,Moderate (1-2km),False,False,True
+144,2021,1325.9777454068317,Causeway Bay,22.279392,114.182926,0,False,Moderate (1-2km),False,False,True
+171,2021,1524.8166978900067,Kennedy Town,22.2812,114.1285,0,False,Moderate (1-2km),False,False,True
+184,2021,1376.284140355501,Causeway Bay,22.279392,114.182926,0,False,Moderate (1-2km),False,False,True
+149,2021,1408.6065746644445,Causeway Bay,22.279392,114.182926,0,False,Moderate (1-2km),False,False,True
+171,2021,1284.8811275574367,Kennedy Town,22.2812,114.1285,0,False,Moderate (1-2km),False,False,True
+149,2021,1740.822379736755,Causeway Bay,22.279392,114.182926,0,False,Moderate (1-2km),False,False,True
+144,2021,1565.8722524215116,Causeway Bay,22.279392,114.182926,0,False,Moderate (1-2km),False,False,True
+172,2021,2117.4484256581736,HKU,22.2841,114.1356,0,False,Far (>2km),False,False,False
+144,2021,1621.8739743575497,Causeway Bay,22.279392,114.182926,0,False,Moderate (1-2km),False,False,True
+171,2021,1762.8461176735586,Kennedy Town,22.2812,114.1285,0,False,Moderate (1-2km),False,False,True
+182,2021,1995.494330473631,Admiralty,22.278399,114.16433,0,False,Moderate (1-2km),False,False,True
+171,2021,1825.93960363106,Kennedy Town,22.2812,114.1285,0,False,Moderate (1-2km),False,False,True
+149,2021,1678.2631300495989,Causeway Bay,22.279392,114.182926,0,False,Moderate (1-2km),False,False,True
+163,2021,351.37343533786384,Chai Wan,22.2644,114.2368,0,False,Very Close (<500m),True,True,True
+144,2021,1531.3271850734172,Causeway Bay,22.279392,114.182926,0,False,Moderate (1-2km),False,False,True
+167,2021,1208.7969062481677,Wan Chai,22.264453,114.237044,0,False,Moderate (1-2km),False,False,True
+182,2021,1996.033315737528,Central,22.281938,114.158077,0,False,Moderate (1-2km),False,False,True
+182,2021,1771.4437496999958,Admiralty,22.278399,114.16433,0,False,Moderate (1-2km),False,False,True
+144,2021,1476.2253558601751,Causeway Bay,22.279392,114.182926,0,False,Moderate (1-2km),False,False,True
+144,2021,1535.0000812044982,Causeway Bay,22.279392,114.182926,0,False,Moderate (1-2km),False,False,True
+190,2021,1771.4954099655447,Causeway Bay,22.279392,114.182926,0,False,Moderate (1-2km),False,False,True
+171,2021,1495.1098637442587,Kennedy Town,22.2812,114.1285,0,False,Moderate (1-2km),False,False,True
+149,2021,1478.36280254698,Causeway Bay,22.279392,114.182926,0,False,Moderate (1-2km),False,False,True
+144,2021,1250.3183201864636,Causeway Bay,22.279392,114.182926,0,False,Moderate (1-2km),False,False,True
+162,2021,717.1237892504156,Heng Fa Chuen,22.2769,114.2398,0,False,Close (500-1000m),True,True,True
+131,2021,894.2971874544165,Exhibition Centre,22.281613,114.17569,0,False,Close (500-1000m),False,True,True
+182,2021,1182.6927363464042,Admiralty,22.278399,114.16433,0,False,Moderate (1-2km),False,True,True
+149,2021,1366.9064781489585,Causeway Bay,22.279392,114.182926,0,False,Moderate (1-2km),False,False,True
+182,2021,2133.232628859842,Wong Chuk Hang,22.248,114.1681,0,False,Far (>2km),False,False,True
+144,2021,1071.7137699172863,Causeway Bay,22.279392,114.182926,0,False,Moderate (1-2km),False,True,True
+144,2021,1035.4610878353863,Causeway Bay,22.279392,114.182926,0,False,Moderate (1-2km),False,True,True
+165,2021,652.9957252282427,Chai Wan,22.2644,114.2368,0,False,Close (500-1000m),False,True,True
+182,2021,1516.3728874960188,Central,22.281938,114.158077,0,False,Moderate (1-2km),False,False,True
+834,2021,8782.749900663011,LOHAS Park,22.2957,114.2689,0,False,Far (>2km),False,False,False
+171,2021,1356.274292044739,Kennedy Town,22.2812,114.1285,0,False,Moderate (1-2km),False,False,True
+163,2021,609.7515416058129,Wan Chai,22.264453,114.237044,0,False,Close (500-1000m),False,True,True
+171,2021,1227.1245262288312,Kennedy Town,22.2812,114.1285,0,False,Moderate (1-2km),False,False,True
+171,2021,1732.7644395368156,Kennedy Town,22.2812,114.1285,0,False,Moderate (1-2km),False,False,True
+144,2021,1199.9065843707513,Causeway Bay,22.279392,114.182926,0,False,Moderate (1-2km),False,False,True
+149,2021,1548.1592550439634,Causeway Bay,22.279392,114.182926,0,False,Moderate (1-2km),False,False,True
+149,2021,1519.1622218200391,Causeway Bay,22.279392,114.182926,0,False,Moderate (1-2km),False,False,True
+144,2021,1191.0118322756732,Causeway Bay,22.279392,114.182926,0,False,Moderate (1-2km),False,False,True
+167,2021,1388.2861516688843,Wan Chai,22.264453,114.237044,0,False,Moderate (1-2km),False,False,True
+943,2021,7374.726765834371,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+149,2021,1575.2410558801614,Tin Hau,22.2827,114.1917,0,False,Moderate (1-2km),False,False,True
+163,2021,1072.5934729082371,Wan Chai,22.264453,114.237044,0,False,Moderate (1-2km),False,False,True
+144,2021,1149.724569570477,Causeway Bay,22.279392,114.182926,0,False,Moderate (1-2km),False,False,True
+144,2021,1186.6627256316242,Causeway Bay,22.279392,114.182926,0,False,Moderate (1-2km),False,False,True
+182,2021,1682.052043300167,Central,22.281938,114.158077,0,False,Moderate (1-2km),False,False,True
+113,2021,529.8175454523779,Sai Ying Pun,22.2856,114.1427,0,False,Close (500-1000m),True,True,True
+112,2021,249.8783805960738,HKU,22.2841,114.1356,0,False,Very Close (<500m),True,True,True
+151,2021,203.79116422129817,Fortress Hill,22.2881,114.1936,0,False,Very Close (<500m),True,True,True
+973,2021,4782.7564902976565,Disneyland Resort,22.3155,114.0451,0,False,Far (>2km),False,False,False
+112,2021,127.68017148740685,Sai Ying Pun,22.2856,114.1427,0,False,Very Close (<500m),True,True,True
+113,2021,305.59436625740335,Sheung Wan,22.285899,114.153707,0,False,Very Close (<500m),True,True,True
+112,2021,176.26492085700735,Sai Ying Pun,22.2856,114.1427,0,False,Very Close (<500m),True,True,True
+112,2021,256.44572374138824,Sai Ying Pun,22.2856,114.1427,0,False,Very Close (<500m),True,True,True
+112,2021,324.08195822186764,Sai Ying Pun,22.2856,114.1427,0,False,Very Close (<500m),True,True,True
+147,2021,412.9946892944288,Tin Hau,22.2827,114.1917,0,False,Very Close (<500m),True,True,True
+114,2021,111.89888664609163,Sheung Wan,22.285899,114.153707,0,False,Very Close (<500m),True,True,True
+839,2021,1912.6784328146794,LOHAS Park,22.2957,114.2689,0,False,Moderate (1-2km),False,False,True
+151,2021,323.7316548697502,Fortress Hill,22.2881,114.1936,0,False,Very Close (<500m),True,True,True
+113,2021,296.3781529406206,Sai Ying Pun,22.2856,114.1427,0,False,Very Close (<500m),True,True,True
+151,2021,264.09479155580124,Fortress Hill,22.2881,114.1936,0,False,Very Close (<500m),True,True,True
+112,2021,380.8846156945564,Sai Ying Pun,22.2856,114.1427,0,False,Very Close (<500m),True,True,True
+157,2021,484.16616932759825,Sai Wan Ho,22.2816,114.2224,0,False,Very Close (<500m),True,True,True
+154,2021,300.8206465742965,Quarry Bay,22.2878,114.2096,0,False,Very Close (<500m),True,True,True
+271,2021,657.8551172415371,Sung Wong Toi,22.326139,114.190407,0,False,Close (500-1000m),False,True,True
+182,2021,1667.8104385919319,Admiralty,22.278399,114.16433,0,False,Moderate (1-2km),False,False,True
+171,2021,1835.8327621775045,Kennedy Town,22.2812,114.1285,0,False,Moderate (1-2km),False,False,True
+149,2021,1666.3524170436922,Causeway Bay,22.279392,114.182926,0,False,Moderate (1-2km),False,False,True
+144,2021,1339.4996683762993,Causeway Bay,22.279392,114.182926,0,False,Moderate (1-2km),False,False,True
+171,2021,1539.6440714957673,Kennedy Town,22.2812,114.1285,0,False,Moderate (1-2km),False,False,True
+182,2021,1462.7018069858414,Admiralty,22.278399,114.16433,0,False,Moderate (1-2km),False,False,True
+163,2021,985.5870345952363,Wan Chai,22.264453,114.237044,0,False,Close (500-1000m),False,True,True
+144,2021,1259.8880517835787,Causeway Bay,22.279392,114.182926,0,False,Moderate (1-2km),False,False,True
+144,2021,1298.5490363229412,Causeway Bay,22.279392,114.182926,0,False,Moderate (1-2km),False,False,True
+144,2021,1292.3771913313362,Causeway Bay,22.279392,114.182926,0,False,Moderate (1-2km),False,False,True
+163,2021,393.6005939152515,Wan Chai,22.264453,114.237044,0,False,Very Close (<500m),True,True,True
+131,2021,936.6754931074025,Exhibition Centre,22.281613,114.17569,0,False,Close (500-1000m),False,True,True
+164,2021,804.5739566720067,Shau Kei Wan,22.2789,114.2289,0,False,Close (500-1000m),False,True,True
+144,2021,872.8157128204756,Causeway Bay,22.279392,114.182926,0,False,Close (500-1000m),False,True,True
+143,2021,1055.7699833785161,Central,22.281938,114.158077,0,False,Moderate (1-2km),False,True,True
+143,2021,837.3132458904664,Admiralty,22.278399,114.16433,0,False,Close (500-1000m),False,True,True
+131,2021,932.4646364964251,Exhibition Centre,22.281613,114.17569,0,False,Close (500-1000m),False,True,True
+131,2021,903.1320226471508,Exhibition Centre,22.281613,114.17569,0,False,Close (500-1000m),False,True,True
+143,2021,1051.9360195667516,Central,22.281938,114.158077,0,False,Moderate (1-2km),False,True,True
+144,2021,841.6132622829465,Causeway Bay,22.279392,114.182926,0,False,Close (500-1000m),False,True,True
+111,2021,1182.9221886137345,Kennedy Town,22.2812,114.1285,0,False,Moderate (1-2km),False,False,True
+111,2021,1223.3673868785063,Kennedy Town,22.2812,114.1285,0,False,Moderate (1-2km),False,False,True
+131,2021,868.9609784529955,Exhibition Centre,22.281613,114.17569,0,False,Close (500-1000m),False,True,True
+163,2021,488.0746911815465,Heng Fa Chuen,22.2769,114.2398,0,False,Very Close (<500m),True,True,True
+171,2021,1326.8169416021249,Kennedy Town,22.2812,114.1285,0,False,Moderate (1-2km),False,False,True
+140,2021,863.3596605798707,Admiralty,22.278399,114.16433,0,False,Close (500-1000m),False,True,True
+171,2021,1247.1594649542847,Kennedy Town,22.2812,114.1285,0,False,Moderate (1-2km),False,False,True
+111,2021,299.2368589666625,Kennedy Town,22.2812,114.1285,0,False,Very Close (<500m),True,True,True
+114,2021,398.0711364753925,Sheung Wan,22.285899,114.153707,0,False,Very Close (<500m),True,True,True
+141,2021,311.1106746353337,Sai Ying Pun,22.2856,114.1427,0,False,Very Close (<500m),True,True,True
+151,2021,138.4856185187492,Tin Hau,22.2827,114.1917,0,False,Very Close (<500m),True,True,True
+113,2021,536.6849311697283,Sheung Wan,22.285899,114.153707,0,False,Close (500-1000m),True,True,True
+135,2021,366.6076957678666,Exhibition Centre,22.281613,114.17569,0,False,Very Close (<500m),True,True,True
+141,2021,402.29306833852564,Sai Ying Pun,22.2856,114.1427,0,False,Very Close (<500m),True,True,True
+156,2021,591.1975012392796,Tai Koo,22.2846,114.2161,0,False,Close (500-1000m),True,True,True
+111,2021,192.8001611435459,Kennedy Town,22.2812,114.1285,0,False,Very Close (<500m),True,True,True
+163,2021,701.1069821699041,Wan Chai,22.264453,114.237044,0,False,Close (500-1000m),False,True,True
+171,2021,1540.3551006812309,Kennedy Town,22.2812,114.1285,0,False,Moderate (1-2km),False,False,True
+237,2021,640.7273060774278,To Kwa Wan,22.3172,114.1876,0,False,Close (500-1000m),True,True,True
+280,2021,785.9590870690853,Kowloon Bay,22.3235,114.2141,0,False,Close (500-1000m),False,True,True
+227,2021,249.2939570292314,Mong Kok,22.321624,114.172537,0,False,Very Close (<500m),True,True,True
+235,2021,361.2636459492844,Mong Kok,22.321624,114.172537,0,False,Very Close (<500m),True,True,True
+221,2021,567.4166963452515,Prince Edward,22.3245,114.1683,0,False,Close (500-1000m),False,True,True
+293,2021,1011.2791327735113,Kwun Tong,22.311559,114.227765,0,False,Moderate (1-2km),False,True,True
+234,2021,804.7273033176439,To Kwa Wan,22.3172,114.1876,0,False,Close (500-1000m),False,True,True
+222,2021,238.04083351274363,Prince Edward,22.3245,114.1683,0,False,Very Close (<500m),True,True,True
+242,2021,312.5728854152676,Sung Wong Toi,22.326139,114.190407,0,False,Very Close (<500m),True,True,True
+221,2021,649.5595706426377,Olympic,22.3178,114.1602,0,False,Close (500-1000m),False,True,True
+221,2021,658.0612500180575,Olympic,22.3178,114.1602,0,False,Close (500-1000m),False,True,True
+254,2021,561.8765476011151,Nam Cheong,22.32829,114.1538,0,False,Close (500-1000m),True,True,True
+284,2021,409.612983400613,Kai Tak,22.3304,114.1994,0,False,Very Close (<500m),True,True,True
+291,2021,66.4374428817984,Choi Hung,22.334161,114.210289,1,True,Very Close (<500m),True,True,True
+288,2021,556.4742520570919,Choi Hung,22.334161,114.210289,0,False,Close (500-1000m),True,True,True
+263,2021,170.87834562950837,Shek Kip Mei,22.332,114.1687,0,False,Very Close (<500m),True,True,True
+291,2021,444.77338264830877,Kowloon Bay,22.3235,114.2141,0,False,Very Close (<500m),True,True,True
+291,2021,146.32415488750817,Kowloon Bay,22.3235,114.2141,0,False,Very Close (<500m),True,True,True
+836,2021,765.6545504726747,Po Lam,22.3224,114.258,0,False,Close (500-1000m),False,True,True
+151,2021,401.1368472801316,Fortress Hill,22.2881,114.1936,0,False,Very Close (<500m),True,True,True
+112,2021,327.0918819937822,Sai Ying Pun,22.2856,114.1427,0,False,Very Close (<500m),True,True,True
+112,2021,270.3989605225264,Sai Ying Pun,22.2856,114.1427,0,False,Very Close (<500m),True,True,True
+268,2021,489.9796892171394,Prince Edward,22.3245,114.1683,0,False,Very Close (<500m),True,True,True
+266,2021,303.67398098486984,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+267,2021,338.729986100149,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+268,2021,310.5368372438655,Shek Kip Mei,22.332,114.1687,0,False,Very Close (<500m),True,True,True
+152,2021,471.84577552978885,North Point,22.2909,114.2007,0,False,Very Close (<500m),True,True,True
+112,2021,458.55745116535627,Sai Ying Pun,22.2856,114.1427,0,False,Very Close (<500m),True,True,True
+246,2021,395.4379352479483,Sung Wong Toi,22.326139,114.190407,0,False,Very Close (<500m),True,True,True
+280,2021,457.2465550616222,Kowloon Bay,22.3235,114.2141,0,False,Very Close (<500m),True,True,True
+232,2021,539.8111482907852,Mong Kok East,22.3222,114.1728,0,False,Close (500-1000m),True,True,True
+221,2021,391.159078408846,Prince Edward,22.3245,114.1683,0,False,Very Close (<500m),True,True,True
+255,2021,387.7806245049491,Nam Cheong,22.32829,114.1538,0,False,Very Close (<500m),True,True,True
+836,2021,217.77022332936215,Po Lam,22.3224,114.258,0,False,Very Close (<500m),True,True,True
+267,2021,395.72291482258834,Shek Kip Mei,22.332,114.1687,0,False,Very Close (<500m),True,True,True
+267,2021,229.27064221629036,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+266,2021,164.08836878369462,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+268,2021,570.6705738380638,Shek Kip Mei,22.332,114.1687,0,False,Close (500-1000m),True,True,True
+267,2021,134.4394551923177,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+268,2021,654.1255206659749,Mong Kok East,22.3222,114.1728,0,False,Close (500-1000m),True,True,True
+271,2021,684.0121069108222,Sung Wong Toi,22.326139,114.190407,0,False,Close (500-1000m),False,True,True
+266,2021,419.3843343329135,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+271,2021,825.6723547376704,Sung Wong Toi,22.326139,114.190407,0,False,Close (500-1000m),False,True,True
+269,2021,371.689204698848,Nam Cheong,22.32829,114.1538,0,False,Very Close (<500m),True,True,True
+292,2021,1382.3422828125283,Choi Hung,22.334161,114.210289,0,False,Moderate (1-2km),False,True,True
+264,2021,473.3009249707107,Cheung Sha Wan,22.3354,114.1563,0,False,Very Close (<500m),True,True,True
+271,2021,349.2669248311796,Kowloon Tong,22.336809,114.177245,0,False,Very Close (<500m),True,True,True
+271,2021,586.856950767541,Kowloon Tong,22.336809,114.177245,0,False,Close (500-1000m),True,True,True
+241,2021,381.57644359685133,To Kwa Wan,22.3172,114.1876,0,False,Very Close (<500m),True,True,True
+222,2021,166.54489926071508,Mong Kok,22.321624,114.172537,0,False,Very Close (<500m),True,True,True
+221,2021,531.496974111237,Olympic,22.3178,114.1602,0,False,Close (500-1000m),True,True,True
+221,2021,325.678340886138,Olympic,22.3178,114.1602,0,False,Very Close (<500m),True,True,True
+222,2021,342.6817128224979,Mong Kok,22.321624,114.172537,0,False,Very Close (<500m),True,True,True
+294,2021,502.099963794752,Ngau Tau Kok,22.3154,114.2193,0,False,Close (500-1000m),True,True,True
+246,2021,389.9741824646735,To Kwa Wan,22.3172,114.1876,0,False,Very Close (<500m),True,True,True
+246,2021,184.71627920946673,Sung Wong Toi,22.326139,114.190407,0,False,Very Close (<500m),True,True,True
+221,2021,131.74209273193844,Prince Edward,22.3245,114.1683,0,False,Very Close (<500m),True,True,True
+221,2021,537.6819367522289,Sham Shui Po,22.330141,114.163247,0,False,Close (500-1000m),True,True,True
+116,2021,339.8904234622301,HKU,22.2841,114.1356,0,False,Very Close (<500m),True,True,True
+157,2021,504.7617288697145,Tai Koo,22.2846,114.2161,0,False,Close (500-1000m),True,True,True
+157,2021,389.1429257166561,Tai Koo,22.2846,114.2161,0,False,Very Close (<500m),True,True,True
+113,2021,543.025609205356,Sheung Wan,22.285899,114.153707,0,False,Close (500-1000m),True,True,True
+157,2021,272.3408778944916,Tai Koo,22.2846,114.2161,0,False,Very Close (<500m),True,True,True
+232,2021,429.5938688981745,Mong Kok East,22.3222,114.1728,0,False,Very Close (<500m),True,True,True
+234,2021,709.5192757022628,Mong Kok East,22.3222,114.1728,0,False,Close (500-1000m),False,True,True
+221,2021,457.4788910371691,Prince Edward,22.3245,114.1683,0,False,Very Close (<500m),True,True,True
+221,2021,534.1781341591307,Olympic,22.3178,114.1602,0,False,Close (500-1000m),True,True,True
+221,2021,359.3613447047315,Prince Edward,22.3245,114.1683,0,False,Very Close (<500m),True,True,True
+242,2021,552.5112561736491,Sung Wong Toi,22.326139,114.190407,0,False,Close (500-1000m),False,True,True
+280,2021,469.42526732034037,Kowloon Bay,22.3235,114.2141,0,False,Very Close (<500m),True,True,True
+836,2021,600.6508310049151,Po Lam,22.3224,114.258,0,False,Close (500-1000m),True,True,True
+246,2021,284.68608460699227,Sung Wong Toi,22.326139,114.190407,0,False,Very Close (<500m),True,True,True
+221,2021,365.1539134062166,Prince Edward,22.3245,114.1683,0,False,Very Close (<500m),True,True,True
+233,2021,855.7701870077283,Mong Kok East,22.3222,114.1728,0,False,Close (500-1000m),False,True,True
+221,2021,327.686179731455,Prince Edward,22.3245,114.1683,0,False,Very Close (<500m),True,True,True
+221,2021,225.27197433856136,Prince Edward,22.3245,114.1683,0,False,Very Close (<500m),True,True,True
+835,2021,999.2429536689256,Po Lam,22.3224,114.258,0,False,Close (500-1000m),False,True,True
+221,2021,250.86390661867307,Prince Edward,22.3245,114.1683,0,False,Very Close (<500m),True,True,True
+292,2021,657.8765052873316,Kowloon Bay,22.3235,114.2141,0,False,Close (500-1000m),False,True,True
+271,2021,913.4201858194534,Kowloon Tong,22.336809,114.177245,0,False,Close (500-1000m),False,True,True
+266,2021,200.53776776320473,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+268,2021,580.8567588476526,Shek Kip Mei,22.332,114.1687,0,False,Close (500-1000m),True,True,True
+836,2021,1065.688092627719,Po Lam,22.3224,114.258,0,False,Moderate (1-2km),False,False,True
+292,2021,1342.092488223995,Kowloon Bay,22.3235,114.2141,0,False,Moderate (1-2km),False,False,True
+280,2021,385.8188797439392,Kowloon Bay,22.3235,114.2141,0,False,Very Close (<500m),True,True,True
+814,2021,10163.160495454656,LOHAS Park,22.2957,114.2689,0,False,Far (>2km),False,False,False
+221,2021,433.47586663810694,Olympic,22.3178,114.1602,0,False,Very Close (<500m),True,True,True
+814,2021,10422.9201869209,LOHAS Park,22.2957,114.2689,0,False,Far (>2km),False,False,False
+831,2021,3896.759552287803,Hang Hau,22.3156,114.2644,0,False,Far (>2km),False,False,False
+294,2021,775.2522798315281,Ngau Tau Kok,22.3154,114.2193,0,False,Close (500-1000m),False,True,True
+283,2021,765.1213969034375,Lok Fu,22.338,114.1871,0,False,Close (500-1000m),False,True,True
+265,2021,317.89331142551276,Cheung Sha Wan,22.3354,114.1563,0,False,Very Close (<500m),True,True,True
+837,2021,734.2402149804291,Hang Hau,22.3156,114.2644,0,False,Close (500-1000m),False,True,True
+222,2021,281.5656506517411,Mong Kok,22.321624,114.172537,0,False,Very Close (<500m),True,True,True
+234,2021,724.0387505300545,Mong Kok East,22.3222,114.1728,0,False,Close (500-1000m),False,True,True
+235,2021,389.9292586482236,Mong Kok,22.321624,114.172537,0,False,Very Close (<500m),True,True,True
+221,2021,492.21528321707166,Olympic,22.3178,114.1602,0,False,Very Close (<500m),True,True,True
+222,2021,224.10271111486645,Mong Kok,22.321624,114.172537,0,False,Very Close (<500m),True,True,True
+293,2021,993.2194588807131,Kwun Tong,22.311559,114.227765,0,False,Close (500-1000m),False,True,True
+246,2021,183.88860218505226,Sung Wong Toi,22.326139,114.190407,0,False,Very Close (<500m),True,True,True
+231,2021,450.8669734546517,Mong Kok East,22.3222,114.1728,0,False,Very Close (<500m),True,True,True
+246,2021,257.3704540934644,Sung Wong Toi,22.326139,114.190407,0,False,Very Close (<500m),True,True,True
+836,2021,818.0144441946981,Po Lam,22.3224,114.258,0,False,Close (500-1000m),False,True,True
+221,2021,384.6229293153648,Prince Edward,22.3245,114.1683,0,False,Very Close (<500m),True,True,True
+233,2021,914.7629202184148,Sung Wong Toi,22.326139,114.190407,0,False,Close (500-1000m),False,True,True
+266,2021,249.5943742775548,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+271,2021,860.025511262238,Kowloon Tong,22.336809,114.177245,0,False,Close (500-1000m),False,True,True
+268,2021,725.8297195633492,Shek Kip Mei,22.332,114.1687,0,False,Close (500-1000m),False,True,True
+265,2021,446.805633485524,Nam Cheong,22.32829,114.1538,0,False,Very Close (<500m),True,True,True
+266,2021,105.51441205691981,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+267,2021,245.4752613767694,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+266,2021,366.08740509036164,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+267,2021,129.9977135851266,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+271,2021,739.0891916015854,Mong Kok East,22.3222,114.1728,0,False,Close (500-1000m),False,True,True
+271,2021,940.4977513941412,Kowloon Tong,22.336809,114.177245,0,False,Close (500-1000m),False,True,True
+271,2021,829.8784569788413,Kowloon Tong,22.336809,114.177245,0,False,Close (500-1000m),False,True,True
+266,2021,43.587049104627425,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+271,2021,772.2004080865529,Kowloon Tong,22.336809,114.177245,0,False,Close (500-1000m),False,True,True
+265,2021,500.2771138464668,Sham Shui Po,22.330141,114.163247,0,False,Close (500-1000m),True,True,True
+272,2021,719.4120131955249,Lok Fu,22.338,114.1871,0,False,Close (500-1000m),True,True,True
+831,2021,2144.2795902957046,Po Lam,22.3224,114.258,0,False,Far (>2km),False,False,True
+268,2021,516.461754434169,Shek Kip Mei,22.332,114.1687,0,False,Close (500-1000m),True,True,True
+264,2021,240.4416806441012,Cheung Sha Wan,22.3354,114.1563,0,False,Very Close (<500m),True,True,True
+231,2021,542.4855528706389,Sung Wong Toi,22.326139,114.190407,0,False,Close (500-1000m),True,True,True
+255,2021,285.47226183160524,Nam Cheong,22.32829,114.1538,0,False,Very Close (<500m),True,True,True
+255,2021,403.5785144003928,Nam Cheong,22.32829,114.1538,0,False,Very Close (<500m),True,True,True
+285,2021,638.3534448461292,Sung Wong Toi,22.326139,114.190407,0,False,Close (500-1000m),False,True,True
+831,2021,1597.0366789449122,Po Lam,22.3224,114.258,0,False,Moderate (1-2km),False,False,True
+264,2021,462.98825869597397,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+264,2021,468.7896430903352,Cheung Sha Wan,22.3354,114.1563,0,False,Very Close (<500m),True,True,True
+814,2021,11087.183604846372,Hang Hau,22.3156,114.2644,0,False,Far (>2km),False,False,False
+268,2021,233.7438395871154,Shek Kip Mei,22.332,114.1687,0,False,Very Close (<500m),True,True,True
+831,2021,3567.009059625329,Hang Hau,22.3156,114.2644,0,False,Far (>2km),False,False,False
+266,2021,237.4540704269352,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+836,2021,453.41667376867616,Po Lam,22.3224,114.258,0,False,Very Close (<500m),True,True,True
+221,2021,512.9567300658623,Prince Edward,22.3245,114.1683,0,False,Close (500-1000m),True,True,True
+234,2021,567.0876154934142,Mong Kok,22.321624,114.172537,0,False,Close (500-1000m),True,True,True
+242,2021,631.8399125567087,Sung Wong Toi,22.326139,114.190407,0,False,Close (500-1000m),False,True,True
+241,2021,529.1635015639182,To Kwa Wan,22.3172,114.1876,0,False,Close (500-1000m),True,True,True
+835,2021,483.67398672335406,Po Lam,22.3224,114.258,0,False,Very Close (<500m),True,True,True
+231,2021,824.5741657303323,Mong Kok East,22.3222,114.1728,0,False,Close (500-1000m),False,True,True
+246,2021,459.0976885496555,Sung Wong Toi,22.326139,114.190407,0,False,Very Close (<500m),True,True,True
+231,2021,958.7140667248811,Sung Wong Toi,22.326139,114.190407,0,False,Close (500-1000m),False,True,True
+268,2021,481.7850635951355,Shek Kip Mei,22.332,114.1687,0,False,Very Close (<500m),True,True,True
+285,2021,441.6568178916515,Sung Wong Toi,22.326139,114.190407,0,False,Very Close (<500m),True,True,True
+266,2021,321.906866568013,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+267,2021,282.7376119808849,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+246,2021,140.4803829239684,Sung Wong Toi,22.326139,114.190407,0,False,Very Close (<500m),True,True,True
+267,2021,276.2368790351204,Prince Edward,22.3245,114.1683,0,False,Very Close (<500m),True,True,True
+231,2021,811.06871281326,Sung Wong Toi,22.326139,114.190407,0,False,Close (500-1000m),False,True,True
+267,2021,399.29930854652827,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+836,2021,468.462040375272,Po Lam,22.3224,114.258,0,False,Very Close (<500m),True,True,True
+268,2021,703.8742610118434,Kowloon Tong,22.336809,114.177245,0,False,Close (500-1000m),False,True,True
+268,2021,695.8680551021936,Kowloon Tong,22.336809,114.177245,0,False,Close (500-1000m),False,True,True
+154,2021,353.8918704653791,Quarry Bay,22.2878,114.2096,0,False,Very Close (<500m),True,True,True
+113,2021,470.4993134285499,Sheung Wan,22.285899,114.153707,0,False,Very Close (<500m),True,True,True
+155,2021,229.33312642698277,Quarry Bay,22.2878,114.2096,0,False,Very Close (<500m),True,True,True
+151,2021,110.04513843383673,Fortress Hill,22.2881,114.1936,0,False,Very Close (<500m),True,True,True
+835,2021,1268.9394017647637,Po Lam,22.3224,114.258,0,False,Moderate (1-2km),False,False,True
+221,2021,525.9657718697208,Olympic,22.3178,114.1602,0,False,Close (500-1000m),True,True,True
+242,2021,515.8606458953548,Sung Wong Toi,22.326139,114.190407,0,False,Close (500-1000m),True,True,True
+222,2021,342.63347669015974,Mong Kok,22.321624,114.172537,0,False,Very Close (<500m),True,True,True
+835,2021,1156.575560542949,Po Lam,22.3224,114.258,0,False,Moderate (1-2km),False,False,True
+221,2021,524.2759678043435,Prince Edward,22.3245,114.1683,0,False,Close (500-1000m),True,True,True
+297,2021,535.7227864580299,Lam Tin,22.305367,114.234261,0,False,Close (500-1000m),True,True,True
+156,2021,475.6934023040751,Tai Koo,22.2846,114.2161,0,False,Very Close (<500m),True,True,True
+122,2021,453.03568295580186,Sheung Wan,22.285899,114.153707,0,False,Very Close (<500m),True,True,True
+111,2021,525.7299145886981,Kennedy Town,22.2812,114.1285,0,False,Close (500-1000m),True,True,True
+142,2021,585.4293351363315,Sheung Wan,22.285899,114.153707,0,False,Close (500-1000m),True,True,True
+135,2021,26.114557757765905,Exhibition Centre,22.281613,114.17569,1,True,Very Close (<500m),True,True,True
+146,2021,241.82688952978623,Causeway Bay,22.279392,114.182926,0,False,Very Close (<500m),True,True,True
+145,2021,170.1343683462082,Tin Hau,22.2827,114.1917,0,False,Very Close (<500m),True,True,True
+161,2021,127.443304898663,Sai Wan Ho,22.2816,114.2224,0,False,Very Close (<500m),True,True,True
+122,2021,501.8359664525455,Sheung Wan,22.285899,114.153707,0,False,Close (500-1000m),True,True,True
+123,2021,225.41439394997,Central,22.281938,114.158077,0,False,Very Close (<500m),True,True,True
+142,2021,641.6524271888866,Sheung Wan,22.285899,114.153707,0,False,Close (500-1000m),False,True,True
+141,2021,406.0703849679349,HKU,22.2841,114.1356,0,False,Very Close (<500m),True,True,True
+147,2021,568.4967903324439,Fortress Hill,22.2881,114.1936,0,False,Close (500-1000m),True,True,True
+113,2021,548.6552666971561,Sheung Wan,22.285899,114.153707,0,False,Close (500-1000m),True,True,True
+152,2021,354.9560781301296,Fortress Hill,22.2881,114.1936,0,False,Very Close (<500m),True,True,True
+112,2021,464.8745575079309,HKU,22.2841,114.1356,0,False,Very Close (<500m),True,True,True
+155,2021,291.5385196693722,Quarry Bay,22.2878,114.2096,0,False,Very Close (<500m),True,True,True
+294,2021,374.1325975903118,Kowloon Bay,22.3235,114.2141,0,False,Very Close (<500m),True,True,True
+221,2021,417.7235989294725,Prince Edward,22.3245,114.1683,0,False,Very Close (<500m),True,True,True
+221,2021,198.54555741807422,Prince Edward,22.3245,114.1683,0,False,Very Close (<500m),True,True,True
+115,2021,575.6099923943283,Sai Ying Pun,22.2856,114.1427,0,False,Close (500-1000m),False,True,True
+121,2021,43.145841973562426,Hong Kong,22.285,114.158,2,True,Very Close (<500m),True,True,True
+114,2021,49.39346129567721,Sheung Wan,22.285899,114.153707,0,False,Very Close (<500m),True,True,True
+161,2021,69.85577310645526,Shau Kei Wan,22.2789,114.2289,0,False,Very Close (<500m),True,True,True
+145,2021,472.61643433811025,Tin Hau,22.2827,114.1917,0,False,Very Close (<500m),True,True,True
+166,2021,416.786744977394,Sai Wan Ho,22.2816,114.2224,0,False,Very Close (<500m),True,True,True
+131,2021,493.40050091255216,Exhibition Centre,22.281613,114.17569,0,False,Very Close (<500m),True,True,True
+145,2021,491.9581866929636,Tin Hau,22.2827,114.1917,0,False,Very Close (<500m),True,True,True
+267,2021,276.6383780318708,Shek Kip Mei,22.332,114.1687,0,False,Very Close (<500m),True,True,True
+267,2021,233.86109414933497,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+283,2021,552.5255850937646,Sung Wong Toi,22.326139,114.190407,0,False,Close (500-1000m),False,True,True
+291,2021,543.9916731751686,Choi Hung,22.334161,114.210289,0,False,Close (500-1000m),True,True,True
+266,2021,256.4503002576279,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+280,2021,590.5754770067447,Choi Hung,22.334161,114.210289,0,False,Close (500-1000m),False,True,True
+350,2021,2499.907929038564,Lai King,22.3484,114.1261,0,False,Far (>2km),False,False,False
+266,2021,156.10679387192695,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+285,2021,599.9267365387109,Sung Wong Toi,22.326139,114.190407,0,False,Close (500-1000m),True,True,True
+283,2021,480.48451048379883,Lok Fu,22.338,114.1871,0,False,Very Close (<500m),True,True,True
+974,2021,552.3924089792954,Sunny Bay,22.33285,114.028222,0,False,Close (500-1000m),True,True,True
+284,2021,524.7067523482104,Diamond Hill,22.339189,114.202382,0,False,Close (500-1000m),True,True,True
+264,2021,304.0186656021057,Cheung Sha Wan,22.3354,114.1563,0,False,Very Close (<500m),True,True,True
+264,2021,479.59995453217226,Cheung Sha Wan,22.3354,114.1563,0,False,Very Close (<500m),True,True,True
+260,2021,468.47053331412417,Mei Foo,22.336907,114.140573,0,False,Very Close (<500m),True,True,True
+264,2021,160.16007871616105,Lai Chi Kok,22.3373,114.1482,0,False,Very Close (<500m),True,True,True
+268,2021,340.60257239032705,Prince Edward,22.3245,114.1683,0,False,Very Close (<500m),True,True,True
+267,2021,397.6671440552025,Prince Edward,22.3245,114.1683,0,False,Very Close (<500m),True,True,True
+267,2021,255.18847481467273,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+350,2021,3522.261126137033,Tsing Yi,22.360206,114.107587,0,False,Far (>2km),False,False,False
+267,2021,292.4599754713363,Shek Kip Mei,22.332,114.1687,0,False,Very Close (<500m),True,True,True
+283,2021,611.5130102981209,Kai Tak,22.3304,114.1994,0,False,Close (500-1000m),True,True,True
+151,2021,282.30193995547523,Fortress Hill,22.2881,114.1936,0,False,Very Close (<500m),True,True,True
+157,2021,243.28651376415664,Tai Koo,22.2846,114.2161,0,False,Very Close (<500m),True,True,True
+157,2021,283.75916013691335,Tai Koo,22.2846,114.2161,0,False,Very Close (<500m),True,True,True
+151,2021,192.4412691672175,Fortress Hill,22.2881,114.1936,0,False,Very Close (<500m),True,True,True
+114,2021,207.83549380312783,Sheung Wan,22.285899,114.153707,0,False,Very Close (<500m),True,True,True
+152,2021,505.3143380113761,Tin Hau,22.2827,114.1917,0,False,Close (500-1000m),True,True,True
+112,2021,361.9219524391639,HKU,22.2841,114.1356,0,False,Very Close (<500m),True,True,True
+152,2021,672.6818352255536,North Point,22.2909,114.2007,0,False,Close (500-1000m),True,True,True
+112,2021,332.01329778144225,HKU,22.2841,114.1356,0,False,Very Close (<500m),True,True,True
+157,2021,596.0320015260485,Sai Wan Ho,22.2816,114.2224,0,False,Close (500-1000m),False,True,True
+112,2021,411.6917510894246,Sai Ying Pun,22.2856,114.1427,0,False,Very Close (<500m),True,True,True
+113,2021,314.6191444337991,Sheung Wan,22.285899,114.153707,0,False,Very Close (<500m),True,True,True
+266,2021,154.8388647122367,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+266,2021,92.33257035898498,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+292,2021,1061.1423399507778,Kowloon Bay,22.3235,114.2141,0,False,Moderate (1-2km),False,True,True
+320,2021,1860.4380874272413,Mei Foo,22.336907,114.140573,0,False,Moderate (1-2km),False,True,True
+267,2021,267.3833780176537,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+157,2021,486.0879918036424,Sai Wan Ho,22.2816,114.2224,0,False,Very Close (<500m),True,True,True
+112,2021,379.3110369574765,HKU,22.2841,114.1356,0,False,Very Close (<500m),True,True,True
+113,2021,420.50608961413866,Sai Ying Pun,22.2856,114.1427,0,False,Very Close (<500m),True,True,True
+155,2021,553.1135037091669,Quarry Bay,22.2878,114.2096,0,False,Close (500-1000m),True,True,True
+111,2021,1302.7328262008916,Kennedy Town,22.2812,114.1285,0,False,Moderate (1-2km),False,False,True
+114,2021,92.81382388953188,Sheung Wan,22.285899,114.153707,0,False,Very Close (<500m),True,True,True
+155,2021,311.45616484834017,Quarry Bay,22.2878,114.2096,0,False,Very Close (<500m),True,True,True
+116,2021,267.28876186184806,HKU,22.2841,114.1356,0,False,Very Close (<500m),True,True,True
+151,2021,249.23067291185637,Fortress Hill,22.2881,114.1936,0,False,Very Close (<500m),True,True,True
+111,2021,478.97519958801195,Kennedy Town,22.2812,114.1285,0,False,Very Close (<500m),True,True,True
+973,2021,1237.7716995222377,Disneyland Resort,22.3155,114.0451,0,False,Moderate (1-2km),False,True,True
+271,2021,697.8810451462402,Kowloon Tong,22.336809,114.177245,0,False,Close (500-1000m),False,True,True
+264,2021,435.75428351065807,Cheung Sha Wan,22.3354,114.1563,0,False,Very Close (<500m),True,True,True
+263,2021,592.497416686389,Sham Shui Po,22.330141,114.163247,0,False,Close (500-1000m),False,True,True
+268,2021,354.39496275181676,Shek Kip Mei,22.332,114.1687,0,False,Very Close (<500m),True,True,True
+263,2021,396.15415972796603,Shek Kip Mei,22.332,114.1687,0,False,Very Close (<500m),True,True,True
+260,2021,351.04614779645584,Mei Foo,22.336907,114.140573,0,False,Very Close (<500m),True,True,True
+350,2021,2594.5323918422037,Lai King,22.3484,114.1261,0,False,Far (>2km),False,False,False
+283,2021,315.3798799553519,Lok Fu,22.338,114.1871,0,False,Very Close (<500m),True,True,True
+284,2021,577.6972149986932,Kai Tak,22.3304,114.1994,0,False,Close (500-1000m),True,True,True
+264,2021,96.93270984025084,Cheung Sha Wan,22.3354,114.1563,0,False,Very Close (<500m),True,True,True
+280,2021,597.2791633067714,Kowloon Bay,22.3235,114.2141,0,False,Close (500-1000m),True,True,True
+267,2021,293.1092466150035,Prince Edward,22.3245,114.1683,0,False,Very Close (<500m),True,True,True
+267,2021,372.7607410390452,Prince Edward,22.3245,114.1683,0,False,Very Close (<500m),True,True,True
+267,2021,307.07732643498395,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+246,2021,145.45811775819146,Sung Wong Toi,22.326139,114.190407,0,False,Very Close (<500m),True,True,True
+266,2021,492.72121012490095,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+254,2021,297.6897133629612,Olympic,22.3178,114.1602,0,False,Very Close (<500m),True,True,True
+294,2021,833.5686377495708,Kwun Tong,22.311559,114.227765,0,False,Close (500-1000m),False,True,True
+837,2021,487.20703119206576,Hang Hau,22.3156,114.2644,0,False,Very Close (<500m),True,True,True
+221,2021,235.0691046122239,Olympic,22.3178,114.1602,0,False,Very Close (<500m),True,True,True
+222,2021,364.9297544200165,Mong Kok,22.321624,114.172537,0,False,Very Close (<500m),True,True,True
+266,2021,117.75334540806568,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+268,2021,314.7943577791543,Shek Kip Mei,22.332,114.1687,0,False,Very Close (<500m),True,True,True
+268,2021,241.55165449673996,Shek Kip Mei,22.332,114.1687,0,False,Very Close (<500m),True,True,True
+350,2021,2950.738313771153,Lai King,22.3484,114.1261,0,False,Far (>2km),False,False,False
+291,2021,296.6233901815535,Kowloon Bay,22.3235,114.2141,0,False,Very Close (<500m),True,True,True
+973,2021,51.45316593508986,Disneyland Resort,22.3155,114.0451,1,True,Very Close (<500m),True,True,True
+271,2021,563.4357638112642,Sung Wong Toi,22.326139,114.190407,0,False,Close (500-1000m),True,True,True
+267,2021,282.1612946077736,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+288,2021,113.76318331678324,Choi Hung,22.334161,114.210289,0,False,Very Close (<500m),True,True,True
+284,2021,705.9443790990163,Kai Tak,22.3304,114.1994,0,False,Close (500-1000m),False,True,True
+268,2021,383.4840650123686,Kowloon Tong,22.336809,114.177245,0,False,Very Close (<500m),True,True,True
+241,2021,175.50131922712427,To Kwa Wan,22.3172,114.1876,0,False,Very Close (<500m),True,True,True
+227,2021,368.0587619325325,Mong Kok,22.321624,114.172537,0,False,Very Close (<500m),True,True,True
+294,2021,792.6114183771551,Kwun Tong,22.311559,114.227765,0,False,Close (500-1000m),False,True,True
+294,2021,340.3668661932947,Ngau Tau Kok,22.3154,114.2193,0,False,Very Close (<500m),True,True,True
+288,2021,191.64536540377756,Choi Hung,22.334161,114.210289,0,False,Very Close (<500m),True,True,True
+234,2021,867.5635703537754,To Kwa Wan,22.3172,114.1876,0,False,Close (500-1000m),False,True,True
+221,2021,307.40216048266115,Prince Edward,22.3245,114.1683,0,False,Very Close (<500m),True,True,True
+221,2021,461.6697168740116,Prince Edward,22.3245,114.1683,0,False,Very Close (<500m),True,True,True
+268,2021,380.4190255080697,Shek Kip Mei,22.332,114.1687,0,False,Very Close (<500m),True,True,True
+271,2021,797.9033450217021,Kowloon Tong,22.336809,114.177245,0,False,Close (500-1000m),False,True,True
+831,2021,1189.4213970548935,Hang Hau,22.3156,114.2644,0,False,Moderate (1-2km),False,True,True
+246,2021,594.4000730288996,To Kwa Wan,22.3172,114.1876,0,False,Close (500-1000m),True,True,True
+836,2021,164.83082986268815,Po Lam,22.3224,114.258,0,False,Very Close (<500m),True,True,True
+221,2021,575.3796161275326,Prince Edward,22.3245,114.1683,0,False,Close (500-1000m),False,True,True
+221,2021,115.13281015778381,Prince Edward,22.3245,114.1683,0,False,Very Close (<500m),True,True,True
+142,2021,857.476599993274,Central,22.281938,114.158077,0,False,Close (500-1000m),False,True,True
+132,2021,552.699157918369,Exhibition Centre,22.281613,114.17569,0,False,Close (500-1000m),False,True,True
+145,2021,850.7071602811579,Tin Hau,22.2827,114.1917,0,False,Close (500-1000m),False,True,True
+132,2021,663.3659748516967,Exhibition Centre,22.281613,114.17569,0,False,Close (500-1000m),False,True,True
+836,2021,841.1569078219286,Po Lam,22.3224,114.258,0,False,Close (500-1000m),False,True,True
+268,2021,382.35106498210496,Shek Kip Mei,22.332,114.1687,0,False,Very Close (<500m),True,True,True
+350,2021,3851.831718932819,Tsing Yi,22.360206,114.107587,0,False,Far (>2km),False,False,False
+284,2021,734.080505437252,Wong Tai Sin,22.341839,114.192124,0,False,Close (500-1000m),False,True,True
+264,2021,164.21304851682012,Lai Chi Kok,22.3373,114.1482,0,False,Very Close (<500m),True,True,True
+260,2021,256.5473573088972,Mei Foo,22.336907,114.140573,0,False,Very Close (<500m),True,True,True
+284,2021,664.9769294634012,Diamond Hill,22.339189,114.202382,0,False,Close (500-1000m),False,True,True
+231,2021,688.0156546503132,Sung Wong Toi,22.326139,114.190407,0,False,Close (500-1000m),False,True,True
+255,2021,513.0576890896049,Nam Cheong,22.32829,114.1538,0,False,Close (500-1000m),True,True,True
+265,2021,475.77269905750546,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+237,2021,349.0281339823471,To Kwa Wan,22.3172,114.1876,0,False,Very Close (<500m),True,True,True
+227,2021,325.6591754795045,Mong Kok,22.321624,114.172537,0,False,Very Close (<500m),True,True,True
+294,2021,638.9389981061792,Kwun Tong,22.311559,114.227765,0,False,Close (500-1000m),True,True,True
+242,2021,485.6721993888662,To Kwa Wan,22.3172,114.1876,0,False,Very Close (<500m),True,True,True
+837,2021,890.1666772716181,Hang Hau,22.3156,114.2644,0,False,Close (500-1000m),False,True,True
+241,2021,256.2382724343304,To Kwa Wan,22.3172,114.1876,0,False,Very Close (<500m),True,True,True
+227,2021,289.52872821855914,Mong Kok,22.321624,114.172537,0,False,Very Close (<500m),True,True,True
+291,2021,309.46772592812914,Kowloon Bay,22.3235,114.2141,0,False,Very Close (<500m),True,True,True
+951,2021,2900.3978580080825,AsiaWorld–Expo,22.321988,113.942221,0,False,Far (>2km),True,True,True
+222,2021,139.061177494431,Prince Edward,22.3245,114.1683,0,False,Very Close (<500m),True,True,True
+241,2021,282.0142909724926,Sung Wong Toi,22.326139,114.190407,0,False,Very Close (<500m),True,True,True
+221,2021,532.9688197561665,Prince Edward,22.3245,114.1683,0,False,Close (500-1000m),True,True,True
+222,2021,260.368294082305,Mong Kok East,22.3222,114.1728,0,False,Very Close (<500m),True,True,True
+266,2021,348.4078153308374,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+131,2021,594.8648206523594,Exhibition Centre,22.281613,114.17569,0,False,Close (500-1000m),False,True,True
+145,2021,469.2184280923377,Tin Hau,22.2827,114.1917,0,False,Very Close (<500m),True,True,True
+132,2021,425.5722368324789,Causeway Bay,22.279392,114.182926,0,False,Very Close (<500m),True,True,True
+145,2021,460.8152892497761,Tin Hau,22.2827,114.1917,0,False,Very Close (<500m),True,True,True
+145,2021,469.27391544380396,Tin Hau,22.2827,114.1917,0,False,Very Close (<500m),True,True,True
+161,2021,120.37845036618502,Shau Kei Wan,22.2789,114.2289,0,False,Very Close (<500m),True,True,True
+145,2021,455.5519471197796,Tin Hau,22.2827,114.1917,0,False,Very Close (<500m),True,True,True
+950,2021,1473.8038520548266,Tung Chung,22.2893,113.9416,0,False,Moderate (1-2km),False,False,True
+131,2021,541.9724443362826,Admiralty,22.278399,114.16433,0,False,Close (500-1000m),True,True,True
+131,2021,389.5186880024365,Exhibition Centre,22.281613,114.17569,0,False,Very Close (<500m),True,True,True
+133,2021,392.58586080552146,Exhibition Centre,22.281613,114.17569,0,False,Very Close (<500m),True,True,True
+145,2021,445.0582230193228,Tin Hau,22.2827,114.1917,0,False,Very Close (<500m),True,True,True
+271,2021,654.062468426232,Kowloon Tong,22.336809,114.177245,0,False,Close (500-1000m),False,True,True
+266,2021,147.5377214421884,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+268,2021,644.3777529507947,Shek Kip Mei,22.332,114.1687,0,False,Close (500-1000m),False,True,True
+268,2021,572.1462500974525,Shek Kip Mei,22.332,114.1687,0,False,Close (500-1000m),False,True,True
+291,2021,324.38030255515014,Choi Hung,22.334161,114.210289,0,False,Very Close (<500m),True,True,True
+350,2021,3457.7543077974237,Tsing Yi,22.360206,114.107587,0,False,Far (>2km),False,False,False
+221,2021,667.3467355763247,Olympic,22.3178,114.1602,0,False,Close (500-1000m),False,True,True
+222,2021,107.03944929829588,Prince Edward,22.3245,114.1683,0,False,Very Close (<500m),True,True,True
+254,2021,642.4431466849907,Olympic,22.3178,114.1602,0,False,Close (500-1000m),False,True,True
+280,2021,894.2142238767424,Kowloon Bay,22.3235,114.2141,0,False,Close (500-1000m),False,True,True
+288,2021,828.8913374594365,Choi Hung,22.334161,114.210289,0,False,Close (500-1000m),False,True,True
+264,2021,180.87227305278861,Cheung Sha Wan,22.3354,114.1563,0,False,Very Close (<500m),True,True,True
+284,2021,412.53419487574115,Diamond Hill,22.339189,114.202382,0,False,Very Close (<500m),True,True,True
+974,2021,561.7232684654372,Sunny Bay,22.33285,114.028222,0,False,Close (500-1000m),True,True,True
+284,2021,674.8213307224324,Wong Tai Sin,22.341839,114.192124,0,False,Close (500-1000m),False,True,True
+264,2021,355.0673434925326,Cheung Sha Wan,22.3354,114.1563,0,False,Very Close (<500m),True,True,True
+264,2021,276.72325253909656,Cheung Sha Wan,22.3354,114.1563,0,False,Very Close (<500m),True,True,True
+272,2021,529.8987556445811,Kowloon Tong,22.336809,114.177245,0,False,Close (500-1000m),True,True,True
+294,2021,597.7006929284341,Ngau Tau Kok,22.3154,114.2193,0,False,Close (500-1000m),True,True,True
+221,2021,243.64020255503982,Prince Edward,22.3245,114.1683,0,False,Very Close (<500m),True,True,True
+221,2021,558.687331360473,Olympic,22.3178,114.1602,0,False,Close (500-1000m),False,True,True
+221,2021,562.6515892615616,Prince Edward,22.3245,114.1683,0,False,Close (500-1000m),False,True,True
+221,2021,521.4241112186262,Olympic,22.3178,114.1602,0,False,Close (500-1000m),True,True,True
+836,2021,358.5016114381987,Po Lam,22.3224,114.258,0,False,Very Close (<500m),True,True,True
+246,2021,361.3396399375714,Sung Wong Toi,22.326139,114.190407,0,False,Very Close (<500m),True,True,True
+266,2021,477.7215347449627,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+267,2021,361.71420340236574,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+267,2021,362.7421274030975,Prince Edward,22.3245,114.1683,0,False,Very Close (<500m),True,True,True
+255,2021,287.34685637919586,Nam Cheong,22.32829,114.1538,0,False,Very Close (<500m),True,True,True
+267,2021,369.67687671513534,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+246,2021,40.80427823045995,Sung Wong Toi,22.326139,114.190407,0,False,Very Close (<500m),True,True,True
+951,2021,3812.1913900751383,AsiaWorld–Expo,22.321988,113.942221,0,False,Far (>2km),False,False,False
+267,2021,366.8652653808517,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+263,2021,96.61692121522135,Shek Kip Mei,22.332,114.1687,0,False,Very Close (<500m),True,True,True
+146,2021,205.03621353910705,Causeway Bay,22.279392,114.182926,0,False,Very Close (<500m),True,True,True
+133,2021,247.55082960639803,Causeway Bay,22.279392,114.182926,0,False,Very Close (<500m),True,True,True
+123,2021,104.291392998178,Central,22.281938,114.158077,0,False,Very Close (<500m),True,True,True
+161,2021,137.69874087336618,Sai Wan Ho,22.2816,114.2224,0,False,Very Close (<500m),True,True,True
+221,2021,384.70639744233836,Prince Edward,22.3245,114.1683,0,False,Very Close (<500m),True,True,True
+951,2021,1379.7321854191455,AsiaWorld–Expo,22.321988,113.942221,0,False,Moderate (1-2km),False,True,True
+232,2021,461.2705378867507,Mong Kok East,22.3222,114.1728,0,False,Very Close (<500m),True,True,True
+267,2021,301.2680083221605,Prince Edward,22.3245,114.1683,0,False,Very Close (<500m),True,True,True
+280,2021,816.9005658865639,Kowloon Bay,22.3235,114.2141,0,False,Close (500-1000m),False,True,True
+292,2021,1300.378203105641,Kowloon Bay,22.3235,114.2141,0,False,Moderate (1-2km),False,False,True
+271,2021,815.3218191912631,Mong Kok East,22.3222,114.1728,0,False,Close (500-1000m),False,True,True
+280,2021,481.48839714636296,Kowloon Bay,22.3235,114.2141,0,False,Very Close (<500m),True,True,True
+267,2021,335.8052501412283,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+266,2021,432.76883162051035,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+267,2021,252.02788590938366,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+271,2021,967.4972412518969,Sung Wong Toi,22.326139,114.190407,0,False,Close (500-1000m),False,True,True
+292,2021,1260.0654651958585,Kowloon Bay,22.3235,114.2141,0,False,Moderate (1-2km),False,False,True
+254,2021,451.2017265033656,Olympic,22.3178,114.1602,0,False,Very Close (<500m),True,True,True
+242,2021,381.5706773237052,To Kwa Wan,22.3172,114.1876,0,False,Very Close (<500m),True,True,True
+283,2021,625.0268861021708,Lok Fu,22.338,114.1871,0,False,Close (500-1000m),False,True,True
+814,2021,10903.848867923463,Hang Hau,22.3156,114.2644,0,False,Far (>2km),False,False,False
+288,2021,701.7879001221883,Choi Hung,22.334161,114.210289,0,False,Close (500-1000m),False,True,True
+831,2021,3920.0605029347284,Hang Hau,22.3156,114.2644,0,False,Far (>2km),False,False,False
+254,2021,671.4008901405826,Nam Cheong,22.32829,114.1538,0,False,Close (500-1000m),False,True,True
+234,2021,662.3679730896905,To Kwa Wan,22.3172,114.1876,0,False,Close (500-1000m),False,True,True
+221,2021,559.4626562792799,Olympic,22.3178,114.1602,0,False,Close (500-1000m),False,True,True
+221,2021,560.954953632965,Olympic,22.3178,114.1602,0,False,Close (500-1000m),False,True,True
+221,2021,564.3600081286152,Olympic,22.3178,114.1602,0,False,Close (500-1000m),False,True,True
+221,2021,594.8829519661772,Olympic,22.3178,114.1602,0,False,Close (500-1000m),False,True,True
+242,2021,405.9199297269368,Sung Wong Toi,22.326139,114.190407,0,False,Very Close (<500m),True,True,True
+222,2021,228.8179238373469,Prince Edward,22.3245,114.1683,0,False,Very Close (<500m),True,True,True
+221,2021,509.6757318013595,Prince Edward,22.3245,114.1683,0,False,Close (500-1000m),True,True,True
+280,2021,679.5001113339157,Kowloon Bay,22.3235,114.2141,0,False,Close (500-1000m),False,True,True
+254,2021,707.1266084690504,Nam Cheong,22.32829,114.1538,0,False,Close (500-1000m),False,True,True
+280,2021,411.95501577988466,Kowloon Bay,22.3235,114.2141,0,False,Very Close (<500m),True,True,True
+232,2021,436.289016047027,Mong Kok East,22.3222,114.1728,0,False,Very Close (<500m),True,True,True
+242,2021,491.1021166683268,Sung Wong Toi,22.326139,114.190407,0,False,Very Close (<500m),True,True,True
+241,2021,392.0717620919391,Sung Wong Toi,22.326139,114.190407,0,False,Very Close (<500m),True,True,True
+271,2021,738.8181260146107,Mong Kok East,22.3222,114.1728,0,False,Close (500-1000m),False,True,True
+241,2021,395.2992901423006,Sung Wong Toi,22.326139,114.190407,0,False,Very Close (<500m),True,True,True
+222,2021,225.07515827629658,Prince Edward,22.3245,114.1683,0,False,Very Close (<500m),True,True,True
+233,2021,594.7551361667591,Mong Kok East,22.3222,114.1728,0,False,Close (500-1000m),False,True,True
+221,2021,234.4223016928103,Prince Edward,22.3245,114.1683,0,False,Very Close (<500m),True,True,True
+221,2021,193.25710773285095,Prince Edward,22.3245,114.1683,0,False,Very Close (<500m),True,True,True
+294,2021,622.3945434701367,Kowloon Bay,22.3235,114.2141,0,False,Close (500-1000m),False,True,True
+221,2021,626.4331541180846,Prince Edward,22.3245,114.1683,0,False,Close (500-1000m),False,True,True
+255,2021,299.0242263385597,Lai Chi Kok,22.3373,114.1482,0,False,Very Close (<500m),True,True,True
+264,2021,259.67012148553687,Cheung Sha Wan,22.3354,114.1563,0,False,Very Close (<500m),True,True,True
+264,2021,101.80342572539489,Cheung Sha Wan,22.3354,114.1563,0,False,Very Close (<500m),True,True,True
+264,2021,345.5718349976295,Cheung Sha Wan,22.3354,114.1563,0,False,Very Close (<500m),True,True,True
+284,2021,606.9961864989127,Kai Tak,22.3304,114.1994,0,False,Close (500-1000m),False,True,True
+264,2021,297.46247479513335,Lai Chi Kok,22.3373,114.1482,0,False,Very Close (<500m),True,True,True
+264,2021,327.6747281694059,Lai Chi Kok,22.3373,114.1482,0,False,Very Close (<500m),True,True,True
+264,2021,201.69779140172471,Lai Chi Kok,22.3373,114.1482,0,False,Very Close (<500m),True,True,True
+284,2021,726.2050810239862,Wong Tai Sin,22.341839,114.192124,0,False,Close (500-1000m),False,True,True
+234,2021,485.75932701849064,To Kwa Wan,22.3172,114.1876,0,False,Very Close (<500m),True,True,True
+294,2021,924.0288874749006,Ngau Tau Kok,22.3154,114.2193,0,False,Close (500-1000m),False,True,True
+221,2021,304.33127137812517,Prince Edward,22.3245,114.1683,0,False,Very Close (<500m),True,True,True
+814,2021,10794.645316030763,Hang Hau,22.3156,114.2644,0,False,Far (>2km),False,False,False
+292,2021,929.0776928085373,Kowloon Bay,22.3235,114.2141,0,False,Close (500-1000m),False,True,True
+269,2021,1740.3383727823114,Nam Cheong,22.32829,114.1538,0,False,Moderate (1-2km),False,True,True
+267,2021,383.33694715856285,Prince Edward,22.3245,114.1683,0,False,Very Close (<500m),True,True,True
+267,2021,441.37963864504525,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+242,2021,439.1424446596151,Sung Wong Toi,22.326139,114.190407,0,False,Very Close (<500m),True,True,True
+266,2021,193.8349930773759,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+271,2021,749.13604232506,Kowloon Tong,22.336809,114.177245,0,False,Close (500-1000m),False,True,True
+255,2021,517.9681398344289,Nam Cheong,22.32829,114.1538,0,False,Close (500-1000m),True,True,True
+291,2021,267.08202250703704,Choi Hung,22.334161,114.210289,0,False,Very Close (<500m),True,True,True
+271,2021,624.2937191947574,Kowloon Tong,22.336809,114.177245,0,False,Close (500-1000m),True,True,True
+271,2021,593.7238777154253,Kowloon Tong,22.336809,114.177245,0,False,Close (500-1000m),False,True,True
+266,2021,276.9636454612903,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+266,2021,250.80720231416464,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+271,2021,589.7468676389622,Kowloon Tong,22.336809,114.177245,0,False,Close (500-1000m),True,True,True
+254,2021,108.47516722251868,Olympic,22.3178,114.1602,0,False,Very Close (<500m),True,True,True
+227,2021,416.825058313936,Mong Kok,22.321624,114.172537,0,False,Very Close (<500m),True,True,True
+280,2021,678.1890847815714,Kowloon Bay,22.3235,114.2141,0,False,Close (500-1000m),False,True,True
+837,2021,286.8318466992995,Hang Hau,22.3156,114.2644,0,False,Very Close (<500m),True,True,True
+221,2021,208.71420539346678,Olympic,22.3178,114.1602,0,False,Very Close (<500m),True,True,True
+241,2021,122.9817143260776,To Kwa Wan,22.3172,114.1876,0,False,Very Close (<500m),True,True,True
+280,2021,581.0948015343096,Kowloon Bay,22.3235,114.2141,0,False,Close (500-1000m),True,True,True
+293,2021,1112.0608433828713,Kwun Tong,22.311559,114.227765,0,False,Moderate (1-2km),False,True,True
+232,2021,320.5848945914287,Mong Kok East,22.3222,114.1728,0,False,Very Close (<500m),True,True,True
+247,2021,663.2577988504737,To Kwa Wan,22.3172,114.1876,0,False,Close (500-1000m),False,True,True
+835,2021,719.1557777146407,Tiu Keng Leng,22.305056,114.251907,0,False,Close (500-1000m),True,True,True
+837,2021,754.720106824454,Hang Hau,22.3156,114.2644,0,False,Close (500-1000m),False,True,True
+221,2021,138.61795117010348,Prince Edward,22.3245,114.1683,0,False,Very Close (<500m),True,True,True
+951,2021,294.3452670798399,AsiaWorld–Expo,22.321988,113.942221,1,True,Very Close (<500m),True,True,True
+271,2021,664.6799530192457,Kowloon Tong,22.336809,114.177245,0,False,Close (500-1000m),False,True,True
+836,2021,961.6046308949768,Po Lam,22.3224,114.258,0,False,Close (500-1000m),False,True,True
+222,2021,308.1436207382539,Mong Kok,22.321624,114.172537,0,False,Very Close (<500m),True,True,True
+294,2021,922.0703800609705,Kwun Tong,22.311559,114.227765,0,False,Close (500-1000m),False,True,True
+221,2021,290.91883767256684,Olympic,22.3178,114.1602,0,False,Very Close (<500m),True,True,True
+141,2021,302.0772446701527,Sai Ying Pun,22.2856,114.1427,0,False,Very Close (<500m),True,True,True
+246,2021,243.71602120901645,Sung Wong Toi,22.326139,114.190407,0,False,Very Close (<500m),True,True,True
+271,2021,969.3980013386447,Mong Kok East,22.3222,114.1728,0,False,Close (500-1000m),False,True,True
+267,2021,318.4177954665666,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+266,2021,416.1261772925347,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+280,2021,759.5157663964478,Kai Tak,22.3304,114.1994,0,False,Close (500-1000m),False,True,True
+974,2021,318.557293020324,Sunny Bay,22.33285,114.028222,0,False,Very Close (<500m),True,True,True
+268,2021,502.73611441041845,Shek Kip Mei,22.332,114.1687,0,False,Close (500-1000m),True,True,True
+268,2021,436.7214580691461,Shek Kip Mei,22.332,114.1687,0,False,Very Close (<500m),True,True,True
+266,2021,213.55782580140004,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+266,2021,234.61585274289024,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+265,2021,375.2633270520827,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+255,2021,341.0755260238796,Nam Cheong,22.32829,114.1538,0,False,Very Close (<500m),True,True,True
+263,2021,184.1371641237356,Shek Kip Mei,22.332,114.1687,0,False,Very Close (<500m),True,True,True
+266,2021,252.0958823371459,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+265,2021,357.64632525580964,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+232,2021,122.36186184857809,Mong Kok East,22.3222,114.1728,0,False,Very Close (<500m),True,True,True
+246,2021,581.825606335545,Sung Wong Toi,22.326139,114.190407,0,False,Close (500-1000m),True,True,True
+221,2021,536.0347466425853,Prince Edward,22.3245,114.1683,0,False,Close (500-1000m),True,True,True
+836,2021,350.5837823170804,Po Lam,22.3224,114.258,0,False,Very Close (<500m),True,True,True
+271,2021,587.4498573535769,Kowloon Tong,22.336809,114.177245,0,False,Close (500-1000m),True,True,True
+266,2021,280.49922134119197,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+232,2021,323.71680080465484,Mong Kok East,22.3222,114.1728,0,False,Very Close (<500m),True,True,True
+254,2021,469.80954687776585,Nam Cheong,22.32829,114.1538,0,False,Very Close (<500m),True,True,True
+221,2021,125.1802335223368,Prince Edward,22.3245,114.1683,0,False,Very Close (<500m),True,True,True
+222,2021,319.4066349809731,Prince Edward,22.3245,114.1683,0,False,Very Close (<500m),True,True,True
+836,2021,466.82767216097847,Po Lam,22.3224,114.258,0,False,Very Close (<500m),True,True,True
+271,2021,594.65822592134,Sung Wong Toi,22.326139,114.190407,0,False,Close (500-1000m),True,True,True
+266,2021,220.75487419831586,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+280,2021,713.3095693984334,Choi Hung,22.334161,114.210289,0,False,Close (500-1000m),False,True,True
+280,2021,611.7159088351057,Kowloon Bay,22.3235,114.2141,0,False,Close (500-1000m),False,True,True
+951,2021,2699.5968990785013,AsiaWorld–Expo,22.321988,113.942221,0,False,Far (>2km),False,False,False
+265,2021,452.3260221668655,Cheung Sha Wan,22.3354,114.1563,0,False,Very Close (<500m),True,True,True
+255,2021,538.4062957684268,Lai Chi Kok,22.3373,114.1482,0,False,Close (500-1000m),True,True,True
+291,2021,160.8208318522452,Choi Hung,22.334161,114.210289,0,False,Very Close (<500m),True,True,True
+266,2021,307.1137151871393,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+271,2021,533.8841028102078,Kowloon Tong,22.336809,114.177245,0,False,Close (500-1000m),True,True,True
+122,2021,313.7348213339558,Sheung Wan,22.285899,114.153707,0,False,Very Close (<500m),True,True,True
+122,2021,331.4558140856314,Sheung Wan,22.285899,114.153707,0,False,Very Close (<500m),True,True,True
+141,2021,333.78949743743703,Sai Ying Pun,22.2856,114.1427,0,False,Very Close (<500m),True,True,True
+121,2021,250.31751318448184,Central,22.281938,114.158077,0,False,Very Close (<500m),True,True,True
+161,2021,212.45366651300043,Sai Wan Ho,22.2816,114.2224,0,False,Very Close (<500m),True,True,True
+151,2021,78.62817905619661,Tin Hau,22.2827,114.1917,0,False,Very Close (<500m),True,True,True
+114,2021,476.3010292818458,Sheung Wan,22.285899,114.153707,0,False,Very Close (<500m),True,True,True
+292,2021,1478.7398685738374,Kowloon Bay,22.3235,114.2141,0,False,Moderate (1-2km),False,False,True
+294,2021,1003.8870892638466,Kwun Tong,22.311559,114.227765,0,False,Moderate (1-2km),False,True,True
+294,2021,250.93338865704402,Ngau Tau Kok,22.3154,114.2193,0,False,Very Close (<500m),True,True,True
+253,2021,525.3312508683168,Yau Ma Tei,22.3129,114.1707,0,False,Close (500-1000m),True,True,True
+236,2021,712.5529331260963,Ho Man Tin,22.308953,114.181612,0,False,Close (500-1000m),False,True,True
+212,2021,482.87667453191824,Jordan,22.3049,114.1718,0,False,Very Close (<500m),True,True,True
+245,2021,374.54609702086094,Whampoa,22.305852,114.188799,0,False,Very Close (<500m),True,True,True
+227,2021,348.11923377963444,Yau Ma Tei,22.3129,114.1707,0,False,Very Close (<500m),True,True,True
+235,2021,631.6179113321931,Yau Ma Tei,22.3129,114.1707,0,False,Close (500-1000m),False,True,True
+814,2021,11261.957589154616,Hang Hau,22.3156,114.2644,0,False,Far (>2km),False,False,False
+255,2021,517.8653738748914,Lai Chi Kok,22.3373,114.1482,0,False,Close (500-1000m),True,True,True
+283,2021,549.4678164007269,Kai Tak,22.3304,114.1994,0,False,Close (500-1000m),True,True,True
+221,2021,285.62121650490053,Prince Edward,22.3245,114.1683,0,False,Very Close (<500m),True,True,True
+233,2021,655.7871571331445,Mong Kok East,22.3222,114.1728,0,False,Close (500-1000m),False,True,True
+222,2021,59.39020664621744,Prince Edward,22.3245,114.1683,1,True,Very Close (<500m),True,True,True
+222,2021,148.29547153425705,Prince Edward,22.3245,114.1683,0,False,Very Close (<500m),True,True,True
+222,2021,319.1842127501912,Mong Kok East,22.3222,114.1728,0,False,Very Close (<500m),True,True,True
+280,2021,711.2140622418273,Kowloon Bay,22.3235,114.2141,0,False,Close (500-1000m),False,True,True
+221,2021,275.30100856525354,Prince Edward,22.3245,114.1683,0,False,Very Close (<500m),True,True,True
+266,2021,280.02860428497604,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+267,2021,208.140562831005,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+285,2021,280.4509926014415,Sung Wong Toi,22.326139,114.190407,0,False,Very Close (<500m),True,True,True
+837,2021,608.6351772726305,Hang Hau,22.3156,114.2644,0,False,Close (500-1000m),True,True,True
+227,2021,260.9714454623073,Mong Kok,22.321624,114.172537,0,False,Very Close (<500m),True,True,True
+234,2021,598.8205868998789,Mong Kok,22.321624,114.172537,0,False,Close (500-1000m),False,True,True
+291,2021,484.86162595673153,Kowloon Bay,22.3235,114.2141,0,False,Very Close (<500m),True,True,True
+222,2021,207.8346939121048,Prince Edward,22.3245,114.1683,0,False,Very Close (<500m),True,True,True
+268,2021,631.0688647250292,Shek Kip Mei,22.332,114.1687,0,False,Close (500-1000m),False,True,True
+267,2021,165.44719346167957,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+266,2021,477.5657013608926,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+291,2021,496.2235102605493,Kowloon Bay,22.3235,114.2141,0,False,Very Close (<500m),True,True,True
+280,2021,739.8430317215317,Kai Tak,22.3304,114.1994,0,False,Close (500-1000m),False,True,True
+285,2021,279.13429133913303,Sung Wong Toi,22.326139,114.190407,0,False,Very Close (<500m),True,True,True
+234,2021,816.499236208461,To Kwa Wan,22.3172,114.1876,0,False,Close (500-1000m),False,True,True
+227,2021,365.9346382216623,Mong Kok,22.321624,114.172537,0,False,Very Close (<500m),True,True,True
+221,2021,541.5385218245128,Mong Kok,22.321624,114.172537,0,False,Close (500-1000m),True,True,True
+971,2021,2683.907375701676,Sunny Bay,22.33285,114.028222,0,False,Far (>2km),False,False,True
+241,2021,294.34295218654603,To Kwa Wan,22.3172,114.1876,0,False,Very Close (<500m),True,True,True
+237,2021,538.4062230943828,To Kwa Wan,22.3172,114.1876,0,False,Close (500-1000m),True,True,True
+241,2021,192.97098831229533,To Kwa Wan,22.3172,114.1876,0,False,Very Close (<500m),True,True,True
+221,2021,485.99409127267944,Olympic,22.3178,114.1602,0,False,Very Close (<500m),True,True,True
+221,2021,489.046668760708,Mong Kok,22.321624,114.172537,0,False,Very Close (<500m),True,True,True
+280,2021,683.7494493912873,Kowloon Bay,22.3235,114.2141,0,False,Close (500-1000m),False,True,True
+221,2021,635.2222024638693,Prince Edward,22.3245,114.1683,0,False,Close (500-1000m),False,True,True
+294,2021,509.8489942969507,Ngau Tau Kok,22.3154,114.2193,0,False,Close (500-1000m),True,True,True
+221,2021,589.8042857171287,Olympic,22.3178,114.1602,0,False,Close (500-1000m),False,True,True
+241,2021,260.5246010437928,To Kwa Wan,22.3172,114.1876,0,False,Very Close (<500m),True,True,True
+235,2021,284.7680299418863,Mong Kok,22.321624,114.172537,0,False,Very Close (<500m),True,True,True
+221,2021,427.232727096882,Mong Kok,22.321624,114.172537,0,False,Very Close (<500m),True,True,True
+294,2021,309.9038793193687,Kowloon Bay,22.3235,114.2141,0,False,Very Close (<500m),True,True,True
+221,2021,273.26107094712165,Prince Edward,22.3245,114.1683,0,False,Very Close (<500m),True,True,True
+836,2021,680.3745635683782,Po Lam,22.3224,114.258,0,False,Close (500-1000m),False,True,True
+291,2021,273.67465860440694,Kowloon Bay,22.3235,114.2141,0,False,Very Close (<500m),True,True,True
+350,2021,2772.466567188334,Lai King,22.3484,114.1261,0,False,Far (>2km),False,False,False
+285,2021,246.55657967872398,Sung Wong Toi,22.326139,114.190407,0,False,Very Close (<500m),True,True,True
+285,2021,244.4424767645169,Sung Wong Toi,22.326139,114.190407,0,False,Very Close (<500m),True,True,True
+285,2021,255.84569462288817,Sung Wong Toi,22.326139,114.190407,0,False,Very Close (<500m),True,True,True
+973,2021,1745.270315721015,Sunny Bay,22.33285,114.028222,0,False,Moderate (1-2km),False,True,True
+241,2021,507.18528251943496,To Kwa Wan,22.3172,114.1876,0,False,Close (500-1000m),True,True,True
+242,2021,571.2349549513734,Sung Wong Toi,22.326139,114.190407,0,False,Close (500-1000m),False,True,True
+285,2021,612.7919648274051,Sung Wong Toi,22.326139,114.190407,0,False,Close (500-1000m),True,True,True
+265,2021,368.56342569236557,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+271,2021,614.9630926676008,Lok Fu,22.338,114.1871,0,False,Close (500-1000m),False,True,True
+836,2021,1328.2456723552468,Po Lam,22.3224,114.258,0,False,Moderate (1-2km),False,True,True
+831,2021,2214.9830211979215,Po Lam,22.3224,114.258,0,False,Far (>2km),False,False,True
+266,2021,325.03639063444234,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+292,2021,1647.0542837292014,Kowloon Bay,22.3235,114.2141,0,False,Moderate (1-2km),False,False,True
+283,2021,599.4326030754931,Lok Fu,22.338,114.1871,0,False,Close (500-1000m),False,True,True
+265,2021,441.84628307749983,Cheung Sha Wan,22.3354,114.1563,0,False,Very Close (<500m),True,True,True
+831,2021,1132.099543285692,Po Lam,22.3224,114.258,0,False,Moderate (1-2km),False,True,True
+974,2021,1090.1396628257032,Sunny Bay,22.33285,114.028222,0,False,Moderate (1-2km),True,True,True
+291,2021,827.282805326343,Kowloon Bay,22.3235,114.2141,0,False,Close (500-1000m),True,True,True
+221,2021,379.37401270868406,Olympic,22.3178,114.1602,0,False,Very Close (<500m),True,True,True
+221,2021,252.88532816563827,Olympic,22.3178,114.1602,0,False,Very Close (<500m),True,True,True
+235,2021,350.0818227348006,Mong Kok,22.321624,114.172537,0,False,Very Close (<500m),True,True,True
+271,2021,828.9975965871407,Kowloon Tong,22.336809,114.177245,0,False,Close (500-1000m),False,True,True
+831,2021,2023.9653495631958,Kowloon Bay,22.3235,114.2141,0,False,Far (>2km),False,False,True
+831,2021,1878.0366137961869,Po Lam,22.3224,114.258,0,False,Moderate (1-2km),False,False,True
+814,2021,11088.031682413717,Hang Hau,22.3156,114.2644,0,False,Far (>2km),False,False,False
+280,2021,451.86483201281,Choi Hung,22.334161,114.210289,0,False,Very Close (<500m),True,True,True
+284,2021,613.2379371524333,Kai Tak,22.3304,114.1994,0,False,Close (500-1000m),False,True,True
+221,2021,461.8323700281362,Olympic,22.3178,114.1602,0,False,Very Close (<500m),True,True,True
+280,2021,476.0159145620664,Kowloon Bay,22.3235,114.2141,0,False,Very Close (<500m),True,True,True
+232,2021,282.9786548512742,Mong Kok,22.321624,114.172537,0,False,Very Close (<500m),True,True,True
+294,2021,654.66081423446,Ngau Tau Kok,22.3154,114.2193,0,False,Close (500-1000m),True,True,True
+242,2021,680.3601434376535,Sung Wong Toi,22.326139,114.190407,0,False,Close (500-1000m),False,True,True
+254,2021,601.542713026305,Olympic,22.3178,114.1602,0,False,Close (500-1000m),False,True,True
+221,2021,340.5270875506261,Olympic,22.3178,114.1602,0,False,Very Close (<500m),True,True,True
+221,2021,408.4308547911507,Olympic,22.3178,114.1602,0,False,Very Close (<500m),True,True,True
+221,2021,385.6702502363431,Olympic,22.3178,114.1602,0,False,Very Close (<500m),True,True,True
+242,2021,653.1950261343333,Sung Wong Toi,22.326139,114.190407,0,False,Close (500-1000m),False,True,True
+241,2021,400.5081326958509,To Kwa Wan,22.3172,114.1876,0,False,Very Close (<500m),True,True,True
+285,2021,310.950304945931,Sung Wong Toi,22.326139,114.190407,0,False,Very Close (<500m),True,True,True
+267,2021,328.31967342954744,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+266,2021,367.5802379549257,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+285,2021,348.9444959383741,Sung Wong Toi,22.326139,114.190407,0,False,Very Close (<500m),True,True,True
+836,2021,1344.9127825433488,Po Lam,22.3224,114.258,0,False,Moderate (1-2km),False,True,True
+285,2021,393.80672057951193,Sung Wong Toi,22.326139,114.190407,0,False,Very Close (<500m),True,True,True
+255,2021,135.58548257666422,Nam Cheong,22.32829,114.1538,0,False,Very Close (<500m),True,True,True
+285,2021,439.98482502965646,Sung Wong Toi,22.326139,114.190407,0,False,Very Close (<500m),True,True,True
+267,2021,232.2985408592732,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+263,2021,115.756422594159,Shek Kip Mei,22.332,114.1687,1,True,Very Close (<500m),True,True,True
+264,2021,389.49400066816287,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+265,2021,331.30487464273034,Cheung Sha Wan,22.3354,114.1563,0,False,Very Close (<500m),True,True,True
+255,2021,423.05646707368055,Lai Chi Kok,22.3373,114.1482,0,False,Very Close (<500m),True,True,True
+264,2021,410.434627677434,Cheung Sha Wan,22.3354,114.1563,0,False,Very Close (<500m),True,True,True
+271,2021,580.5618755004226,Kowloon Tong,22.336809,114.177245,0,False,Close (500-1000m),True,True,True
+271,2021,472.1839851307897,Kowloon Tong,22.336809,114.177245,0,False,Very Close (<500m),True,True,True
+814,2021,11350.044702528914,Hang Hau,22.3156,114.2644,0,False,Far (>2km),False,False,False
+271,2021,439.6609383507968,Kowloon Tong,22.336809,114.177245,0,False,Very Close (<500m),True,True,True
+267,2021,314.71478218794795,Shek Kip Mei,22.332,114.1687,0,False,Very Close (<500m),True,True,True
+271,2021,784.4765607954043,Sung Wong Toi,22.326139,114.190407,0,False,Close (500-1000m),False,True,True
+263,2021,376.88404134099545,Shek Kip Mei,22.332,114.1687,0,False,Very Close (<500m),True,True,True
+264,2021,418.6704606630118,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+264,2021,433.90657030276344,Cheung Sha Wan,22.3354,114.1563,0,False,Very Close (<500m),True,True,True
+221,2021,586.0918928188424,Prince Edward,22.3245,114.1683,0,False,Close (500-1000m),True,True,True
+835,2021,942.9362614091261,Po Lam,22.3224,114.258,0,False,Close (500-1000m),False,True,True
+835,2021,592.2571411995762,Po Lam,22.3224,114.258,0,False,Close (500-1000m),True,True,True
+221,2021,489.5336001709801,Prince Edward,22.3245,114.1683,0,False,Very Close (<500m),True,True,True
+265,2021,329.9683249983632,Cheung Sha Wan,22.3354,114.1563,0,False,Very Close (<500m),True,True,True
+288,2021,938.3317692637693,Choi Hung,22.334161,114.210289,0,False,Close (500-1000m),False,True,True
+254,2021,245.41157719153813,Olympic,22.3178,114.1602,0,False,Very Close (<500m),True,True,True
+280,2021,785.6386847770065,Kowloon Bay,22.3235,114.2141,0,False,Close (500-1000m),False,True,True
+831,2021,1867.4066726982337,Hang Hau,22.3156,114.2644,0,False,Moderate (1-2km),False,False,True
+221,2021,548.4840997407144,Olympic,22.3178,114.1602,0,False,Close (500-1000m),False,True,True
+242,2021,555.6620542115948,To Kwa Wan,22.3172,114.1876,0,False,Close (500-1000m),True,True,True
+242,2021,611.3105217536645,Sung Wong Toi,22.326139,114.190407,0,False,Close (500-1000m),False,True,True
+221,2021,449.0289617424083,Prince Edward,22.3245,114.1683,0,False,Very Close (<500m),True,True,True
+280,2021,675.6070147633351,Kowloon Bay,22.3235,114.2141,0,False,Close (500-1000m),False,True,True
+242,2021,591.071884204584,Sung Wong Toi,22.326139,114.190407,0,False,Close (500-1000m),False,True,True
+280,2021,583.0026034092108,Kowloon Bay,22.3235,114.2141,0,False,Close (500-1000m),True,True,True
+294,2021,954.8127847765749,Ngau Tau Kok,22.3154,114.2193,0,False,Close (500-1000m),False,True,True
+221,2021,389.80704009890786,Prince Edward,22.3245,114.1683,0,False,Very Close (<500m),True,True,True
+232,2021,464.60113852212436,Mong Kok East,22.3222,114.1728,0,False,Very Close (<500m),True,True,True
+221,2021,36.857404077695605,Prince Edward,22.3245,114.1683,0,False,Very Close (<500m),True,True,True
+814,2021,10747.826642396203,Hang Hau,22.3156,114.2644,0,False,Far (>2km),False,False,False
+221,2021,238.92907291155677,Prince Edward,22.3245,114.1683,0,False,Very Close (<500m),True,True,True
+221,2021,471.7724747835285,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+813,2021,5854.673596176477,Hang Hau,22.3156,114.2644,0,False,Far (>2km),False,False,False
+814,2021,10628.676048559662,Hang Hau,22.3156,114.2644,0,False,Far (>2km),False,False,False
+221,2021,450.34910138282595,Sham Shui Po,22.330141,114.163247,0,False,Very Close (<500m),True,True,True
+836,2021,1129.152474457262,Po Lam,22.3224,114.258,0,False,Moderate (1-2km),False,True,True
+285,2021,488.17514111899175,Sung Wong Toi,22.326139,114.190407,0,False,Very Close (<500m),True,True,True
+814,2021,10180.038078203535,Hang Hau,22.3156,114.2644,0,False,Far (>2km),False,False,False
+350,2021,3004.3140839335038,Lai King,22.3484,114.1261,0,False,Far (>2km),False,False,False
+285,2021,417.4595149881445,Sung Wong Toi,22.326139,114.190407,0,False,Very Close (<500m),True,True,True
+285,2021,404.48667074445467,Sung Wong Toi,22.326139,114.190407,0,False,Very Close (<500m),True,True,True
+272,2021,469.70513779509866,Lok Fu,22.338,114.1871,0,False,Very Close (<500m),True,True,True
+263,2021,331.51707020131624,Shek Kip Mei,22.332,114.1687,0,False,Very Close (<500m),True,True,True
+272,2021,388.97092692762243,Lok Fu,22.338,114.1871,0,False,Very Close (<500m),True,True,True
+836,2021,965.4240075458839,Po Lam,22.3224,114.258,0,False,Close (500-1000m),False,True,True
+184,2021,1183.5368859614164,Admiralty,22.278399,114.16433,0,False,Moderate (1-2km),False,True,True
+149,2021,1380.274456007258,Tin Hau,22.2827,114.1917,0,False,Moderate (1-2km),False,False,True
+171,2021,1247.2621230066713,Kennedy Town,22.2812,114.1285,0,False,Moderate (1-2km),False,False,True
+754,2021,916.4998942434119,Tai Wai,22.3731,114.1786,0,False,Close (500-1000m),False,True,True
+762,2021,3349.8803743152203,Shek Mun,22.3877,114.2083,0,False,Far (>2km),False,False,False
+424,2021,1416.4333386407823,Tuen Mun,22.394156,113.973948,0,False,Moderate (1-2km),False,False,True
+826,2021,5893.845878371326,Tai Shui Hang,22.4088,114.223,0,False,Far (>2km),False,False,False
+822,2021,5361.404478673427,Wu Kai Sha,22.4291,114.2438,0,False,Far (>2km),False,False,False
+142,2021,849.3455237076416,Central,22.281938,114.158077,0,False,Close (500-1000m),False,True,True
+111,2021,369.1934861142572,Kennedy Town,22.2812,114.1285,0,False,Very Close (<500m),True,True,True
+976,2021,3749.288570975495,Disneyland Resort,22.3155,114.0451,0,False,Far (>2km),False,False,False
+161,2021,238.03616388826856,Sai Wan Ho,22.2816,114.2224,0,False,Very Close (<500m),True,True,True
+122,2021,352.95026792656125,Sheung Wan,22.285899,114.153707,0,False,Very Close (<500m),True,True,True
+151,2021,12.83632745010361,Tin Hau,22.2827,114.1917,1,True,Very Close (<500m),True,True,True
+111,2021,269.5786126771012,Kennedy Town,22.2812,114.1285,0,False,Very Close (<500m),True,True,True
+161,2021,326.3515682291315,Sai Wan Ho,22.2816,114.2224,0,False,Very Close (<500m),True,True,True
+121,2021,232.62001496103903,Central,22.281938,114.158077,0,False,Very Close (<500m),True,True,True
+121,2021,180.6164592091468,Central,22.281938,114.158077,0,False,Very Close (<500m),True,True,True
+122,2021,362.2725819547509,Sheung Wan,22.285899,114.153707,0,False,Very Close (<500m),True,True,True
+151,2021,85.51956119117933,Tin Hau,22.2827,114.1917,0,False,Very Close (<500m),True,True,True
+151,2021,149.57858618273124,Tin Hau,22.2827,114.1917,0,False,Very Close (<500m),True,True,True
+156,2021,401.0457321952418,Tai Koo,22.2846,114.2161,0,False,Very Close (<500m),True,True,True
+114,2021,380.31273746579313,Sheung Wan,22.285899,114.153707,0,False,Very Close (<500m),True,True,True
+142,2021,512.8130992902777,Sai Ying Pun,22.2856,114.1427,0,False,Close (500-1000m),True,True,True
+111,2021,354.7303453625517,Kennedy Town,22.2812,114.1285,0,False,Very Close (<500m),True,True,True
+132,2021,528.8709739331313,Exhibition Centre,22.281613,114.17569,0,False,Close (500-1000m),False,True,True
+753,2021,1094.3781438443941,Fo Tan,22.3953,114.1982,0,False,Moderate (1-2km),False,True,True
+733,2021,1961.064245070067,Tai Wai,22.3731,114.1786,0,False,Moderate (1-2km),False,True,True
+812,2021,9344.320333192689,Wu Kai Sha,22.4291,114.2438,0,False,Far (>2km),False,False,False
+424,2021,290.75795598891614,Tuen Mun,22.394156,113.973948,0,False,Very Close (<500m),True,True,True
+423,2021,1477.6863890144837,Tuen Mun,22.394156,113.973948,0,False,Moderate (1-2km),False,True,True
+756,2021,756.0631433137139,Shek Mun,22.3877,114.2083,0,False,Close (500-1000m),False,True,True
+147,2021,298.08205780139906,Tin Hau,22.2827,114.1917,0,False,Very Close (<500m),True,True,True
+114,2021,179.29465557394707,Sheung Wan,22.285899,114.153707,0,False,Very Close (<500m),True,True,True
+113,2021,551.5205928207174,Sai Ying Pun,22.2856,114.1427,0,False,Close (500-1000m),True,True,True
+147,2021,514.1104630743324,Causeway Bay,22.279392,114.182926,0,False,Close (500-1000m),True,True,True
+112,2021,32.62021562528787,Sai Ying Pun,22.2856,114.1427,1,True,Very Close (<500m),True,True,True
+155,2021,194.56477588432412,Tai Koo,22.2846,114.2161,0,False,Very Close (<500m),True,True,True
+113,2021,557.9694944819527,Sheung Wan,22.285899,114.153707,0,False,Close (500-1000m),True,True,True
+113,2021,406.99990739620864,Sheung Wan,22.285899,114.153707,0,False,Very Close (<500m),True,True,True
+112,2021,128.44392729998202,Sai Ying Pun,22.2856,114.1427,0,False,Very Close (<500m),True,True,True
+155,2021,316.2814904871271,Tai Koo,22.2846,114.2161,0,False,Very Close (<500m),True,True,True
+112,2021,219.03892182252113,HKU,22.2841,114.1356,0,False,Very Close (<500m),True,True,True
+114,2021,91.31454068908833,Sheung Wan,22.285899,114.153707,1,True,Very Close (<500m),True,True,True
+190,2021,1923.0939299981185,Tin Hau,22.2827,114.1917,0,False,Moderate (1-2km),False,False,True
+132,2021,541.7107600734167,Causeway Bay,22.279392,114.182926,0,False,Close (500-1000m),True,True,True
+132,2021,541.8979126587373,Exhibition Centre,22.281613,114.17569,0,False,Close (500-1000m),True,True,True
+143,2021,641.3449915874971,Central,22.281938,114.158077,0,False,Close (500-1000m),False,True,True
+190,2021,1339.5950903456676,Tin Hau,22.2827,114.1917,0,False,Moderate (1-2km),False,False,True
+142,2021,902.5200558962724,Central,22.281938,114.158077,0,False,Close (500-1000m),False,True,True
+132,2021,499.7465282603007,Exhibition Centre,22.281613,114.17569,0,False,Very Close (<500m),True,True,True
+122,2021,460.3088336069201,Sheung Wan,22.285899,114.153707,0,False,Very Close (<500m),True,True,True
+132,2021,505.6789910532103,Exhibition Centre,22.281613,114.17569,0,False,Close (500-1000m),True,True,True
+131,2021,572.4019554359992,Admiralty,22.278399,114.16433,0,False,Close (500-1000m),False,True,True
+132,2021,430.2902578368974,Causeway Bay,22.279392,114.182926,0,False,Very Close (<500m),True,True,True
+131,2021,607.2873499270488,Exhibition Centre,22.281613,114.17569,0,False,Close (500-1000m),False,True,True
+132,2021,362.42864610402245,Causeway Bay,22.279392,114.182926,0,False,Very Close (<500m),True,True,True
+132,2021,317.0516260673148,Causeway Bay,22.279392,114.182926,0,False,Very Close (<500m),True,True,True
+839,2021,2828.6083816332166,LOHAS Park,22.2957,114.2689,0,False,Far (>2km),False,False,False
+131,2021,683.5670907625362,Exhibition Centre,22.281613,114.17569,0,False,Close (500-1000m),False,True,True
+132,2021,263.0872087202422,Causeway Bay,22.279392,114.182926,0,False,Very Close (<500m),True,True,True
+141,2021,577.4995263503176,Kennedy Town,22.2812,114.1285,0,False,Close (500-1000m),False,True,True
+161,2021,256.2665577211078,Shau Kei Wan,22.2789,114.2289,0,False,Very Close (<500m),True,True,True
+145,2021,631.1791552036398,Tin Hau,22.2827,114.1917,0,False,Close (500-1000m),False,True,True
+161,2021,196.71937424778102,Shau Kei Wan,22.2789,114.2289,0,False,Very Close (<500m),True,True,True
+131,2021,513.3508157564229,Admiralty,22.278399,114.16433,0,False,Close (500-1000m),True,True,True
+131,2021,590.0648804195367,Admiralty,22.278399,114.16433,0,False,Close (500-1000m),False,True,True
+132,2021,485.62368124982174,Exhibition Centre,22.281613,114.17569,0,False,Very Close (<500m),True,True,True
+161,2021,212.76855566978077,Sai Wan Ho,22.2816,114.2224,0,False,Very Close (<500m),True,True,True
+146,2021,738.0912766962085,Causeway Bay,22.279392,114.182926,0,False,Close (500-1000m),False,True,True
+131,2021,491.02659144582805,Exhibition Centre,22.281613,114.17569,0,False,Very Close (<500m),True,True,True
+132,2021,547.9779260053708,Exhibition Centre,22.281613,114.17569,0,False,Close (500-1000m),True,True,True
+144,2021,452.9141263928303,Causeway Bay,22.279392,114.182926,0,False,Very Close (<500m),True,True,True
+161,2021,224.72730661670303,Shau Kei Wan,22.2789,114.2289,0,False,Very Close (<500m),True,True,True
+132,2021,394.24409226708354,Causeway Bay,22.279392,114.182926,0,False,Very Close (<500m),True,True,True
+131,2021,435.336105106458,Admiralty,22.278399,114.16433,0,False,Very Close (<500m),True,True,True
+834,2021,5161.900837624344,LOHAS Park,22.2957,114.2689,0,False,Far (>2km),False,False,False
+161,2021,177.33427974478735,Shau Kei Wan,22.2789,114.2289,0,False,Very Close (<500m),True,True,True
+161,2021,195.7081462011323,Shau Kei Wan,22.2789,114.2289,0,False,Very Close (<500m),True,True,True
+145,2021,552.41951582152,Tin Hau,22.2827,114.1917,0,False,Close (500-1000m),False,True,True
+145,2021,601.7864349139038,Tin Hau,22.2827,114.1917,0,False,Close (500-1000m),False,True,True
+144,2021,393.6120188428698,Causeway Bay,22.279392,114.182926,0,False,Very Close (<500m),True,True,True
+132,2021,440.8084824445462,Exhibition Centre,22.281613,114.17569,0,False,Very Close (<500m),True,True,True
+132,2021,576.1548494466853,Exhibition Centre,22.281613,114.17569,0,False,Close (500-1000m),False,True,True
+131,2021,539.4713190491271,Admiralty,22.278399,114.16433,0,False,Close (500-1000m),True,True,True
+132,2021,475.4436961149263,Causeway Bay,22.279392,114.182926,0,False,Very Close (<500m),True,True,True
+145,2021,698.8287208884634,Tin Hau,22.2827,114.1917,0,False,Close (500-1000m),False,True,True
+144,2021,368.22657118754756,Causeway Bay,22.279392,114.182926,0,False,Very Close (<500m),True,True,True
+143,2021,313.80207529709975,Admiralty,22.278399,114.16433,0,False,Very Close (<500m),True,True,True
+161,2021,269.1459723515653,Shau Kei Wan,22.2789,114.2289,0,False,Very Close (<500m),True,True,True
+131,2021,706.1819415517355,Exhibition Centre,22.281613,114.17569,0,False,Close (500-1000m),False,True,True
+131,2021,642.6939133035709,Admiralty,22.278399,114.16433,0,False,Close (500-1000m),False,True,True
+131,2021,463.4553056125556,Admiralty,22.278399,114.16433,0,False,Very Close (<500m),True,True,True
+145,2021,665.1751894667453,Tin Hau,22.2827,114.1917,0,False,Close (500-1000m),False,True,True
+132,2021,541.4435204017091,Exhibition Centre,22.281613,114.17569,0,False,Close (500-1000m),False,True,True
+111,2021,356.26996239867657,Kennedy Town,22.2812,114.1285,0,False,Very Close (<500m),True,True,True
+132,2021,473.95530315028276,Exhibition Centre,22.281613,114.17569,0,False,Very Close (<500m),True,True,True
+124,2021,95.06814617259539,Admiralty,22.278399,114.16433,1,True,Very Close (<500m),True,True,True
+132,2021,296.6608304151841,Causeway Bay,22.279392,114.182926,0,False,Very Close (<500m),True,True,True
+148,2021,453.8054111301415,Tin Hau,22.2827,114.1917,0,False,Very Close (<500m),True,True,True
+146,2021,146.61273816040475,Causeway Bay,22.279392,114.182926,0,False,Very Close (<500m),True,True,True
+146,2021,119.31739658164153,Causeway Bay,22.279392,114.182926,0,False,Very Close (<500m),True,True,True
+145,2021,338.93102215099634,Tin Hau,22.2827,114.1917,0,False,Very Close (<500m),True,True,True
+161,2021,60.31595554505283,Sai Wan Ho,22.2816,114.2224,0,False,Very Close (<500m),True,True,True
+943,2021,5965.220638224061,Tung Chung,22.2893,113.9416,0,False,Far (>2km),False,False,False
+123,2021,361.1667972968778,Central,22.281938,114.158077,0,False,Very Close (<500m),True,True,True
+133,2021,291.63095071539533,Causeway Bay,22.279392,114.182926,0,False,Very Close (<500m),True,True,True
+123,2021,235.77234242270578,Central,22.281938,114.158077,0,False,Very Close (<500m),True,True,True
+161,2021,333.09382075221595,Sai Wan Ho,22.2816,114.2224,0,False,Very Close (<500m),True,True,True
+161,2021,85.95491173369787,Sai Wan Ho,22.2816,114.2224,0,False,Very Close (<500m),True,True,True
+122,2021,521.5749455079808,Sheung Wan,22.285899,114.153707,0,False,Close (500-1000m),True,True,True
+123,2021,381.11319428036745,Central,22.281938,114.158077,0,False,Very Close (<500m),True,True,True
+143,2021,876.5107996863,Central,22.281938,114.158077,0,False,Close (500-1000m),False,True,True
+131,2021,756.8297303726138,Exhibition Centre,22.281613,114.17569,0,False,Close (500-1000m),False,True,True
+161,2021,535.8357128175193,Shau Kei Wan,22.2789,114.2289,0,False,Close (500-1000m),True,True,True
+123,2021,299.4195918319035,Central,22.281938,114.158077,0,False,Very Close (<500m),True,True,True
+161,2021,504.61028159685026,Shau Kei Wan,22.2789,114.2289,0,False,Close (500-1000m),True,True,True
+161,2021,194.06864564116015,Shau Kei Wan,22.2789,114.2289,0,False,Very Close (<500m),True,True,True
+145,2021,341.2153849099969,Tin Hau,22.2827,114.1917,0,False,Very Close (<500m),True,True,True
+133,2021,129.33853391162503,Causeway Bay,22.279392,114.182926,0,False,Very Close (<500m),True,True,True
+161,2021,141.8718591147232,Shau Kei Wan,22.2789,114.2289,0,False,Very Close (<500m),True,True,True
+132,2021,446.80232139482007,Causeway Bay,22.279392,114.182926,0,False,Very Close (<500m),True,True,True
+124,2021,536.0843702391804,Central,22.281938,114.158077,0,False,Close (500-1000m),True,True,True
+145,2021,546.1060676294263,Tin Hau,22.2827,114.1917,0,False,Close (500-1000m),False,True,True
+145,2021,705.5287696371071,Tin Hau,22.2827,114.1917,0,False,Close (500-1000m),True,True,True
+145,2021,440.6584172591535,Tin Hau,22.2827,114.1917,0,False,Very Close (<500m),True,True,True
+141,2021,466.88070156751377,Kennedy Town,22.2812,114.1285,0,False,Very Close (<500m),True,True,True
+145,2021,439.23022171163416,Tin Hau,22.2827,114.1917,0,False,Very Close (<500m),True,True,True
+132,2021,144.9052061748465,Causeway Bay,22.279392,114.182926,0,False,Very Close (<500m),True,True,True
+131,2021,322.16389872047887,Exhibition Centre,22.281613,114.17569,0,False,Very Close (<500m),True,True,True
+132,2021,110.78434479231903,Causeway Bay,22.279392,114.182926,0,False,Very Close (<500m),True,True,True
+145,2021,422.1560250879882,Tin Hau,22.2827,114.1917,0,False,Very Close (<500m),True,True,True
+145,2021,426.64717796729207,Tin Hau,22.2827,114.1917,0,False,Very Close (<500m),True,True,True
+131,2021,811.6269832145183,Admiralty,22.278399,114.16433,0,False,Close (500-1000m),False,True,True
+140,2021,771.1585731709699,Admiralty,22.278399,114.16433,0,False,Close (500-1000m),True,True,True
+131,2021,744.2658041418716,Exhibition Centre,22.281613,114.17569,0,False,Close (500-1000m),False,True,True
+143,2021,595.9926826423336,Admiralty,22.278399,114.16433,0,False,Close (500-1000m),True,True,True
+171,2021,816.9214707599102,Kennedy Town,22.2812,114.1285,0,False,Close (500-1000m),False,True,True
+131,2021,724.3849065258743,Admiralty,22.278399,114.16433,0,False,Close (500-1000m),False,True,True
+131,2021,623.66588812605,Admiralty,22.278399,114.16433,0,False,Close (500-1000m),False,True,True
+132,2021,613.0243551760052,Causeway Bay,22.279392,114.182926,0,False,Close (500-1000m),False,True,True
+142,2021,1016.7409386759482,Central,22.281938,114.158077,0,False,Moderate (1-2km),False,True,True
+111,2021,624.9203778055546,Kennedy Town,22.2812,114.1285,0,False,Close (500-1000m),False,True,True
+131,2021,679.1315510573203,Admiralty,22.278399,114.16433,0,False,Close (500-1000m),False,True,True
+145,2021,402.7629165616769,Tin Hau,22.2827,114.1917,0,False,Very Close (<500m),True,True,True
+146,2021,283.3187797330174,Causeway Bay,22.279392,114.182926,0,False,Very Close (<500m),True,True,True
+145,2021,409.1318415257545,Tin Hau,22.2827,114.1917,0,False,Very Close (<500m),True,True,True
+131,2021,450.5497941441576,Exhibition Centre,22.281613,114.17569,0,False,Very Close (<500m),True,True,True
+151,2021,327.07569123520915,Tin Hau,22.2827,114.1917,0,False,Very Close (<500m),True,True,True
+146,2021,264.92226601289013,Causeway Bay,22.279392,114.182926,0,False,Very Close (<500m),True,True,True
+161,2021,335.0040066306422,Shau Kei Wan,22.2789,114.2289,0,False,Very Close (<500m),True,True,True
+246,2021,471.66766095848647,Sung Wong Toi,22.326139,114.190407,0,False,Very Close (<500m),True,True,True
+241,2021,285.38356016661754,Sung Wong Toi,22.326139,114.190407,0,False,Very Close (<500m),True,True,True
+836,2021,408.5917355668575,Po Lam,22.3224,114.258,0,False,Very Close (<500m),True,True,True
+280,2021,459.44701172733687,Kowloon Bay,22.3235,114.2141,0,False,Very Close (<500m),True,True,True
+280,2021,304.67849830237344,Kowloon Bay,22.3235,114.2141,0,False,Very Close (<500m),True,True,True
+836,2021,563.4754593685017,Po Lam,22.3224,114.258,0,False,Close (500-1000m),True,True,True
+221,2021,173.12250604500247,Prince Edward,22.3245,114.1683,0,False,Very Close (<500m),True,True,True
+836,2021,79.84623105259385,Po Lam,22.3224,114.258,1,True,Very Close (<500m),True,True,True
+222,2021,132.40569150503174,Mong Kok East,22.3222,114.1728,0,False,Very Close (<500m),True,True,True
+241,2021,352.3857287134985,Sung Wong Toi,22.326139,114.190407,0,False,Very Close (<500m),True,True,True
+222,2021,35.03693451908677,Mong Kok East,22.3222,114.1728,2,True,Very Close (<500m),True,True,True
+837,2021,534.288315601913,Hang Hau,22.3156,114.2644,0,False,Close (500-1000m),True,True,True
+221,2021,546.9714056458057,Prince Edward,22.3245,114.1683,0,False,Close (500-1000m),True,True,True
+144,2021,748.4128142393265,Causeway Bay,22.279392,114.182926,0,False,Close (500-1000m),True,True,True
+143,2021,518.0573837371168,Admiralty,22.278399,114.16433,0,False,Close (500-1000m),True,True,True
+171,2021,1440.786000772713,Kennedy Town,22.2812,114.1285,0,False,Moderate (1-2km),False,True,True
+111,2021,698.8794766243485,Kennedy Town,22.2812,114.1285,0,False,Close (500-1000m),False,True,True
+131,2021,795.5916432757767,Admiralty,22.278399,114.16433,0,False,Close (500-1000m),False,True,True
+146,2021,266.99502466957534,Causeway Bay,22.279392,114.182926,0,False,Very Close (<500m),True,True,True
+142,2021,720.712136747245,Sheung Wan,22.285899,114.153707,0,False,Close (500-1000m),False,True,True
+133,2021,342.07261772461726,Exhibition Centre,22.281613,114.17569,0,False,Very Close (<500m),True,True,True
+182,2021,1289.5790088388653,Admiralty,22.278399,114.16433,0,False,Moderate (1-2km),False,False,True
+182,2021,1022.8289023719007,Admiralty,22.278399,114.16433,0,False,Moderate (1-2km),False,True,True
+132,2021,300.6642984324198,Causeway Bay,22.279392,114.182926,0,False,Very Close (<500m),True,True,True
+131,2021,436.72025689446065,Exhibition Centre,22.281613,114.17569,0,False,Very Close (<500m),True,True,True
+132,2021,465.02206088566226,Exhibition Centre,22.281613,114.17569,0,False,Very Close (<500m),True,True,True
+146,2021,445.51210332180807,Causeway Bay,22.279392,114.182926,0,False,Very Close (<500m),True,True,True
+145,2021,518.6324057319667,Tin Hau,22.2827,114.1917,0,False,Close (500-1000m),True,True,True
+132,2021,265.82436529420005,Causeway Bay,22.279392,114.182926,0,False,Very Close (<500m),True,True,True
+162,2021,563.1359330808011,Heng Fa Chuen,22.2769,114.2398,0,False,Close (500-1000m),True,True,True
+755,2021,452.90411448338267,Sha Tin Wai,22.3771,114.195,0,False,Very Close (<500m),True,True,True
+321,2021,877.6105433936946,Tai Wo Hau,22.371129,114.126303,0,False,Close (500-1000m),False,True,True
+425,2021,2050.1094166100543,Tuen Mun,22.394156,113.973948,0,False,Far (>2km),False,False,True
+813,2021,6642.423659129139,Wu Kai Sha,22.4291,114.2438,0,False,Far (>2km),False,False,False
+758,2021,284.2736704796449,Sha Tin,22.3825,114.1875,0,False,Very Close (<500m),True,True,True
+421,2021,5928.267469198463,Tuen Mun,22.394156,113.973948,0,False,Far (>2km),False,False,False
+754,2021,926.4527036582305,Tai Wai,22.3731,114.1786,0,False,Close (500-1000m),False,True,True
+143,2021,438.4506178337631,Admiralty,22.278399,114.16433,0,False,Very Close (<500m),True,True,True
+131,2021,525.2470330911451,Admiralty,22.278399,114.16433,0,False,Close (500-1000m),True,True,True
+131,2021,476.32042383771517,Admiralty,22.278399,114.16433,0,False,Very Close (<500m),True,True,True
+152,2021,531.3479886935805,Tin Hau,22.2827,114.1917,0,False,Close (500-1000m),True,True,True
+131,2021,916.6049945462819,Exhibition Centre,22.281613,114.17569,0,False,Close (500-1000m),False,True,True
+144,2021,828.3252719463187,Causeway Bay,22.279392,114.182926,0,False,Close (500-1000m),False,True,True
+131,2021,830.4860120851909,Exhibition Centre,22.281613,114.17569,0,False,Close (500-1000m),False,True,True
+131,2021,851.504524425457,Exhibition Centre,22.281613,114.17569,0,False,Close (500-1000m),False,True,True
+111,2021,1272.6462228541534,Kennedy Town,22.2812,114.1285,0,False,Moderate (1-2km),False,False,True
+144,2021,948.6428634219708,Causeway Bay,22.279392,114.182926,0,False,Close (500-1000m),False,True,True
+149,2021,1292.1245963051942,Tin Hau,22.2827,114.1917,0,False,Moderate (1-2km),False,True,True
+131,2021,847.1876681481255,Exhibition Centre,22.281613,114.17569,0,False,Close (500-1000m),False,True,True
+142,2021,583.4170897241817,Central,22.281938,114.158077,0,False,Close (500-1000m),False,True,True
+161,2021,118.34941566088324,Shau Kei Wan,22.2789,114.2289,0,False,Very Close (<500m),True,True,True
+132,2021,208.8513813008812,Causeway Bay,22.279392,114.182926,0,False,Very Close (<500m),True,True,True
+132,2021,186.67160264221278,Causeway Bay,22.279392,114.182926,0,False,Very Close (<500m),True,True,True
+146,2021,429.4545064435118,Causeway Bay,22.279392,114.182926,0,False,Very Close (<500m),True,True,True
+132,2021,340.0779086121318,Causeway Bay,22.279392,114.182926,0,False,Very Close (<500m),True,True,True
+142,2021,793.5439113812788,Central,22.281938,114.158077,0,False,Close (500-1000m),False,True,True
+135,2021,235.956018353703,Exhibition Centre,22.281613,114.17569,0,False,Very Close (<500m),True,True,True
+146,2021,295.9923764550133,Causeway Bay,22.279392,114.182926,0,False,Very Close (<500m),True,True,True
+123,2021,132.89892308211438,Central,22.281938,114.158077,0,False,Very Close (<500m),True,True,True
+124,2021,120.51745962663307,Admiralty,22.278399,114.16433,0,False,Very Close (<500m),True,True,True
+161,2021,186.21947808280103,Shau Kei Wan,22.2789,114.2289,0,False,Very Close (<500m),True,True,True
+161,2021,173.5200932993673,Sai Wan Ho,22.2816,114.2224,0,False,Very Close (<500m),True,True,True
+134,2021,529.8932608540283,Admiralty,22.278399,114.16433,0,False,Close (500-1000m),True,True,True
+146,2021,399.7825954229437,Causeway Bay,22.279392,114.182926,0,False,Very Close (<500m),True,True,True
+141,2021,632.8454515507859,Sai Ying Pun,22.2856,114.1427,0,False,Close (500-1000m),False,True,True
+123,2021,179.68352746962145,Central,22.281938,114.158077,0,False,Very Close (<500m),True,True,True
+133,2021,172.8564674048774,Causeway Bay,22.279392,114.182926,0,False,Very Close (<500m),True,True,True
+146,2021,375.97637018795825,Causeway Bay,22.279392,114.182926,0,False,Very Close (<500m),True,True,True
+135,2021,157.09537428300285,Exhibition Centre,22.281613,114.17569,0,False,Very Close (<500m),True,True,True
+122,2021,471.7249531256114,Central,22.281938,114.158077,0,False,Very Close (<500m),True,True,True
+123,2021,212.44872976647932,Central,22.281938,114.158077,0,False,Very Close (<500m),True,True,True
+111,2021,209.39403793158172,Kennedy Town,22.2812,114.1285,0,False,Very Close (<500m),True,True,True
+111,2021,330.4281451629916,Kennedy Town,22.2812,114.1285,0,False,Very Close (<500m),True,True,True
+111,2021,228.80428397720388,Kennedy Town,22.2812,114.1285,0,False,Very Close (<500m),True,True,True
+122,2021,349.9545023018148,Central,22.281938,114.158077,0,False,Very Close (<500m),True,True,True
+114,2021,328.68096074033895,Sheung Wan,22.285899,114.153707,0,False,Very Close (<500m),True,True,True
+121,2021,214.57236313056484,Central,22.281938,114.158077,0,False,Very Close (<500m),True,True,True
+161,2021,222.35375505075456,Sai Wan Ho,22.2816,114.2224,0,False,Very Close (<500m),True,True,True
+114,2021,434.54250242363,Sheung Wan,22.285899,114.153707,0,False,Very Close (<500m),True,True,True
+142,2021,575.8032428836744,Sheung Wan,22.285899,114.153707,0,False,Close (500-1000m),True,True,True
+111,2021,328.39044185024005,Kennedy Town,22.2812,114.1285,0,False,Very Close (<500m),True,True,True
+111,2021,201.8648814360525,Kennedy Town,22.2812,114.1285,0,False,Very Close (<500m),True,True,True
+161,2021,291.5490001202357,Sai Wan Ho,22.2816,114.2224,0,False,Very Close (<500m),True,True,True
+114,2021,355.9735407557705,Sheung Wan,22.285899,114.153707,0,False,Very Close (<500m),True,True,True
+142,2021,694.7613029241866,Sai Ying Pun,22.2856,114.1427,0,False,Close (500-1000m),True,True,True
+161,2021,489.34591653641246,Shau Kei Wan,22.2789,114.2289,0,False,Very Close (<500m),True,True,True
+146,2021,279.0974371424242,Causeway Bay,22.279392,114.182926,0,False,Very Close (<500m),True,True,True
+161,2021,525.5141878460355,Shau Kei Wan,22.2789,114.2289,0,False,Close (500-1000m),True,True,True
+111,2021,205.96761890083292,Kennedy Town,22.2812,114.1285,0,False,Very Close (<500m),True,True,True
+111,2021,167.18888798983488,Kennedy Town,22.2812,114.1285,0,False,Very Close (<500m),True,True,True
+161,2021,138.00840610675277,Sai Wan Ho,22.2816,114.2224,0,False,Very Close (<500m),True,True,True
+124,2021,288.9181711969674,Admiralty,22.278399,114.16433,0,False,Very Close (<500m),True,True,True
+161,2021,150.29457228557814,Sai Wan Ho,22.2816,114.2224,0,False,Very Close (<500m),True,True,True
+123,2021,164.43030015189544,Central,22.281938,114.158077,0,False,Very Close (<500m),True,True,True
+123,2021,201.31373228321468,Central,22.281938,114.158077,0,False,Very Close (<500m),True,True,True
+142,2021,593.1705563751126,Sheung Wan,22.285899,114.153707,0,False,Close (500-1000m),False,True,True
+111,2021,293.05254896203263,Kennedy Town,22.2812,114.1285,0,False,Very Close (<500m),True,True,True
+124,2021,582.3323450778088,Exhibition Centre,22.281613,114.17569,0,False,Close (500-1000m),True,True,True
+111,2021,736.0651079164581,Kennedy Town,22.2812,114.1285,0,False,Close (500-1000m),True,True,True
+122,2021,370.7589344671888,Central,22.281938,114.158077,0,False,Very Close (<500m),True,True,True
+123,2021,134.7369361228696,Central,22.281938,114.158077,0,False,Very Close (<500m),True,True,True
+151,2021,352.6979425905506,Fortress Hill,22.2881,114.1936,0,False,Very Close (<500m),True,True,True
+114,2021,222.10789625716643,Sheung Wan,22.285899,114.153707,0,False,Very Close (<500m),True,True,True
+116,2021,406.2594075720802,HKU,22.2841,114.1356,0,False,Very Close (<500m),True,True,True
+141,2021,535.8249081502336,Sai Ying Pun,22.2856,114.1427,0,False,Close (500-1000m),True,True,True
+142,2021,732.2308171023242,Sheung Wan,22.285899,114.153707,0,False,Close (500-1000m),False,True,True
+121,2021,192.89282440678878,Central,22.281938,114.158077,0,False,Very Close (<500m),True,True,True
+111,2021,228.5636111452292,Kennedy Town,22.2812,114.1285,0,False,Very Close (<500m),True,True,True
+123,2021,309.7421576052991,Central,22.281938,114.158077,0,False,Very Close (<500m),True,True,True
+146,2021,516.268633686372,Causeway Bay,22.279392,114.182926,0,False,Close (500-1000m),True,True,True
+142,2021,572.9275558234852,Central,22.281938,114.158077,0,False,Close (500-1000m),True,True,True
+161,2021,229.86462818668613,Sai Wan Ho,22.2816,114.2224,0,False,Very Close (<500m),True,True,True
+181,2021,1104.800649251817,Sai Ying Pun,22.2856,114.1427,0,False,Moderate (1-2km),False,True,True
+123,2021,244.78089701207975,Central,22.281938,114.158077,0,False,Very Close (<500m),True,True,True
+161,2021,118.34900657043755,Sai Wan Ho,22.2816,114.2224,0,False,Very Close (<500m),True,True,True
+133,2021,334.8272177193533,Causeway Bay,22.279392,114.182926,0,False,Very Close (<500m),True,True,True
+146,2021,159.80182809395652,Causeway Bay,22.279392,114.182926,0,False,Very Close (<500m),True,True,True
+146,2021,200.67898982360828,Causeway Bay,22.279392,114.182926,0,False,Very Close (<500m),True,True,True
+141,2021,524.5365915144968,HKU,22.2841,114.1356,0,False,Close (500-1000m),True,True,True
+123,2021,360.02231515543775,Central,22.281938,114.158077,0,False,Very Close (<500m),True,True,True
+161,2021,313.73652559179527,Shau Kei Wan,22.2789,114.2289,0,False,Very Close (<500m),True,True,True
+112,2021,86.03534774641781,Sai Ying Pun,22.2856,114.1427,0,False,Very Close (<500m),True,True,True
+161,2021,702.0837297255665,Heng Fa Chuen,22.2769,114.2398,0,False,Close (500-1000m),True,True,True
+113,2021,423.0181020562321,Sheung Wan,22.285899,114.153707,0,False,Very Close (<500m),True,True,True
+142,2021,762.6817155795028,Sai Ying Pun,22.2856,114.1427,0,False,Close (500-1000m),False,True,True
+122,2021,554.1472855228891,Sheung Wan,22.285899,114.153707,0,False,Close (500-1000m),False,True,True
+121,2021,282.0338811069522,Central,22.281938,114.158077,0,False,Very Close (<500m),True,True,True
+123,2021,263.53241558839125,Central,22.281938,114.158077,0,False,Very Close (<500m),True,True,True
+161,2021,311.1434777970633,Sai Wan Ho,22.2816,114.2224,0,False,Very Close (<500m),True,True,True
+141,2021,382.2954650497119,Kennedy Town,22.2812,114.1285,0,False,Very Close (<500m),True,True,True
+156,2021,1019.9808840445631,Tai Koo,22.2846,114.2161,0,False,Moderate (1-2km),True,True,True
+151,2021,295.8655085846075,Tin Hau,22.2827,114.1917,0,False,Very Close (<500m),True,True,True
+832,2021,3993.941565746682,LOHAS Park,22.2957,114.2689,0,False,Far (>2km),False,False,False
+123,2021,238.0729997467795,Central,22.281938,114.158077,0,False,Very Close (<500m),True,True,True
+141,2021,445.8371472768577,Kennedy Town,22.2812,114.1285,0,False,Very Close (<500m),True,True,True
+142,2021,520.5761882188767,Central,22.281938,114.158077,0,False,Close (500-1000m),True,True,True
+166,2021,410.17676876809827,Sai Wan Ho,22.2816,114.2224,0,False,Very Close (<500m),True,True,True
+146,2021,385.2681284345746,Causeway Bay,22.279392,114.182926,0,False,Very Close (<500m),True,True,True
+133,2021,335.9297827850939,Exhibition Centre,22.281613,114.17569,0,False,Very Close (<500m),True,True,True
+132,2021,219.8196015090101,Causeway Bay,22.279392,114.182926,0,False,Very Close (<500m),True,True,True
+146,2021,505.61067637053856,Tin Hau,22.2827,114.1917,0,False,Close (500-1000m),True,True,True
+131,2021,555.8189636256106,Exhibition Centre,22.281613,114.17569,0,False,Close (500-1000m),True,True,True
+133,2021,429.1023086103673,Causeway Bay,22.279392,114.182926,0,False,Very Close (<500m),True,True,True
+132,2021,94.02344605500495,Causeway Bay,22.279392,114.182926,0,False,Very Close (<500m),True,True,True
+132,2021,235.81159900398126,Causeway Bay,22.279392,114.182926,0,False,Very Close (<500m),True,True,True
+124,2021,203.18822637711972,Admiralty,22.278399,114.16433,0,False,Very Close (<500m),True,True,True
+145,2021,384.1067955246116,Tin Hau,22.2827,114.1917,0,False,Very Close (<500m),True,True,True
+146,2021,457.0227550405396,Causeway Bay,22.279392,114.182926,0,False,Very Close (<500m),True,True,True
+111,2021,284.90503765955316,Kennedy Town,22.2812,114.1285,0,False,Very Close (<500m),True,True,True

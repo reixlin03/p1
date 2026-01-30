@@ -34,22 +34,44 @@ def standardize_tpu_data(gdf: gpd.GeoDataFrame, year: str) -> gpd.GeoDataFrame:
     standardized = gdf.copy()
     
     # Try to identify TPU identifier column (common names)
-    tpu_id_cols = ['TPU', 'TPU_CODE', 'TPU_CODE_', 'CODE', 'ID', 'OBJECTID', 'FID']
+    # TPU codes are typically 3-digit numbers (e.g., 001, 002, etc.)
+    tpu_id_cols = ['TPU', 'TPU_CODE', 'TPU_CODE_', 'CODE', 'TPU_ID', 'STPU', 'STPU_CODE', 
+                   'TPUCODE', 'TPU_CD', 'ID', 'OBJECTID', 'FID']
     tpu_id_col = None
     
     for col in tpu_id_cols:
         if col in standardized.columns:
-            tpu_id_col = col
-            break
+            # Check if this column contains TPU-like codes (3-digit numbers typically)
+            sample_values = standardized[col].dropna().head(10)
+            if len(sample_values) > 0:
+                tpu_id_col = col
+                break
     
-    # If no standard ID column found, create one
+    # If no standard ID column found, try to find any column with TPU-like codes
     if tpu_id_col is None:
-        standardized['TPU_ID'] = standardized.index.astype(str)
+        for col in standardized.columns:
+            if col.upper() in ['TPU', 'CODE', 'ID'] or 'TPU' in col.upper():
+                sample = standardized[col].dropna().head(5)
+                # Check if values look like TPU codes (numeric, typically 3 digits)
+                if len(sample) > 0:
+                    try:
+                        # Try to see if values are numeric codes
+                        sample_str = sample.astype(str)
+                        if all(len(str(v)) <= 4 and (str(v).isdigit() or str(v).startswith('0')) for v in sample_str):
+                            tpu_id_col = col
+                            break
+                    except:
+                        pass
+    
+    # If still no ID column found, create one
+    if tpu_id_col is None:
+        standardized['TPU_ID'] = standardized.index.astype(str).str.zfill(3)
         tpu_id_col = 'TPU_ID'
     else:
-        # Rename to standard name
-        if tpu_id_col != 'TPU_ID':
-            standardized['TPU_ID'] = standardized[tpu_id_col].astype(str)
+        # Use the found column and ensure proper formatting
+        standardized['TPU_ID'] = standardized[tpu_id_col].astype(str)
+        # Pad with zeros if needed to make 3-digit codes
+        standardized['TPU_ID'] = standardized['TPU_ID'].str.zfill(3)
     
     # Add year column
     standardized['YEAR'] = year

@@ -35,25 +35,41 @@ def load_mtr_stations(excel_file: str = None) -> pd.DataFrame:
         return pd.DataFrame()
 
 
-def load_tpu_boundaries(data_dir: str = None) -> dict:
+def load_tpu_boundaries(data_dir: str = None, use_spatial_join: bool = True) -> dict:
     """
     Load all processed TPU boundary data.
+    If use_spatial_join is True, loads the spatial join data which includes MTR proximity info.
     """
-    if data_dir is None:
-        project_root = Path(__file__).parent.parent.parent
-        data_dir = project_root / 'data' / 'processed' / 'tpu'
-    data_path = Path(data_dir)
-    tpu_data = {}
+    project_root = Path(__file__).parent.parent.parent
     
+    if use_spatial_join:
+        # Try to load spatial join data first (includes MTR proximity metrics)
+        analysis_dir = project_root / 'data' / 'analysis'
+        data_path = analysis_dir
+    else:
+        if data_dir is None:
+            data_dir = project_root / 'data' / 'processed' / 'tpu'
+        data_path = Path(data_dir)
+    
+    tpu_data = {}
     years = ['2001', '2006', '2011', '2016', '2021']
     
     for year in years:
-        file_path = data_path / f'tpu_boundaries_{year}_processed.geojson'
+        if use_spatial_join:
+            # Try spatial join file first
+            file_path = data_path / f'mtr_tpu_spatial_join_{year}.geojson'
+            if not file_path.exists():
+                # Fallback to processed TPU boundaries
+                file_path = project_root / 'data' / 'processed' / 'tpu' / f'tpu_boundaries_{year}_processed.geojson'
+        else:
+            file_path = data_path / f'tpu_boundaries_{year}_processed.geojson'
+        
         if file_path.exists():
             try:
                 gdf = gpd.read_file(file_path)
                 tpu_data[year] = gdf
-                print(f"Loaded {year} TPU boundaries: {len(gdf)} TPUs")
+                source = "spatial join" if use_spatial_join and "spatial_join" in str(file_path) else "processed"
+                print(f"Loaded {year} TPU boundaries: {len(gdf)} TPUs ({source})")
             except Exception as e:
                 print(f"Error loading {year}: {e}")
     
@@ -119,8 +135,8 @@ def create_map(tpu_data: dict, mtr_stations: pd.DataFrame, output_file: str = No
                 'opacity': 0.7
             },
             tooltip=folium.GeoJsonTooltip(
-                fields=['TPU_ID', 'YEAR'],
-                aliases=['TPU ID:', 'Year:'],
+                fields=[f for f in ['TPU_ID', 'YEAR', 'nearest_mtr_distance', 'nearest_mtr_station', 'has_mtr_station'] if f in gdf.columns],
+                aliases=[f.replace('_', ' ').title() + ':' for f in ['TPU_ID', 'YEAR', 'nearest_mtr_distance', 'nearest_mtr_station', 'has_mtr_station'] if f in gdf.columns],
                 localize=True
             ),
             show=show_by_default  # Show most recent year by default
