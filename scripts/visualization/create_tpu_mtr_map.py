@@ -124,16 +124,34 @@ def create_map(tpu_data: dict, mtr_stations: pd.DataFrame, output_file: str = No
         # Show most recent year by default, hide others
         show_by_default = (year == most_recent_year)
         
-        layer = folium.GeoJson(
-            geojson_data,
-            name=f'TPU Boundaries {year}',
-            style_function=lambda feature, color=color: {
+        # Enhanced style function that colors by MTR proximity if available
+        def style_function(feature, color=color):
+            style = {
                 'fillColor': color,
                 'color': color,
                 'weight': 2,
                 'fillOpacity': 0.3,
                 'opacity': 0.7
-            },
+            }
+            
+            # If spatial join data is available, color by MTR proximity
+            props = feature.get('properties', {})
+            if 'has_mtr_station' in props and props.get('has_mtr_station'):
+                style['fillColor'] = '#00FF00'  # Green for TPUs with MTR stations
+                style['fillOpacity'] = 0.5
+            elif 'within_500m_buffer' in props and props.get('within_500m_buffer'):
+                style['fillColor'] = '#90EE90'  # Light green for very close
+                style['fillOpacity'] = 0.4
+            elif 'within_1000m_buffer' in props and props.get('within_1000m_buffer'):
+                style['fillColor'] = '#FFFF99'  # Yellow for close
+                style['fillOpacity'] = 0.35
+            
+            return style
+        
+        layer = folium.GeoJson(
+            geojson_data,
+            name=f'TPU Boundaries {year}',
+            style_function=style_function,
             tooltip=folium.GeoJsonTooltip(
                 fields=[f for f in ['TPU_ID', 'YEAR', 'nearest_mtr_distance', 'nearest_mtr_station', 'has_mtr_station'] if f in gdf.columns],
                 aliases=[f.replace('_', ' ').title() + ':' for f in ['TPU_ID', 'YEAR', 'nearest_mtr_distance', 'nearest_mtr_station', 'has_mtr_station'] if f in gdf.columns],
