@@ -173,6 +173,18 @@ def create_map(tpu_data: dict, mtr_stations: pd.DataFrame, output_file: str = No
             'Yau Tong', 'Quarry Bay', 'North Point'
         ]
         
+        # Yellow stations
+        yellow_stations = [
+            'Tuen Mun', 'Siu Hong', 'Tin Shui Wai', 'Long Ping', 'Yuen Long', 
+            'Kam Sheung Road', 'Tsuen Wan West', 'Mei Foo', 'Nam Cheong'
+        ]
+        
+        # Blue stations
+        blue_stations = [
+            'Wu Kai Sha', 'Ma On Shan', 'Heng On', 'Tai Shui Hang', 'Shek Mun', 
+            'City One', 'Sha Tin Wai', 'Che Kung Temple', 'Tai Wai'
+        ]
+        
         for idx, station in mtr_stations.iterrows():
             station_name = station.get('Station Name (English)', 'Unknown')
             chinese_name = station.get('Station Name (Chinese)', '')
@@ -181,16 +193,32 @@ def create_map(tpu_data: dict, mtr_stations: pd.DataFrame, output_file: str = No
             lon = station['Longitude']
             code = station.get('Station Code', '')
             
-            # Check if this is a Tseung Kwan O line station to highlight
+            # Check station category
             is_tko_station = any(tko_name.lower() in station_name.lower() for tko_name in tko_line_stations)
+            is_yellow_station = any(yellow_name.lower() in station_name.lower() for yellow_name in yellow_stations)
+            is_blue_station = any(blue_name.lower() in station_name.lower() for blue_name in blue_stations)
             
-            # Set color based on station
+            # Set color based on station category (priority: purple > yellow > blue > white)
             if is_tko_station:
                 marker_color = '#800080'  # Purple for Tseung Kwan O line stations
                 marker_fill = '#800080'
+                category_label = '📍 Tseung Kwan O Line'
+                category_color = '#800080'
+            elif is_yellow_station:
+                marker_color = '#FFD700'  # Yellow (Gold)
+                marker_fill = '#FFD700'
+                category_label = '📍 West Rail'
+                category_color = '#FFD700'
+            elif is_blue_station:
+                marker_color = '#0000FF'  # Blue
+                marker_fill = '#0000FF'
+                category_label = '📍 Ma On Shan Line'
+                category_color = '#0000FF'
             else:
                 marker_color = '#FFFFFF'  # White for other stations
                 marker_fill = '#FFFFFF'
+                category_label = ''
+                category_color = ''
             
             # Create popup content
             popup_html = f"""
@@ -199,7 +227,7 @@ def create_map(tpu_data: dict, mtr_stations: pd.DataFrame, output_file: str = No
                 {f'<p style="margin: 3px 0; color: #666;">{chinese_name}</p>' if chinese_name else ''}
                 {f'<p style="margin: 3px 0;"><strong>Code:</strong> {code}</p>' if code else ''}
                 {f'<p style="margin: 3px 0;"><strong>Lines:</strong> {lines}</p>' if lines else ''}
-                {'<p style="margin: 3px 0; color: #800080;"><strong>📍 Tseung Kwan O Line</strong></p>' if is_tko_station else ''}
+                {f'<p style="margin: 3px 0; color: {category_color};"><strong>{category_label}</strong></p>' if category_label else ''}
                 <p style="margin: 3px 0; font-size: 0.9em; color: #888;">
                     <strong>Coordinates:</strong><br>
                     {lat:.6f}, {lon:.6f}
@@ -249,7 +277,7 @@ def create_map(tpu_data: dict, mtr_stations: pd.DataFrame, output_file: str = No
     # Add legend
     legend_html = '''
     <div style="position: fixed; 
-                bottom: 50px; right: 50px; width: 200px; height: auto; 
+                bottom: 50px; right: 50px; width: 220px; height: auto; 
                 background-color: white; z-index:9999; font-size:14px;
                 border:2px solid grey; border-radius: 5px; padding: 10px">
     <h4 style="margin-top: 0;">TPU Boundary Years</h4>
@@ -258,8 +286,11 @@ def create_map(tpu_data: dict, mtr_stations: pd.DataFrame, output_file: str = No
     <p><span style="color: #45B7D1;">■</span> 2011</p>
     <p><span style="color: #FFA07A;">■</span> 2016</p>
     <hr>
-    <p><span style="color: #FFFFFF; text-shadow: 1px 1px 2px #000;">●</span> MTR Stations</p>
+    <p><strong>MTR Stations:</strong></p>
+    <p><span style="color: #FFFFFF; text-shadow: 1px 1px 2px #000;">●</span> Other Stations</p>
     <p><span style="color: #800080;">●</span> Tseung Kwan O Line</p>
+    <p><span style="color: #FFD700;">●</span> West Rail</p>
+    <p><span style="color: #0000FF;">●</span> Ma On Shan Line</p>
     </div>
     '''
     m.get_root().html.add_child(folium.Element(legend_html))
