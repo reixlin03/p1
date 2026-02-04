@@ -169,7 +169,7 @@ def create_map(tpu_data: dict, mtr_stations: pd.DataFrame, output_file: str = No
         
         # Tseung Kwan O line stations to highlight in purple
         tko_line_stations = [
-            'Po Lam', 'Hang Hau', 'Tseung Kwan O', 'Tiu Keng Leng', 
+            'Po Lam', 'Hang Hau', 'LOHAS Park', 'Tseung Kwan O', 'Tiu Keng Leng', 
             'Yau Tong', 'Quarry Bay', 'North Point'
         ]
         
