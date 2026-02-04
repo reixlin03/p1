@@ -52,7 +52,7 @@ def load_tpu_boundaries(data_dir: str = None, use_spatial_join: bool = True) -> 
         data_path = Path(data_dir)
     
     tpu_data = {}
-    years = ['2001', '2006', '2011', '2016', '2021']
+    years = ['2001', '2006', '2011', '2016']  # Excluding 2021 as requested
     
     for year in years:
         if use_spatial_join:
@@ -239,7 +239,6 @@ def create_map(tpu_data: dict, mtr_stations: pd.DataFrame, output_file: str = No
     <p><span style="color: #4ECDC4;">■</span> 2006</p>
     <p><span style="color: #45B7D1;">■</span> 2011</p>
     <p><span style="color: #FFA07A;">■</span> 2016</p>
-    <p><span style="color: #98D8C8;">■</span> 2021</p>
     <hr>
     <p><span style="color: #FF0000;">●</span> MTR Stations</p>
     </div>
