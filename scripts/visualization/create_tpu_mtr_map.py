@@ -167,6 +167,12 @@ def create_map(tpu_data: dict, mtr_stations: pd.DataFrame, output_file: str = No
     if len(mtr_stations) > 0:
         mtr_group = folium.FeatureGroup(name='MTR Stations', show=True)
         
+        # Tseung Kwan O line stations to highlight in purple
+        tko_line_stations = [
+            'Po Lam', 'Hang Hau', 'Tseung Kwan O', 'Tiu Keng Leng', 
+            'Yau Tong', 'Quarry Bay', 'North Point'
+        ]
+        
         for idx, station in mtr_stations.iterrows():
             station_name = station.get('Station Name (English)', 'Unknown')
             chinese_name = station.get('Station Name (Chinese)', '')
@@ -175,6 +181,17 @@ def create_map(tpu_data: dict, mtr_stations: pd.DataFrame, output_file: str = No
             lon = station['Longitude']
             code = station.get('Station Code', '')
             
+            # Check if this is a Tseung Kwan O line station to highlight
+            is_tko_station = any(tko_name.lower() in station_name.lower() for tko_name in tko_line_stations)
+            
+            # Set color based on station
+            if is_tko_station:
+                marker_color = '#800080'  # Purple for Tseung Kwan O line stations
+                marker_fill = '#800080'
+            else:
+                marker_color = '#FF0000'  # Red for other stations
+                marker_fill = '#FF0000'
+            
             # Create popup content
             popup_html = f"""
             <div style="min-width: 200px;">
@@ -182,6 +199,7 @@ def create_map(tpu_data: dict, mtr_stations: pd.DataFrame, output_file: str = No
                 {f'<p style="margin: 3px 0; color: #666;">{chinese_name}</p>' if chinese_name else ''}
                 {f'<p style="margin: 3px 0;"><strong>Code:</strong> {code}</p>' if code else ''}
                 {f'<p style="margin: 3px 0;"><strong>Lines:</strong> {lines}</p>' if lines else ''}
+                {'<p style="margin: 3px 0; color: #800080;"><strong>📍 Tseung Kwan O Line</strong></p>' if is_tko_station else ''}
                 <p style="margin: 3px 0; font-size: 0.9em; color: #888;">
                     <strong>Coordinates:</strong><br>
                     {lat:.6f}, {lon:.6f}
@@ -195,8 +213,8 @@ def create_map(tpu_data: dict, mtr_stations: pd.DataFrame, output_file: str = No
                 radius=8,
                 popup=folium.Popup(popup_html, max_width=300),
                 tooltip=station_name,
-                color='#FF0000',
-                fillColor='#FF0000',
+                color=marker_color,
+                fillColor=marker_fill,
                 fillOpacity=0.8,
                 weight=2
             ).add_to(mtr_group)
@@ -241,6 +259,7 @@ def create_map(tpu_data: dict, mtr_stations: pd.DataFrame, output_file: str = No
     <p><span style="color: #FFA07A;">■</span> 2016</p>
     <hr>
     <p><span style="color: #FF0000;">●</span> MTR Stations</p>
+    <p><span style="color: #800080;">●</span> Tseung Kwan O Line</p>
     </div>
     '''
     m.get_root().html.add_child(folium.Element(legend_html))
