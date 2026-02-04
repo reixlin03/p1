@@ -189,8 +189,8 @@ def create_map(tpu_data: dict, mtr_stations: pd.DataFrame, output_file: str = No
                 marker_color = '#800080'  # Purple for Tseung Kwan O line stations
                 marker_fill = '#800080'
             else:
-                marker_color = '#FF0000'  # Red for other stations
-                marker_fill = '#FF0000'
+                marker_color = '#FFFFFF'  # White for other stations
+                marker_fill = '#FFFFFF'
             
             # Create popup content
             popup_html = f"""
@@ -258,7 +258,7 @@ def create_map(tpu_data: dict, mtr_stations: pd.DataFrame, output_file: str = No
     <p><span style="color: #45B7D1;">■</span> 2011</p>
     <p><span style="color: #FFA07A;">■</span> 2016</p>
     <hr>
-    <p><span style="color: #FF0000;">●</span> MTR Stations</p>
+    <p><span style="color: #FFFFFF; text-shadow: 1px 1px 2px #000;">●</span> MTR Stations</p>
     <p><span style="color: #800080;">●</span> Tseung Kwan O Line</p>
     </div>
     '''
