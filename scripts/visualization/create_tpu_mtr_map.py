@@ -35,6 +35,33 @@ def load_mtr_stations(excel_file: str = None) -> pd.DataFrame:
         return pd.DataFrame()
 
 
+def load_new_town_boundaries(shp_file: str = None) -> gpd.GeoDataFrame:
+    """
+    Load New Town boundaries from shapefile.
+    """
+    if shp_file is None:
+        project_root = Path(__file__).parent.parent.parent
+        shp_file = project_root.parent / 'BoundariesofNewTownsfor2006PopulationBycensus_SHP' / 'NewTown_2006.shp'
+    
+    shp_path = Path(shp_file)
+    if not shp_path.exists():
+        print(f"New Town boundaries file not found: {shp_path}")
+        return None
+    
+    try:
+        gdf = gpd.read_file(shp_path)
+        # Convert to WGS84 to match the map
+        if gdf.crs is None:
+            # Assume it's in Hong Kong 1980 Grid System (EPSG:2326)
+            gdf.set_crs('EPSG:2326', inplace=True)
+        gdf = gdf.to_crs('EPSG:4326')
+        print(f"Loaded {len(gdf)} New Town boundaries")
+        return gdf
+    except Exception as e:
+        print(f"Error loading New Town boundaries: {e}")
+        return None
+
+
 def load_tpu_boundaries(data_dir: str = None, use_spatial_join: bool = True) -> dict:
     """
     Load all processed TPU boundary data.
@@ -76,7 +103,7 @@ def load_tpu_boundaries(data_dir: str = None, use_spatial_join: bool = True) -> 
     return tpu_data
 
 
-def create_map(tpu_data: dict, mtr_stations: pd.DataFrame, output_file: str = None):
+def create_map(tpu_data: dict, mtr_stations: pd.DataFrame, new_town_boundaries: gpd.GeoDataFrame = None, output_file: str = None):
     """
     Create interactive HTML map with TPU boundaries and MTR stations.
     """
@@ -249,6 +276,68 @@ def create_map(tpu_data: dict, mtr_stations: pd.DataFrame, output_file: str = No
         
         mtr_group.add_to(m)
     
+    # Add New Town boundaries layer
+    if new_town_boundaries is not None and len(new_town_boundaries) > 0:
+        new_town_group = folium.FeatureGroup(name='New Town Boundaries (2006)', show=True)
+        
+        # Create GeoJSON from New Town boundaries
+        new_town_geojson = json.loads(new_town_boundaries.to_json())
+        
+        # Style function for New Town boundaries
+        def new_town_style(feature):
+            return {
+                'fillColor': '#FFA500',  # Orange
+                'color': '#FF8C00',      # Dark orange border
+                'weight': 3,
+                'fillOpacity': 0.2,
+                'opacity': 0.8,
+                'dashArray': '5, 5'      # Dashed line
+            }
+        
+        # Add tooltip with New Town name
+        def new_town_tooltip(feature):
+            props = feature.get('properties', {})
+            name_en = props.get('NewTown_en', 'Unknown')
+            name_tc = props.get('NewTown_Tc', '')
+            return f"{name_en}" + (f" ({name_tc})" if name_tc else "")
+        
+        # Add popup with more details
+        def new_town_popup(feature):
+            props = feature.get('properties', {})
+            name_en = props.get('NewTown_en', 'Unknown')
+            name_tc = props.get('NewTown_Tc', '')
+            name_sc = props.get('NewTown_Sc', '')
+            
+            popup_html = f"""
+            <div style="min-width: 200px;">
+                <h4 style="margin: 5px 0; color: #FF8C00;">{name_en}</h4>
+                {f'<p style="margin: 3px 0; color: #666;">{name_tc}</p>' if name_tc else ''}
+                {f'<p style="margin: 3px 0; color: #666;">{name_sc}</p>' if name_sc else ''}
+                <p style="margin: 3px 0; font-size: 0.9em; color: #888;">
+                    <strong>New Town Boundary (2006 Census)</strong>
+                </p>
+            </div>
+            """
+            return popup_html
+        
+        # Add GeoJSON layer
+        folium.GeoJson(
+            new_town_geojson,
+            style_function=new_town_style,
+            tooltip=folium.GeoJsonTooltip(
+                fields=['NewTown_en', 'NewTown_Tc'],
+                aliases=['New Town: ', '新市鎮: '],
+                style=('background-color: white; font-size: 12px; padding: 5px;')
+            ),
+            popup=folium.GeoJsonPopup(
+                fields=['NewTown_en', 'NewTown_Tc', 'NewTown_Sc'],
+                aliases=['English: ', 'Traditional Chinese: ', 'Simplified Chinese: '],
+                style='font-size: 12px;'
+            )
+        ).add_to(new_town_group)
+        
+        new_town_group.add_to(m)
+    
     # Add layer control
     folium.LayerControl(collapsed=False).add_to(m)
     
@@ -291,6 +380,9 @@ def create_map(tpu_data: dict, mtr_stations: pd.DataFrame, output_file: str = No
     <p><span style="color: #800080;">●</span> Tseung Kwan O Line</p>
     <p><span style="color: #FFD700;">●</span> West Rail</p>
     <p><span style="color: #0000FF;">●</span> Ma On Shan Line</p>
+    <hr>
+    <p><strong>Other Layers:</strong></p>
+    <p><span style="color: #FFA500; border: 2px dashed #FF8C00;">━</span> New Town Boundaries (2006)</p>
     </div>
     '''
     m.get_root().html.add_child(folium.Element(legend_html))
@@ -316,13 +408,16 @@ def main():
     print("\nLoading MTR stations...")
     mtr_stations = load_mtr_stations()
     
+    print("\nLoading New Town boundaries...")
+    new_town_boundaries = load_new_town_boundaries()
+    
     if not tpu_data and len(mtr_stations) == 0:
         print("No data available to create map!")
         return
     
     # Create map
     print("\nCreating interactive map...")
-    create_map(tpu_data, mtr_stations)
+    create_map(tpu_data, mtr_stations, new_town_boundaries)
     
     print(f"\n{'='*60}")
     print("Map creation complete!")
