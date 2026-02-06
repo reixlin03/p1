@@ -91,11 +91,36 @@ def load_tpu_boundaries(data_dir: str = None, use_spatial_join: bool = True) -> 
         else:
             file_path = data_path / f'tpu_boundaries_{year}_processed.geojson'
         
+        # For 2006, use dissolved boundaries (merged SB_VCs)
+        if year == '2006':
+            dissolved_file = project_root / 'data' / 'processed' / 'tpu' / f'tpu_boundaries_{year}_dissolved.geojson'
+            if dissolved_file.exists():
+                file_path = dissolved_file
+        
         if file_path.exists():
             try:
                 gdf = gpd.read_file(file_path)
+                
+                # If using dissolved boundaries, we need to rejoin spatial data
+                if year == '2006' and 'dissolved' in str(file_path) and use_spatial_join:
+                    # Try to load spatial join data and aggregate it
+                    spatial_file = data_path / f'mtr_tpu_spatial_join_{year}.geojson'
+                    if spatial_file.exists():
+                        spatial_gdf = gpd.read_file(spatial_file)
+                        # Aggregate spatial data by TPU_ID
+                        spatial_agg = spatial_gdf.groupby('TPU_ID').agg({
+                            'nearest_mtr_distance': 'min',
+                            'nearest_mtr_station': 'first',
+                            'has_mtr_station': 'any',
+                            'within_500m_buffer': 'any',
+                            'within_1000m_buffer': 'any',
+                            'mtr_stations_count': 'sum'
+                        }).reset_index()
+                        # Merge with dissolved boundaries
+                        gdf = gdf.merge(spatial_agg, on='TPU_ID', how='left')
+                
                 tpu_data[year] = gdf
-                source = "spatial join" if use_spatial_join and "spatial_join" in str(file_path) else "processed"
+                source = "dissolved" if 'dissolved' in str(file_path) else ("spatial join" if use_spatial_join and "spatial_join" in str(file_path) else "processed")
                 print(f"Loaded {year} TPU boundaries: {len(gdf)} TPUs ({source})")
             except Exception as e:
                 print(f"Error loading {year}: {e}")

@@ -1,0 +1,80 @@
+Year,TPU_ID,Station_Category,Nearest_MTR_Station,Distance_to_Station_m
+2001,153,Tseung Kwan O Line (Purple),North Point,38.5
+2001,155,Tseung Kwan O Line (Purple),Quarry Bay,49.3
+2001,260,West Rail (Yellow),Mei Foo,95.9
+2001,265,West Rail (Yellow),Nam Cheong,122.5
+2001,298,Tseung Kwan O Line (Purple),Yau Tong,109.9
+2001,423,West Rail (Yellow),Tuen Mun,935.6
+2001,424,West Rail (Yellow),Tuen Mun,91.6
+2001,510,West Rail (Yellow),Tin Shui Wai,202.0
+2001,524,West Rail (Yellow),Yuen Long,418.8
+2001,531,West Rail (Yellow),Kam Sheung Road,257.4
+2001,755,Ma On Shan Line (Blue),Sha Tin Wai,201.5
+2001,756,Ma On Shan Line (Blue),City One,102.8
+2001,757,Ma On Shan Line (Blue),Ma On Shan,59.3
+2001,759,Ma On Shan Line (Blue),Tai Wai,153.9
+2001,833,Tseung Kwan O Line (Purple),Tiu Keng Leng,141.8
+2001,836,Tseung Kwan O Line (Purple),Po Lam,79.8
+2001,837,Tseung Kwan O Line (Purple),Hang Hau,81.2
+2001,838,Tseung Kwan O Line (Purple),Tseung Kwan O,99.5
+2001,839,Tseung Kwan O Line (Purple),LOHAS Park,177.7
+2006,153,Tseung Kwan O Line (Purple),North Point,38.5
+2006,155,Tseung Kwan O Line (Purple),Quarry Bay,50.3
+2006,255,West Rail (Yellow),Nam Cheong,122.3
+2006,260,West Rail (Yellow),Mei Foo,95.9
+2006,298,Tseung Kwan O Line (Purple),Yau Tong,112.1
+2006,324,West Rail (Yellow),Tsuen Wan West,185.1
+2006,423,West Rail (Yellow),Siu Hong,220.6
+2006,424,West Rail (Yellow),Tuen Mun,142.0
+2006,515,West Rail (Yellow),Tin Shui Wai,237.5
+2006,524,West Rail (Yellow),Yuen Long,67.9
+2006,531,West Rail (Yellow),Kam Sheung Road,1051.4
+2006,755,Ma On Shan Line (Blue),Sha Tin Wai,201.5
+2006,756,Ma On Shan Line (Blue),City One,102.8
+2006,757,Ma On Shan Line (Blue),Tai Shui Hang,903.4
+2006,759,Ma On Shan Line (Blue),Che Kung Temple,55.9
+2006,833,Tseung Kwan O Line (Purple),Tiu Keng Leng,141.8
+2006,836,Tseung Kwan O Line (Purple),Po Lam,79.8
+2006,837,Tseung Kwan O Line (Purple),Hang Hau,81.2
+2006,838,Tseung Kwan O Line (Purple),Tseung Kwan O,99.5
+2006,839,Tseung Kwan O Line (Purple),LOHAS Park,196.4
+2011,153,Tseung Kwan O Line (Purple),North Point,38.5
+2011,155,Tseung Kwan O Line (Purple),Quarry Bay,50.3
+2011,255,West Rail (Yellow),Nam Cheong,122.3
+2011,260,West Rail (Yellow),Mei Foo,95.9
+2011,298,Tseung Kwan O Line (Purple),Yau Tong,112.1
+2011,324,West Rail (Yellow),Tsuen Wan West,185.1
+2011,423,West Rail (Yellow),Siu Hong,220.6
+2011,424,West Rail (Yellow),Tuen Mun,142.0
+2011,515,West Rail (Yellow),Tin Shui Wai,237.5
+2011,524,West Rail (Yellow),Long Ping,46.6
+2011,531,West Rail (Yellow),Kam Sheung Road,1051.4
+2011,755,Ma On Shan Line (Blue),Sha Tin Wai,201.5
+2011,756,Ma On Shan Line (Blue),Shek Mun,207.2
+2011,757,Ma On Shan Line (Blue),Wu Kai Sha,121.1
+2011,759,Ma On Shan Line (Blue),Tai Wai,153.9
+2011,833,Tseung Kwan O Line (Purple),Tiu Keng Leng,141.1
+2011,836,Tseung Kwan O Line (Purple),Po Lam,79.8
+2011,837,Tseung Kwan O Line (Purple),Hang Hau,81.2
+2011,838,Tseung Kwan O Line (Purple),Tseung Kwan O,103.1
+2011,839,Tseung Kwan O Line (Purple),LOHAS Park,196.7
+2016,153,Tseung Kwan O Line (Purple),North Point,38.5
+2016,155,Tseung Kwan O Line (Purple),Quarry Bay,50.3
+2016,255,West Rail (Yellow),Nam Cheong,122.3
+2016,260,West Rail (Yellow),Mei Foo,95.9
+2016,298,Tseung Kwan O Line (Purple),Yau Tong,112.1
+2016,324,West Rail (Yellow),Tsuen Wan West,185.1
+2016,423,West Rail (Yellow),Siu Hong,220.6
+2016,424,West Rail (Yellow),Tuen Mun,142.0
+2016,515,West Rail (Yellow),Tin Shui Wai,237.5
+2016,524,West Rail (Yellow),Long Ping,46.6
+2016,531,West Rail (Yellow),Kam Sheung Road,1051.4
+2016,755,Ma On Shan Line (Blue),Sha Tin Wai,201.5
+2016,756,Ma On Shan Line (Blue),City One,102.8
+2016,757,Ma On Shan Line (Blue),Wu Kai Sha,121.1
+2016,759,Ma On Shan Line (Blue),Che Kung Temple,55.9
+2016,833,Tseung Kwan O Line (Purple),Tiu Keng Leng,141.1
+2016,836,Tseung Kwan O Line (Purple),Po Lam,79.8
+2016,837,Tseung Kwan O Line (Purple),Hang Hau,81.2
+2016,838,Tseung Kwan O Line (Purple),Tseung Kwan O,103.1
+2016,839,Tseung Kwan O Line (Purple),LOHAS Park,196.7
